@@ -1,0 +1,8162 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.3">
+    
+    
+      
+        <title>四川省诊所类医疗健康数据接入规范 - 诊所信息系统标准</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3b61ea93.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="诊所信息系统标准" class="md-header-nav__button md-logo" aria-label="诊所信息系统标准">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            诊所信息系统标准
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              四川省诊所类医疗健康数据接入规范
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="诊所信息系统标准" class="md-nav__button md-logo" aria-label="诊所信息系统标准">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    诊所信息系统标准
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      项目简介
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="../%E5%9B%9B%E5%B7%9D%E7%9C%81%E6%99%BA%E6%85%A7%E8%AF%8A%E6%89%80%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%9F%BA%E6%9C%AC%E5%8A%9F%E8%83%BD%E8%A7%84%E8%8C%83/" class="md-nav__link">
+      四川省智慧诊所信息系统基本功能规范
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        四川省诊所类医疗健康数据接入规范
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      四川省诊所类医疗健康数据接入规范
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    前言
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    范围
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    规范性引用文件
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    术语和定义
+  </a>
+  
+    <nav class="md-nav" aria-label="术语和定义">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    诊所
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    健康医疗服务
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    健康医疗数据
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    健康医疗信息系统
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    数据规范说明
+  </a>
+  
+    <nav class="md-nav" aria-label="数据规范说明">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    个人标识类型、个人标识号
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    个人标识类型
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    就诊流水号定义规范
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    机构代码规范
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    日期、日期时间类型字段规范
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    浮点类型字段长度说明
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    卫生活动资源目录
+  </a>
+  
+    <nav class="md-nav" aria-label="卫生活动资源目录">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    数据采集优先级说明
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    卫生活动资源目录
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    对接方式
+  </a>
+  
+    <nav class="md-nav" aria-label="对接方式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    单诊所类
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    连锁化、集团化类
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    数据采集接口规范
+  </a>
+  
+    <nav class="md-nav" aria-label="数据采集接口规范">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    API接口服务规范
+  </a>
+  
+    <nav class="md-nav" aria-label="API接口服务规范">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    交互方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    调用流程
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    对接方式
+  </a>
+  
+    <nav class="md-nav" aria-label="对接方式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    数据加密
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    接口调用及示例
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    库表对接服务规范
+  </a>
+  
+    <nav class="md-nav" aria-label="库表对接服务规范">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    交互方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    数据传输问题的反馈和处理
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    数据采集内容规范
+  </a>
+  
+    <nav class="md-nav" aria-label="数据采集内容规范">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    基础信息
+  </a>
+  
+    <nav class="md-nav" aria-label="基础信息">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tb_yljg_info" class="md-nav__link">
+    机构信息表（TB_YLJG_INFO）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tb_ksxx" class="md-nav__link">
+    科室信息表（TB_KSXX）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tb_yhry" class="md-nav__link">
+    医护人员表（TB_YHRY）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tb_ylsb" class="md-nav__link">
+    医疗设备表（TB_YLSB）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    患者概要信息
+  </a>
+  
+    <nav class="md-nav" aria-label="患者概要信息">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tb_hzxx" class="md-nav__link">
+    患者基本信息（TB_HZXX）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    挂号信息
+  </a>
+  
+    <nav class="md-nav" aria-label="挂号信息">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tb_mz_ghmxb" class="md-nav__link">
+    挂号明细表（TB_MZ_GHMXB）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    就诊信息
+  </a>
+  
+    <nav class="md-nav" aria-label="就诊信息">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tb_mz_jzmxb" class="md-nav__link">
+    门诊就诊明细表(TB_MZ_JZMXB)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_37" class="md-nav__link">
+    诊断信息
+  </a>
+  
+    <nav class="md-nav" aria-label="诊断信息">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tb_mz_zdmxb" class="md-nav__link">
+    门诊诊断明细表(TB_MZ_ZDMXB)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_38" class="md-nav__link">
+    处方信息
+  </a>
+  
+    <nav class="md-nav" aria-label="处方信息">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tb_mz_cfzb" class="md-nav__link">
+    门诊处方主表（TB_MZ_CFZB）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tb_mz_ypcfmxb" class="md-nav__link">
+    门诊药品处方明细表（TB_MZ_YPCFMXB）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tb_mz_qtcfmx" class="md-nav__link">
+    门诊其他处方明细表（TB_MZ_QTCFMX）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_39" class="md-nav__link">
+    费用信息
+  </a>
+  
+    <nav class="md-nav" aria-label="费用信息">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tb_mz_sfmxb" class="md-nav__link">
+    门诊费用明细表(TB_MZ_SFMXB)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_40" class="md-nav__link">
+    报告信息
+  </a>
+  
+    <nav class="md-nav" aria-label="报告信息">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_41" class="md-nav__link">
+    检验报告信息
+  </a>
+  
+    <nav class="md-nav" aria-label="检验报告信息">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tb_jy_jybgzb" class="md-nav__link">
+    检验报告主表(TB_JY_JYBGZB)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tb_jy_jyjgzbb" class="md-nav__link">
+    检验结果指标表（TB_JY_JYJGZBB）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tb_jy_xjjgb" class="md-nav__link">
+    细菌结果表(TB_JY_XJJGB)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tb_jy_ymjgb" class="md-nav__link">
+    药敏结果表(TB_JY_YMJGB)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_42" class="md-nav__link">
+    检查报告信息
+  </a>
+  
+    <nav class="md-nav" aria-label="检查报告信息">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tb_jc_yxjcbgb" class="md-nav__link">
+    医学检查报告表(TB_JC_YXJCBGB)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_43" class="md-nav__link">
+    费用结算信息
+  </a>
+  
+    <nav class="md-nav" aria-label="费用结算信息">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tb_mz_jsmxb" class="md-nav__link">
+    门诊结算明细表（TB_MZ_JSMXB）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tb_mz_jszffsmxb" class="md-nav__link">
+    门诊结算支付方式明细表（TB_MZ_JSZFFSMXB）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_44" class="md-nav__link">
+    病历信息
+  </a>
+  
+    <nav class="md-nav" aria-label="病历信息">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tb_bl_mzblxx" class="md-nav__link">
+    门（急）诊病历信息（TB_BL_MZBLXX）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_45" class="md-nav__link">
+    附录
+  </a>
+  
+    <nav class="md-nav" aria-label="附录">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_46" class="md-nav__link">
+    数据元值域编码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    前言
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    范围
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    规范性引用文件
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    术语和定义
+  </a>
+  
+    <nav class="md-nav" aria-label="术语和定义">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    诊所
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    健康医疗服务
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    健康医疗数据
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    健康医疗信息系统
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    数据规范说明
+  </a>
+  
+    <nav class="md-nav" aria-label="数据规范说明">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    个人标识类型、个人标识号
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    个人标识类型
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    就诊流水号定义规范
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    机构代码规范
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    日期、日期时间类型字段规范
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    浮点类型字段长度说明
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    卫生活动资源目录
+  </a>
+  
+    <nav class="md-nav" aria-label="卫生活动资源目录">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    数据采集优先级说明
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    卫生活动资源目录
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    对接方式
+  </a>
+  
+    <nav class="md-nav" aria-label="对接方式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    单诊所类
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    连锁化、集团化类
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    数据采集接口规范
+  </a>
+  
+    <nav class="md-nav" aria-label="数据采集接口规范">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    API接口服务规范
+  </a>
+  
+    <nav class="md-nav" aria-label="API接口服务规范">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    交互方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    调用流程
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    对接方式
+  </a>
+  
+    <nav class="md-nav" aria-label="对接方式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    数据加密
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    接口调用及示例
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    库表对接服务规范
+  </a>
+  
+    <nav class="md-nav" aria-label="库表对接服务规范">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    交互方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    数据传输问题的反馈和处理
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    数据采集内容规范
+  </a>
+  
+    <nav class="md-nav" aria-label="数据采集内容规范">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    基础信息
+  </a>
+  
+    <nav class="md-nav" aria-label="基础信息">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tb_yljg_info" class="md-nav__link">
+    机构信息表（TB_YLJG_INFO）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tb_ksxx" class="md-nav__link">
+    科室信息表（TB_KSXX）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tb_yhry" class="md-nav__link">
+    医护人员表（TB_YHRY）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tb_ylsb" class="md-nav__link">
+    医疗设备表（TB_YLSB）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    患者概要信息
+  </a>
+  
+    <nav class="md-nav" aria-label="患者概要信息">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tb_hzxx" class="md-nav__link">
+    患者基本信息（TB_HZXX）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    挂号信息
+  </a>
+  
+    <nav class="md-nav" aria-label="挂号信息">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tb_mz_ghmxb" class="md-nav__link">
+    挂号明细表（TB_MZ_GHMXB）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    就诊信息
+  </a>
+  
+    <nav class="md-nav" aria-label="就诊信息">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tb_mz_jzmxb" class="md-nav__link">
+    门诊就诊明细表(TB_MZ_JZMXB)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_37" class="md-nav__link">
+    诊断信息
+  </a>
+  
+    <nav class="md-nav" aria-label="诊断信息">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tb_mz_zdmxb" class="md-nav__link">
+    门诊诊断明细表(TB_MZ_ZDMXB)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_38" class="md-nav__link">
+    处方信息
+  </a>
+  
+    <nav class="md-nav" aria-label="处方信息">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tb_mz_cfzb" class="md-nav__link">
+    门诊处方主表（TB_MZ_CFZB）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tb_mz_ypcfmxb" class="md-nav__link">
+    门诊药品处方明细表（TB_MZ_YPCFMXB）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tb_mz_qtcfmx" class="md-nav__link">
+    门诊其他处方明细表（TB_MZ_QTCFMX）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_39" class="md-nav__link">
+    费用信息
+  </a>
+  
+    <nav class="md-nav" aria-label="费用信息">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tb_mz_sfmxb" class="md-nav__link">
+    门诊费用明细表(TB_MZ_SFMXB)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_40" class="md-nav__link">
+    报告信息
+  </a>
+  
+    <nav class="md-nav" aria-label="报告信息">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_41" class="md-nav__link">
+    检验报告信息
+  </a>
+  
+    <nav class="md-nav" aria-label="检验报告信息">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tb_jy_jybgzb" class="md-nav__link">
+    检验报告主表(TB_JY_JYBGZB)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tb_jy_jyjgzbb" class="md-nav__link">
+    检验结果指标表（TB_JY_JYJGZBB）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tb_jy_xjjgb" class="md-nav__link">
+    细菌结果表(TB_JY_XJJGB)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tb_jy_ymjgb" class="md-nav__link">
+    药敏结果表(TB_JY_YMJGB)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_42" class="md-nav__link">
+    检查报告信息
+  </a>
+  
+    <nav class="md-nav" aria-label="检查报告信息">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tb_jc_yxjcbgb" class="md-nav__link">
+    医学检查报告表(TB_JC_YXJCBGB)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_43" class="md-nav__link">
+    费用结算信息
+  </a>
+  
+    <nav class="md-nav" aria-label="费用结算信息">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tb_mz_jsmxb" class="md-nav__link">
+    门诊结算明细表（TB_MZ_JSMXB）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tb_mz_jszffsmxb" class="md-nav__link">
+    门诊结算支付方式明细表（TB_MZ_JSZFFSMXB）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_44" class="md-nav__link">
+    病历信息
+  </a>
+  
+    <nav class="md-nav" aria-label="病历信息">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tb_bl_mzblxx" class="md-nav__link">
+    门（急）诊病历信息（TB_BL_MZBLXX）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_45" class="md-nav__link">
+    附录
+  </a>
+  
+    <nav class="md-nav" aria-label="附录">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_46" class="md-nav__link">
+    数据元值域编码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="_1">四川省诊所类医疗健康数据接入规范</h1>
+<p>（征求意见稿）</p>
+<p>四川省卫生和计划生育信息中心</p>
+<p>2020年11月</p>
+<h2 id="_2">前言</h2>
+<blockquote>
+<p>为了进一步规范诊所开展的医疗保健行为，实现诊所与区域全民健康信息平台（医疗服务监管信息系统）对接，建立诊所的医疗质量控制体系，加强对诊所运营和医疗服务监管，确保诊所的医疗质量安全。</p>
+<p>本规范在《四川省人口健康信息平台批量数据采集中间库标准》的基础上，结合诊所信息化建设的功能规范、实际开展的医疗保健服务行为，结合卫生行政部门对诊所的管理要求，分析诊所信息化建设进展以及数据条件，充分考虑系统性、科学性和可行性的基础上制定。</p>
+<p>本规范的目标是为了实现诊所与区域全民健康信息平台（医疗服务监管信息系统）互联互通，形成常态化的诊所数据报送、分析、反馈机制，有力支撑卫生行政部门管理与决策，服务诊所的科学管理。尽量做到规范数据报送渠道与口径，避免重复报送，实现“一次采集，多次应用”。</p>
+<p>本规范由四川省卫生信息中心统一发布及信息解释，此后将按照卫生信息部门管理、决策需求，以及诊所信息化建设的进展对规范进行适当调整和修订。</p>
+</blockquote>
+<h2 id="_3">范围</h2>
+<blockquote>
+<p>本规范适用于诊所类机构接入区域全民健康信息平台（医疗服务监管信息系统），所需要完成的数据采集汇聚工作。</p>
+<p>本规范对诊所类机构在开发数据上传接口的工作规范约束。</p>
+<p>本规范适用于相关卫生行政部门以及第三方评估机构等对诊所的医疗服务、保健服务进行管理的数据治理、分析、利用、转化等工作参考。</p>
+</blockquote>
+<h2 id="_4">规范性引用文件</h2>
+<blockquote>
+<p>下列文件对于本文件的应用是必不可少的。凡是注日期的引用文件，仅注日期的版本适用于本文件。凡是不注日期的引用文件，其最新版本（包括所有修改单）适用于本文件。</p>
+</blockquote>
+<ul>
+<li>
+<p>WS 445----2014 电子病历基本数据集</p>
+</li>
+<li>
+<p>WS 446----2014 居民健康档案医学检验项目常用代码</p>
+</li>
+<li>
+<p>WS 599----2018医院人财物运营管理基本数据集</p>
+</li>
+<li>
+<p>WS/T 517----2016 基层医疗卫生信息系统基本功能规范</p>
+</li>
+<li>
+<p>WS/T 500----2016电子病历共享文档规范</p>
+</li>
+<li>
+<p>WS/T 543----2017 居民健康卡技术规范</p>
+</li>
+<li>
+<p>WS/T 545----2017 远程医疗信息系统技术规范</p>
+</li>
+</ul>
+<h2 id="_5">术语和定义</h2>
+<blockquote>
+<p>以下对本文提到的相关术语及定义进行阐述说明。</p>
+</blockquote>
+<h3 id="_6">诊所</h3>
+<blockquote>
+<p>诊所是为患者提供门诊诊断和治疗的医疗机构，不设住院病床（产床），主要提供常见病和多发病的诊疗服务。</p>
+</blockquote>
+<h3 id="_7">健康医疗服务</h3>
+<blockquote>
+<p>诊所专业人员或专业辅助人员对居民提供的对健康状况有影响的服务。</p>
+</blockquote>
+<h3 id="_8">健康医疗数据</h3>
+<blockquote>
+<p>包括个人健康医疗数据以及由个人健康医疗数据加工处理之后得到的健康医疗相关数据。</p>
+</blockquote>
+<h3 id="_9">健康医疗信息系统</h3>
+<blockquote>
+<p>以计算机课处理的形式采集、存储、处理、传输、访问、销毁健康医疗数据的系统。</p>
+</blockquote>
+<h2 id="_10">数据规范说明</h2>
+<h3 id="_11">个人标识类型、个人标识号</h3>
+<blockquote>
+<p>个人标识包括两部分内容（个人标识类型与个人标识号），在监管平台中作为个人的唯一识别码，对于相同的个人标识代表相同个人，对于不同的个人标识不一定代表不同的个人，需要和证件号码、证件类型等进行比对后才能确定是否是不同个人<a href="从严格意思上的个人身份识别来讲，该方法应该是对身份识别进行了简单化处理，它存在着很大的漏洞，采集的个人健康信息，具有相同标识类型和标识号的记录不一定是一个人的记录，因为可能存在有意无意的因素导致的身份冒用。在数据中间库里不解决身份识别问题，至于具有相同标识类型和标识号的记录是否是同一个人的记录，是平台本身内部解决的问题。在相关的指南里已经对身份识别的问题进行了专门的描述。">^1</a>。</p>
+</blockquote>
+<h3 id="_12">个人标识类型</h3>
+<blockquote>
+<p>00：社保卡；01：医保卡；02：统一自费卡；03：非统一自费卡；05：健康卡；06：电子健康卡；07：医疗机构内部就诊卡；10：医院联盟就诊卡；21：区域联盟就诊卡；99：其他卡。</p>
+<p>当个人标识类型为00、01、05、10、21时，患者信息表的证件号码和证件类型数据不能为空，并必须填写居民身份证信息。</p>
+</blockquote>
+<h3 id="_13">就诊流水号定义规范</h3>
+<blockquote>
+<p>患者每次就诊（门诊、住院）所产生的就诊唯一识别码，患者每次就诊（门诊、住院）需要产生不同的就诊流水号。</p>
+</blockquote>
+<h3 id="_14">机构代码规范</h3>
+<blockquote>
+<p>数据采集标准中医疗机构代码字段内容为监管平台区分各机构的唯一识别码，采用统一社会信用代码中的9-17位组成。</p>
+</blockquote>
+<h3 id="_15">日期、日期时间类型字段规范</h3>
+<blockquote>
+<p>数据采集标准中涉及的日期、日期时间类型字段都是北京时间，日期时间类型字段如果无特别说明，请以YYYY-MM-DD
+  hh:mm:ss格式进行数据上传；日期类型字段如果无特别说明，请以YYYY-MM-DD格式进行数据上传。</p>
+</blockquote>
+<h3 id="_16">浮点类型字段长度说明</h3>
+<blockquote>
+<p>数据采集标准中浮点类型字段数据长度：前面表示总长度，分割符逗号后表示小数位数，如12,4表示总位数为12位，小数位保留4位，整数位只有8位。</p>
+</blockquote>
+<h2 id="_17">卫生活动资源目录</h2>
+<h3 id="_18">数据采集优先级说明</h3>
+<blockquote>
+<p>根据卫生管理部门对监管信息要求的侧重情况和诊所类卫生信息化系统建设情况，卫生数据采集的难易程度将数据采集规范划分为3个登记：</p>
+<p><strong>1级：</strong>属于卫生管理部门要求的核心数据，必须采集；</p>
+<p><strong>2级：</strong>属于卫生管理部门要求的重点数据，积极采集；</p>
+<p><strong>3级：</strong>数据卫生管理部门要求的扩展数据，根据实际情况采集。</p>
+</blockquote>
+<h3 id="_19">卫生活动资源目录</h3>
+<table>
+<thead>
+<tr>
+<th><strong>序号</strong></th>
+<th><strong>目录</strong></th>
+<th><strong>接口表</strong></th>
+<th><strong>优先级</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>基础信息</td>
+<td>机构信息表（TB_YLJG_INFO）</td>
+<td>1级</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td></td>
+<td>科室信息表（TB_KSXX）</td>
+<td>1级</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td></td>
+<td>医护人员表（TB_YHRY）</td>
+<td>1级</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td></td>
+<td>医疗设备表（TB_YLSB）</td>
+<td>1级</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>患者概要信息</td>
+<td>患者基本信息（TB_HZXX）</td>
+<td>1级</td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>挂号信息</td>
+<td>挂号明细表（TB_MZ_GHMXB）</td>
+<td>1级</td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td>就诊信息</td>
+<td>门诊就诊明细表(TB_MZ_JZMXB)</td>
+<td>1级</td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td>诊断信息</td>
+<td>门诊诊断明细表(TB_MZ_ZDMXB)</td>
+<td>1级</td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td>处方信息</td>
+<td>门诊处方主表（TB_MZ_CFZB）</td>
+<td>1级</td>
+<td></td>
+</tr>
+<tr>
+<td>10</td>
+<td></td>
+<td>门诊药品处方明细表（TB_MZ_YPCFMXB）</td>
+<td>1级</td>
+<td></td>
+</tr>
+<tr>
+<td>11</td>
+<td></td>
+<td>门诊其他处方明细表（TB_MZ_QTCFMX）</td>
+<td>1级</td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td>费用信息</td>
+<td>门诊费用明细表(TB_MZ_SFMXB)</td>
+<td>1级</td>
+<td></td>
+</tr>
+<tr>
+<td>13</td>
+<td>检验报告信息</td>
+<td>检验报告主表(TB_JY_JYBGZB)</td>
+<td>2级</td>
+<td></td>
+</tr>
+<tr>
+<td>14</td>
+<td></td>
+<td>检验结果指标表（TB_JY_JYJGZBB）</td>
+<td>2级</td>
+<td></td>
+</tr>
+<tr>
+<td>15</td>
+<td></td>
+<td>细菌结果表(TB_JY_XJJGB)</td>
+<td>3级</td>
+<td></td>
+</tr>
+<tr>
+<td>16</td>
+<td></td>
+<td>药敏结果表(TB_JY_YMJGB)</td>
+<td>3级</td>
+<td></td>
+</tr>
+<tr>
+<td>17</td>
+<td>检查报告信息</td>
+<td>医学检查报告表(TB_JC_YXJCBGB)</td>
+<td>2级</td>
+<td></td>
+</tr>
+<tr>
+<td>18</td>
+<td>费用结算信息</td>
+<td>门诊结算明细表（TB_MZ_JSMXB）</td>
+<td>1级</td>
+<td></td>
+</tr>
+<tr>
+<td>19</td>
+<td></td>
+<td>门诊结算支付方式明细表（TB_MZ_JSZFFSMXB）</td>
+<td>1级</td>
+<td></td>
+</tr>
+<tr>
+<td>20</td>
+<td>病历信息</td>
+<td>门（急）诊病历信息（TB_BL_MZBLXX）</td>
+<td>3级</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_20">对接方式</h2>
+<h3 id="_21">单诊所类</h3>
+<blockquote>
+<p>对于单诊所类，信息化相对比较独立的机构，由所在辖区的各区（市）县卫健局指导，接入本机全民健康信息平台。并由区（市）县卫健局对诊所的日常数据接入进行监督管理。</p>
+<p>如果本区（市）县未建立全民健康信息平台，辖区内诊所可以直接对接市级全民健康信息平台，由市级全民健康信息平台对日常数据接入进行管理。</p>
+</blockquote>
+<h3 id="_22">连锁化、集团化类</h3>
+<blockquote>
+<p>对连锁化、集团化诊所由集团统一建设集成信息系统，包含所有成员诊所诊疗和服务信息，接入到备案区（市）县全民健康信息平台。属于在市卫健委备案的跨区（市）县经营的连锁化、集团化诊所，接入市级全民健康信息平台。</p>
+</blockquote>
+<h2 id="_23">数据采集接口规范</h2>
+<blockquote>
+<p>各诊所类机构可以根据自身信息化系统建设情况，选择实时/批量的数据对接方式，建议在不影响诊所内部信息化系统的基础上，采用实时的数据对接方式。</p>
+</blockquote>
+<h3 id="api">API接口服务规范</h3>
+<h4 id="_24">交互方式</h4>
+<p>平台提供服务接口，服务方式httpService,数据提供方通过程序将数据装成指定JSON格式，以POST方式向平台发送数据,平台接收请求对数据进行持久化。</p>
+<p>请求说明：HIS 平台接口</p>
+<h4 id="_25">调用流程</h4>
+<p><img alt="" src="../media/6468272774edbc156265a8ec63d3e331.png" /></p>
+<blockquote>
+<p>C:\Users\yoshihiko\Desktop\数据接入规范流程图.png</p>
+</blockquote>
+<h4 id="_26">对接方式</h4>
+<h5 id="_27">数据加密</h5>
+<blockquote>
+<p>数据传输过程需对参数进行加密，整个接口的以密文传输，适用国密SM4算法(国家已开放算法)，提供java加密，解密jar,如果是java后台在引入jar后可直接调用。</p>
+<p>加密调用common-endecrypt-2.0.0.jar中的Sm4HexEn.encode("明文")方法;</p>
+<p>解密调用common-decrypt-2.0.0.jar中的Sm4HexDe.decode("密文");方法</p>
+<p>如果非java程序进行加解密需自行实现，有两种方式【自行实现】或【将JAR转DLL】</p>
+<p>算法使用SM4的ECB模式</p>
+<p>byte[] keyBytes = {</p>
+<p>17, 34, 79, 88, -120, 16,</p>
+<p>64, 56, 40, 37, 121, 81, -53, -35,</p>
+<p>85, 102 };</p>
+<p>自行实现算法时不要调用Base64编码，需直接将加密结果转成16进制。</p>
+<p>如果是调用动态库，可将jar包转成DLL来调用</p>
+</blockquote>
+<h5 id="_28">接口调用及示例</h5>
+<blockquote>
+<p>以挂号明细表（TB_MZ_GHMXB）章节为例：</p>
+<p>接口编码：命名为数据采集标准文档中英文表名如下：TB_MZ_GHMXB</p>
+<p>接口名称：命名挂号明细表</p>
+<p>接口方法：调用统一的方法execute</p>
+<p>调用方式：一次调用传一张表数据(批量或单条业务数据)，例如:传10张表数据则可并发调用10次该方法。</p>
+<p>入参参数示例:</p>
+<p>{"ProviderCode":"xxxhis","AccessOrgCode”:"接入医疗机构编码",
+  "InterfaceCode":"TB_MZ_GHMXB","InterfaceName":"挂号明细表", "data":[{
+  "YLJGDM":"医疗机构代码","GHJLID":"挂号记录ID","JZLSH":"就诊流水号","GRBSLX":"个人标识类型","GRBSH":"个人标识号","GTHBZ":"退号标志","STFBH":"收/退费编号","GTHSJ":"挂/退号时间","GHLB":"挂号类别","SFJZ":"是否急诊","JZXZ":"就诊性质","GHTJBM":"挂号途径代码","BXLX":"保险类型（患者属性）","KSBM":"科室编码","KSMC":"科室名称","LCYXLXDM":"临床医学类型代码","GHYSBH":"挂号医生编号","GHYSXM":"挂号医生姓名","TXBZ":"特需标志","WDBZ":"外地标志","GHZFY":"挂号总费用","XGBZ":"修改标志"},{…..}]})。</p>
+<p><strong>入参参数节点说明：</strong></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>节点</strong></th>
+<th><strong>名称</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ProviderCode</td>
+<td>接入厂商编码</td>
+<td>平台统一提供</td>
+</tr>
+<tr>
+<td>AccessOrgCode</td>
+<td>接入医疗机构编码</td>
+<td>组织机构代码</td>
+</tr>
+<tr>
+<td>InterfaceCode</td>
+<td>接口编码</td>
+<td>参见接口编码规范示例</td>
+</tr>
+<tr>
+<td>InterfaceName</td>
+<td>接口名称</td>
+<td>参见接口名称规范示例</td>
+</tr>
+<tr>
+<td>data</td>
+<td></td>
+<td>数据节点包含表中所有的字段，key对应表中字段名，value为业务数据。且该data节点为JSON数组格式</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>返回参数：</p>
+<p>{“ResultCode”:””,”ResultMessage”:”消息描述”}</p>
+<p><strong>返回参数节点说明：</strong></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>节点</strong></th>
+<th><strong>名称</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ResultCode</td>
+<td>结果状态</td>
+<td>0成功 1失败</td>
+</tr>
+<tr>
+<td>ResultMessage</td>
+<td>消息描述</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_29">库表对接服务规范</h3>
+<h4 id="_30">交互方式</h4>
+<blockquote>
+<p>库表对接方式即采用库对库模式，即系统将数据写入指定的数据交换前置机，由数据交换前置机和监管平台进行数据交换处理。</p>
+</blockquote>
+<p><img alt="" src="../media/da3bad5399bf6ce407e7ca72e01dae3d.png" /></p>
+<h4 id="_31">数据传输问题的反馈和处理</h4>
+<blockquote>
+<p>各接入单位的数据传输至前置机后，可以在前置机查看数据问题情况，包括汇总和问题明细。接入单位和接入单位厂商前期每天查看数据问题情况并进行改进后重传。数据质控规则及查看方式另行规定。</p>
+</blockquote>
+<h2 id="_32">数据采集内容规范</h2>
+<h3 id="_33">基础信息</h3>
+<h4 id="tb_yljg_info">机构信息表（TB_YLJG_INFO）</h4>
+<table>
+<thead>
+<tr>
+<th><strong>标识符</strong></th>
+<th><strong>中文名</strong></th>
+<th><strong>字段名</strong></th>
+<th><strong>数据类型</strong></th>
+<th><strong>数据长度</strong></th>
+<th><strong>填报要求</strong></th>
+<th><strong>备注</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>统一社会信用代码</td>
+<td>SHXYDM</td>
+<td>字符串</td>
+<td>20</td>
+<td>必填</td>
+<td>主键</td>
+</tr>
+<tr>
+<td></td>
+<td>机构名称</td>
+<td>CAPTION</td>
+<td>字符串</td>
+<td>200</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>机构组织代码</td>
+<td>DETP_CODE</td>
+<td>字符串</td>
+<td>85</td>
+<td>必填</td>
+<td>经《医疗机构执业许可证》登记的代码</td>
+</tr>
+<tr>
+<td></td>
+<td>经济类型</td>
+<td>DEPT_CLASS</td>
+<td>字符串</td>
+<td>85</td>
+<td>应填</td>
+<td>登记注册类型代码表</td>
+</tr>
+<tr>
+<td></td>
+<td>机构类别</td>
+<td>DEPT_CLASS</td>
+<td>字符串</td>
+<td>85</td>
+<td>应填</td>
+<td>医疗卫生机构类别代码表</td>
+</tr>
+<tr>
+<td></td>
+<td>机构分类管理</td>
+<td>JGFLGL</td>
+<td>字符串</td>
+<td>85</td>
+<td>应填</td>
+<td>机构分类管理代码表</td>
+</tr>
+<tr>
+<td></td>
+<td>是否分支机构</td>
+<td>FZJG</td>
+<td>字符串</td>
+<td>2</td>
+<td>必填</td>
+<td>0：否；1：是</td>
+</tr>
+<tr>
+<td></td>
+<td>上级组织机构代码</td>
+<td>FZJG_SJJGDM</td>
+<td>字符串</td>
+<td>20</td>
+<td>应填</td>
+<td>是分支机构必填</td>
+</tr>
+<tr>
+<td></td>
+<td>上级组织机构名称</td>
+<td>FZJG_SJJGMC</td>
+<td>字符串</td>
+<td>200</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>设置/主办单位</td>
+<td>SZZBDW</td>
+<td>字符串</td>
+<td>2</td>
+<td>应填</td>
+<td>设置/主办单位代码表</td>
+</tr>
+<tr>
+<td></td>
+<td>行政区划代码</td>
+<td>XZQHDM</td>
+<td>字符串</td>
+<td>8</td>
+<td>应填</td>
+<td>行政区划代码表</td>
+</tr>
+<tr>
+<td></td>
+<td>街道行政区划</td>
+<td>DEPT_XZJDCODE</td>
+<td>字符型</td>
+<td>85</td>
+<td>应填</td>
+<td>单位所在乡镇街道代码</td>
+</tr>
+<tr>
+<td></td>
+<td>乡镇街道名称</td>
+<td>DEPT_XZJD</td>
+<td>字符型</td>
+<td>200</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>地址</td>
+<td>TX_DZ</td>
+<td>字符型</td>
+<td>200</td>
+<td>应填</td>
+<td>单位所在详细地址</td>
+</tr>
+<tr>
+<td></td>
+<td>省</td>
+<td>SHENG</td>
+<td>字符型</td>
+<td>200</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>市</td>
+<td>SHI</td>
+<td>字符型</td>
+<td>200</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>县</td>
+<td>XIAN</td>
+<td>字符型</td>
+<td>200</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>邮政编码</td>
+<td>TX_YZBM</td>
+<td>字符型</td>
+<td>200</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>电话号码</td>
+<td>TX_DHHM</td>
+<td>字符型</td>
+<td>200</td>
+<td>应填</td>
+<td>医疗机构联系电话</td>
+</tr>
+<tr>
+<td></td>
+<td>开业时间</td>
+<td>CLSJ</td>
+<td>字符型</td>
+<td>200</td>
+<td>应填</td>
+<td>XXXX年XX月</td>
+</tr>
+<tr>
+<td></td>
+<td>法人（负责人）</td>
+<td>FZR</td>
+<td>字符型</td>
+<td>200</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>注册资金（万元）</td>
+<td>ZCZJ</td>
+<td>字符型</td>
+<td>200</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>医院级别</td>
+<td>YYDJ_J</td>
+<td>字符型</td>
+<td>200</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>医院等次</td>
+<td>YYDJ_D</td>
+<td>字符型</td>
+<td>200</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>修改标志</td>
+<td>XGBZ</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>1：新增；2：更新/覆盖</td>
+</tr>
+<tr>
+<td></td>
+<td>业务数据时间</td>
+<td>YWSJSJ</td>
+<td>DATETIME</td>
+<td></td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>预留一</td>
+<td>YL1</td>
+<td>字符型</td>
+<td>200</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>预留二</td>
+<td>YL2</td>
+<td>字符型</td>
+<td>200</td>
+<td>应填</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="tb_ksxx">科室信息表（TB_KSXX）</h4>
+<table>
+<thead>
+<tr>
+<th><strong>标识符</strong></th>
+<th><strong>中文名</strong></th>
+<th><strong>字段名</strong></th>
+<th><strong>数据类型</strong></th>
+<th><strong>数据长度</strong></th>
+<th><strong>填报要求</strong></th>
+<th><strong>备注</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>统一社会信用代码</td>
+<td>SHXYDM</td>
+<td>字符串</td>
+<td>20</td>
+<td>必填</td>
+<td>复合主键</td>
+</tr>
+<tr>
+<td></td>
+<td>本地科室代码</td>
+<td>BDKSDM</td>
+<td>字符串</td>
+<td>15</td>
+<td>必填</td>
+<td>复合主键</td>
+</tr>
+<tr>
+<td></td>
+<td>本地科室名称</td>
+<td>BDKSMC</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>标准科室代码</td>
+<td>BZKSDM</td>
+<td>字符串</td>
+<td>15</td>
+<td>必填</td>
+<td>标准科室代码表</td>
+</tr>
+<tr>
+<td></td>
+<td>标准科室名称</td>
+<td>BZKSMC</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>上级科室代码</td>
+<td>FLKSDM</td>
+<td>字符串</td>
+<td>15</td>
+<td>应填</td>
+<td>上级本地科室代码</td>
+</tr>
+<tr>
+<td></td>
+<td>上级科室名称</td>
+<td>FLKSMC</td>
+<td>字符串</td>
+<td>50</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>编制床位数</td>
+<td>BZCWS</td>
+<td>字符串</td>
+<td>5</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>开放床位数</td>
+<td>KFCWS</td>
+<td>字符串</td>
+<td>5</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>修改标志</td>
+<td>XGBZ</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>1：新增；2：更新/覆盖</td>
+</tr>
+<tr>
+<td></td>
+<td>业务数据时间</td>
+<td>YWSJSJ</td>
+<td>DATETIME</td>
+<td></td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>预留一</td>
+<td>YL1</td>
+<td>字符型</td>
+<td>200</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>预留二</td>
+<td>YL2</td>
+<td>字符型</td>
+<td>200</td>
+<td>应填</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="tb_yhry">医护人员表（TB_YHRY）</h4>
+<table>
+<thead>
+<tr>
+<th><strong>标识符</strong></th>
+<th><strong>中文名</strong></th>
+<th><strong>字段名</strong></th>
+<th><strong>数据类型</strong></th>
+<th><strong>数据长度</strong></th>
+<th><strong>填报要求</strong></th>
+<th><strong>备注</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>统一社会信用代码</td>
+<td>SHXYDM</td>
+<td>字符串</td>
+<td>20</td>
+<td>必填</td>
+<td>复合主键</td>
+</tr>
+<tr>
+<td></td>
+<td>人员信息ID</td>
+<td>USERID</td>
+<td>字符串</td>
+<td>255</td>
+<td>必填</td>
+<td>复合主键</td>
+</tr>
+<tr>
+<td></td>
+<td>工号</td>
+<td>GH</td>
+<td>字符串</td>
+<td>255</td>
+<td>必填</td>
+<td>人员在机构HIS系统中工号，用于和诊疗相关信息关联</td>
+</tr>
+<tr>
+<td></td>
+<td>姓名</td>
+<td>XM</td>
+<td>字符串</td>
+<td>255</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>性别代码</td>
+<td>XBDM</td>
+<td>字符串</td>
+<td>255</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>性别</td>
+<td>XB</td>
+<td>字符串</td>
+<td>255</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>出生日期</td>
+<td>CSRQ</td>
+<td>字符串</td>
+<td>255</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>身份证件号码</td>
+<td>SFZJHM</td>
+<td>字符串</td>
+<td>255</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>所属科室代码</td>
+<td>SSKSDM</td>
+<td>字符串</td>
+<td>15</td>
+<td>必填</td>
+<td>所属本地科室代码</td>
+</tr>
+<tr>
+<td></td>
+<td>所属科室名称</td>
+<td>SSKSMC</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>民族</td>
+<td>MZ</td>
+<td>字符串</td>
+<td>255</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>手机号码</td>
+<td>SJHM</td>
+<td>字符串</td>
+<td>255</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>获得证书类别</td>
+<td>HDZSLB</td>
+<td>字符串</td>
+<td>255</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>证书编码</td>
+<td>ZSBM</td>
+<td>字符串</td>
+<td>255</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>专业技术职务代码</td>
+<td>ZYJSZWDM</td>
+<td>字符串</td>
+<td>255</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>学历</td>
+<td>XL</td>
+<td>字符串</td>
+<td>255</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>学位</td>
+<td>XW</td>
+<td>字符串</td>
+<td>255</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>所学专业</td>
+<td>SXZY</td>
+<td>字符串</td>
+<td>255</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>麻醉药品、第一类精神药品处方权</td>
+<td>SF1</td>
+<td>字符型</td>
+<td>255</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>特殊级抗菌药处方权</td>
+<td>SF2</td>
+<td>字符型</td>
+<td>255</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>限制性抗菌药处方权</td>
+<td>SF3</td>
+<td>字符型</td>
+<td>255</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>非限制性抗菌药处方权</td>
+<td>SF4</td>
+<td>字符型</td>
+<td>255</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>流入时间</td>
+<td>LRSJ</td>
+<td>字符型</td>
+<td>255</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>流出时间</td>
+<td>LCSJ</td>
+<td>字符型</td>
+<td>255</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>修改标志</td>
+<td>XGBZ</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>1：新增；2：更新/覆盖</td>
+</tr>
+<tr>
+<td></td>
+<td>业务数据时间</td>
+<td>YWSJSJ</td>
+<td>DATETIME</td>
+<td></td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>预留一</td>
+<td>YL1</td>
+<td>字符型</td>
+<td>200</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>预留二</td>
+<td>YL2</td>
+<td>字符型</td>
+<td>200</td>
+<td>应填</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="tb_ylsb">医疗设备表（TB_YLSB）</h4>
+<table>
+<thead>
+<tr>
+<th><strong>标识符</strong></th>
+<th><strong>中文名</strong></th>
+<th><strong>字段名</strong></th>
+<th><strong>数据类型</strong></th>
+<th><strong>数据长度</strong></th>
+<th><strong>填报要求</strong></th>
+<th><strong>备注</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>统一社会信用代码</td>
+<td>SHXYDM</td>
+<td>字符串</td>
+<td>20</td>
+<td>必填</td>
+<td>复合主键</td>
+</tr>
+<tr>
+<td></td>
+<td>设备ID</td>
+<td>SBID</td>
+<td>字符串</td>
+<td>120</td>
+<td>必填</td>
+<td>复合主键</td>
+</tr>
+<tr>
+<td></td>
+<td>设备编号</td>
+<td>SBBM</td>
+<td>字符型</td>
+<td>250</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>设备名称</td>
+<td>SBMC</td>
+<td>字符型</td>
+<td>250</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>设备型号</td>
+<td>SBXH</td>
+<td>字符型</td>
+<td>250</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>设备代号</td>
+<td>SBDH</td>
+<td>字符型</td>
+<td>250</td>
+<td>应填</td>
+<td>医疗机构上报设备与代码表</td>
+</tr>
+<tr>
+<td></td>
+<td>设备代号名称</td>
+<td>SBDHMC</td>
+<td>字符型</td>
+<td>250</td>
+<td>应填</td>
+<td>医疗机构上报设备与代码表对应名称</td>
+</tr>
+<tr>
+<td></td>
+<td>产地</td>
+<td>CD</td>
+<td>字符型</td>
+<td>250</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>生产厂家</td>
+<td>SCCJ</td>
+<td>字符型</td>
+<td>250</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>购买价格</td>
+<td>GMJG</td>
+<td>字符串</td>
+<td>20</td>
+<td>应填</td>
+<td>（单价千元，人民币）</td>
+</tr>
+<tr>
+<td></td>
+<td>购买日期</td>
+<td>GMRQ</td>
+<td>字符串</td>
+<td>20</td>
+<td>应填</td>
+<td>XXXX年XX月</td>
+</tr>
+<tr>
+<td></td>
+<td>购买时新旧状况</td>
+<td>XJZK</td>
+<td>字符串</td>
+<td>20</td>
+<td>应填</td>
+<td>1：新设备，2：二手设备</td>
+</tr>
+<tr>
+<td></td>
+<td>相同型号设备台数</td>
+<td>XTSBTX</td>
+<td>字符型</td>
+<td>250</td>
+<td>应填</td>
+<td>该批设备购买日期、名称、生产厂家、型号及价格完全一致数量。</td>
+</tr>
+<tr>
+<td></td>
+<td>理论设计寿命</td>
+<td>LLSJSM</td>
+<td>字符型</td>
+<td>250</td>
+<td>应填</td>
+<td>（年）</td>
+</tr>
+<tr>
+<td></td>
+<td>使用情况</td>
+<td>SYQK</td>
+<td>字符串</td>
+<td>20</td>
+<td>应填</td>
+<td>1：启用，2：未启用；3：报废</td>
+</tr>
+<tr>
+<td></td>
+<td>修改标志</td>
+<td>XGBZ</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>1：新增；2：更新/覆盖</td>
+</tr>
+<tr>
+<td></td>
+<td>业务数据时间</td>
+<td>YWSJSJ</td>
+<td>DATETIME</td>
+<td></td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>预留一</td>
+<td>YL1</td>
+<td>字符型</td>
+<td>200</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>预留二</td>
+<td>YL2</td>
+<td>字符型</td>
+<td>200</td>
+<td>应填</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_34">患者概要信息</h3>
+<h4 id="tb_hzxx">患者基本信息（TB_HZXX）</h4>
+<blockquote>
+<p>服务对象个人信息是对服务对象身份识别的基础。服务对象注册和查询所需的信息都与该内容相关，特别是服务对象的发现服务，判别和识别一个人身份，都需要该表的信息。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>标识符</strong></th>
+<th><strong>中文名</strong></th>
+<th><strong>字段名</strong></th>
+<th><strong>数据类型</strong></th>
+<th><strong>数据长度</strong></th>
+<th><strong>填报要求</strong></th>
+<th><strong>备注</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DE08.10.052.00</td>
+<td>医疗机构代码</td>
+<td>YLJGDM</td>
+<td>字符串</td>
+<td>22</td>
+<td>必填</td>
+<td>复合主键</td>
+</tr>
+<tr>
+<td></td>
+<td>个人标识类型</td>
+<td>GRBSLX</td>
+<td>字符串</td>
+<td>16</td>
+<td>必填</td>
+<td>复合主键；患者识别码，与患者各种就诊信息记录进行关联</td>
+</tr>
+<tr>
+<td></td>
+<td>个人标识号</td>
+<td>GRBSH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.031.00</td>
+<td>证件类型</td>
+<td>ZJLX</td>
+<td>字符串</td>
+<td>2</td>
+<td>必填</td>
+<td>CV02.01.101身份证件类别代码表</td>
+</tr>
+<tr>
+<td>DE02.01.030.00</td>
+<td>证件号码</td>
+<td>ZJHM</td>
+<td>字符串</td>
+<td>18</td>
+<td>必填</td>
+<td>证件号码填写证件的实际号码</td>
+</tr>
+<tr>
+<td></td>
+<td>居民身份证号码</td>
+<td>SFZHM</td>
+<td>字符串</td>
+<td>18</td>
+<td>应填</td>
+<td>填写18位身份证号码，有国家健康卡居民为必填</td>
+</tr>
+<tr>
+<td>DE01.00.009.00</td>
+<td>健康档案编号</td>
+<td>JKDABH</td>
+<td>字符串</td>
+<td>36</td>
+<td>应填</td>
+<td>填写国家规定的标准健康档案编号，已建档居民为必填</td>
+</tr>
+<tr>
+<td></td>
+<td>居民健康卡卡号</td>
+<td>JKKKH</td>
+<td>字符串</td>
+<td>36</td>
+<td>应填</td>
+<td>居民健康卡卡号</td>
+</tr>
+<tr>
+<td>DE02.01.040.00</td>
+<td>性别</td>
+<td>XB</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>GB/T2261.1-2003生理性别代码表</td>
+</tr>
+<tr>
+<td>DE02.01.039.00</td>
+<td>姓名</td>
+<td>XM</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td>患者姓名</td>
+</tr>
+<tr>
+<td>DE02.01.060.00</td>
+<td>患者类型</td>
+<td>HZLX</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>CV09.00.404代码 患者类型代码表</td>
+</tr>
+<tr>
+<td>DE02.01.018.00</td>
+<td>婚姻状况</td>
+<td>HYZK</td>
+<td>字符串</td>
+<td>2</td>
+<td>必填</td>
+<td>GB/T2261.2-2003婚姻状况代码表</td>
+</tr>
+<tr>
+<td>DE02.01.005.01</td>
+<td>出生日期</td>
+<td>CSRQ</td>
+<td>日期</td>
+<td></td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>出生地</td>
+<td>CSD</td>
+<td>字符串</td>
+<td>120</td>
+<td>必填</td>
+<td>县（区）行政区划区代码</td>
+</tr>
+<tr>
+<td>DE02.01.025.00</td>
+<td>民族</td>
+<td>MZ</td>
+<td>字符串</td>
+<td>2</td>
+<td>必填</td>
+<td>GB/T3304-1991民族类别代码表</td>
+</tr>
+<tr>
+<td>DE2.01.015.00</td>
+<td>国籍</td>
+<td>GJ</td>
+<td>字符串</td>
+<td>10</td>
+<td>必填</td>
+<td><a href="http://www.sac.gov.cn/SACSearch/search?channelid=97779&amp;templet=gjcxjg_detail.jsp&amp;searchword=STANDARD_CODE=%27GB/T%202659-2000%27&amp;XZ=T">GB/T2659-2000</a>世界各国和地区名称代码</td>
+</tr>
+<tr>
+<td>DE02.01.010.00</td>
+<td>电话号码</td>
+<td>DHHM</td>
+<td>字符串</td>
+<td>24</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>手机号码</td>
+<td>SJHM</td>
+<td>字符串</td>
+<td>24</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>工作单位邮编</td>
+<td>GZDWYB</td>
+<td>字符串</td>
+<td>6</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE08.10.007.00</td>
+<td>工作单位名称</td>
+<td>GZDWMC</td>
+<td>字符串</td>
+<td>128</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.009.01</td>
+<td>工作单位地址</td>
+<td>GZDWDZ</td>
+<td>字符串</td>
+<td>128</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.010.00</td>
+<td>工作单位电话号码</td>
+<td>GZDWDHHM</td>
+<td>字符串</td>
+<td>20</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.009.02</td>
+<td>居住地址</td>
+<td>JZDZ</td>
+<td>字符串</td>
+<td>128</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.009.03</td>
+<td>户口地址</td>
+<td>HKDZ</td>
+<td>字符串</td>
+<td>128</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>户口地址邮编</td>
+<td>HKDZYB</td>
+<td>字符串</td>
+<td>6</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.039.00</td>
+<td>联系人姓名</td>
+<td>LXRXM</td>
+<td>字符串</td>
+<td>50</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.10.024.00</td>
+<td>联系人关系</td>
+<td>LXRGX</td>
+<td>字符串</td>
+<td>4</td>
+<td>应填</td>
+<td>GB/T4761-2008 家庭关系代码表</td>
+</tr>
+<tr>
+<td>DE02.01.009.04</td>
+<td>联系人地址</td>
+<td>LXRDZ</td>
+<td>字符串</td>
+<td>128</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>联系人邮编</td>
+<td>LXRYB</td>
+<td>字符串</td>
+<td>6</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.010.00</td>
+<td>联系人电话</td>
+<td>LXRDH</td>
+<td>字符串</td>
+<td>24</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>参加工作日期</td>
+<td>CJGZRQ</td>
+<td>字符串</td>
+<td>8</td>
+<td>应填</td>
+<td>YYYYMMDD格式</td>
+</tr>
+<tr>
+<td>DE02.01.012.00</td>
+<td>电子邮件地址</td>
+<td>DZYJDZ</td>
+<td>字符串</td>
+<td>40</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>联系电话-类别代码</td>
+<td>LXDH_LBDM</td>
+<td>字符串</td>
+<td>2</td>
+<td>必填</td>
+<td>联系电话-类别代码</td>
+</tr>
+<tr>
+<td>DE02.01.011.00</td>
+<td>联系电话-类别</td>
+<td>LXDH_LB</td>
+<td>字符串</td>
+<td>20</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.026.00</td>
+<td>年龄（岁）</td>
+<td>NLS</td>
+<td>整数</td>
+<td>3</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.032.00</td>
+<td>年龄（月）</td>
+<td>NLY</td>
+<td>整数</td>
+<td>8</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>密级</td>
+<td>MJ</td>
+<td>字符串</td>
+<td>16</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>修改标志</td>
+<td>XGBZ</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>数据操作方式代码</td>
+</tr>
+<tr>
+<td></td>
+<td>数据生成时间</td>
+<td>TBRQ</td>
+<td>日期时间</td>
+<td></td>
+<td>必填</td>
+<td>业务操作获取该患者信息的时间</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_35">挂号信息</h3>
+<h4 id="tb_mz_ghmxb">挂号明细表（TB_MZ_GHMXB）</h4>
+<blockquote>
+<p>该表用于对患者在挂号环节产生的挂号数据进行上传，对于挂号产生的方式（挂号窗口产生、医生站产生、其他预约途径产生），平台不做限制，在挂号时患者产生了费用，则需要对费用的明细和费用的结算信息进行上传。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>标识符</strong></th>
+<th><strong>中文名</strong></th>
+<th><strong>字段名</strong></th>
+<th><strong>数据类型</strong></th>
+<th><strong>数据长度</strong></th>
+<th><strong>填报要求</strong></th>
+<th><strong>备注</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DE08.10.052.00</td>
+<td>医疗机构代码</td>
+<td>YLJGDM</td>
+<td>字符串</td>
+<td>22</td>
+<td>必填</td>
+<td>复合主键</td>
+</tr>
+<tr>
+<td></td>
+<td>挂号记录ID</td>
+<td>GHJLID</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td>复合主键；医院内挂号记录唯一ID</td>
+</tr>
+<tr>
+<td></td>
+<td>就诊流水号</td>
+<td>JZLSH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td>患者每次挂号就诊的唯一标识号，见表说明1</td>
+</tr>
+<tr>
+<td></td>
+<td>个人标识类型</td>
+<td>GRBSLX</td>
+<td>字符串</td>
+<td>16</td>
+<td>必填</td>
+<td>患者识别码，与患者信息表进行关联</td>
+</tr>
+<tr>
+<td></td>
+<td>个人标识号</td>
+<td>GRBSH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>退号标志</td>
+<td>GTHBZ</td>
+<td>字符串</td>
+<td>2</td>
+<td>必填</td>
+<td>退号标志代码表； 01:挂号；02:退号</td>
+</tr>
+<tr>
+<td></td>
+<td>收/退费编号</td>
+<td>STFBH</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td>即挂号所收有关费用对应的“发票号”。若先就诊后一次性结算挂号费用，则在医疗机构并无因“挂号”而实际发生收费。对此，可对本字段填入“-”号。</td>
+</tr>
+<tr>
+<td></td>
+<td>挂/退号时间</td>
+<td>GTHSJ</td>
+<td>日期时间</td>
+<td></td>
+<td>必填</td>
+<td>挂/退号日期必须为业务实际发生的日期</td>
+</tr>
+<tr>
+<td></td>
+<td>挂号类别</td>
+<td>GHLB</td>
+<td>字符串</td>
+<td>3</td>
+<td>必填</td>
+<td>门诊挂号类别代码表</td>
+</tr>
+<tr>
+<td></td>
+<td>是否急诊</td>
+<td>SFJZ</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>布尔值代码表 0:FALSE；1:TRUE</td>
+</tr>
+<tr>
+<td></td>
+<td>就诊性质</td>
+<td>JZXZ</td>
+<td>字符串</td>
+<td>4</td>
+<td>必填</td>
+<td>就诊性质字典表</td>
+</tr>
+<tr>
+<td></td>
+<td>挂号途径代码</td>
+<td>GHTJBM</td>
+<td>字符串</td>
+<td>4</td>
+<td>必填</td>
+<td>挂号途径字典表</td>
+</tr>
+<tr>
+<td>DE07.00.007.00</td>
+<td>保险类型（患者属性）</td>
+<td>BXLX</td>
+<td>字符串</td>
+<td>20</td>
+<td>必填</td>
+<td>患者来源属性字典表</td>
+</tr>
+<tr>
+<td>DE08.10.025.00</td>
+<td>科室编码</td>
+<td>KSBM</td>
+<td>字符串</td>
+<td>64</td>
+<td>必填</td>
+<td>患者挂号科室代码</td>
+</tr>
+<tr>
+<td>DE08.10.026.00</td>
+<td>科室名称</td>
+<td>KSMC</td>
+<td>字符串</td>
+<td>76</td>
+<td>必填</td>
+<td>患者挂号科室名称</td>
+</tr>
+<tr>
+<td></td>
+<td>临床医学类型代码</td>
+<td>LCYXLXDM</td>
+<td>字符串</td>
+<td>2</td>
+<td>必填</td>
+<td>临床医学类型字典表</td>
+</tr>
+<tr>
+<td></td>
+<td>挂号医生编号</td>
+<td>GHYSBH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td>按照平台人员注册信息填写</td>
+</tr>
+<tr>
+<td>DE02.01.039.00</td>
+<td>挂号医生姓名</td>
+<td>GHYSXM</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td>按照平台人员注册信息填写</td>
+</tr>
+<tr>
+<td></td>
+<td>特需标志</td>
+<td>TXBZ</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>布尔值代码表 0 FALSE；1 TRUE</td>
+</tr>
+<tr>
+<td></td>
+<td>外地标志</td>
+<td>WDBZ</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>外地标志</td>
+</tr>
+<tr>
+<td></td>
+<td>挂号总费用</td>
+<td>GHZFY</td>
+<td>浮点</td>
+<td>12,4</td>
+<td>应填</td>
+<td>填写挂号时产生的总费用</td>
+</tr>
+<tr>
+<td></td>
+<td>修改标志</td>
+<td>XGBZ</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>数据操作方式代码</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_36">就诊信息</h3>
+<h4 id="tb_mz_jzmxb">门诊就诊明细表(TB_MZ_JZMXB)</h4>
+<blockquote>
+<p>该表用于患者在就诊环节产生的数据进行上传，就诊和撤销就诊都需要上传数据。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>标识符</strong></th>
+<th><strong>中文名</strong></th>
+<th><strong>字段名</strong></th>
+<th><strong>数据类型</strong></th>
+<th><strong>数据长度</strong></th>
+<th><strong>填报要求</strong></th>
+<th><strong>备注</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DE08.10.052.00</td>
+<td>医疗机构代码</td>
+<td>YLJGDM</td>
+<td>字符串</td>
+<td>22</td>
+<td>必填</td>
+<td>复合主键</td>
+</tr>
+<tr>
+<td></td>
+<td>就诊明细ID</td>
+<td>JZMXID</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td>复合主键；该列作为医院内部就诊明细记录的主键</td>
+</tr>
+<tr>
+<td></td>
+<td>个人标识类型</td>
+<td>GRBSLX</td>
+<td>字符串</td>
+<td>16</td>
+<td>必填</td>
+<td>患者识别码，与患者信息表进行关联</td>
+</tr>
+<tr>
+<td></td>
+<td>个人标识号</td>
+<td>GRBSH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>就诊流水号</td>
+<td>JZLSH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>是否复诊</td>
+<td>SFFZ</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>布尔值代码表 0 FALSE；1 TRUE</td>
+</tr>
+<tr>
+<td></td>
+<td>临床医学类型代码</td>
+<td>LCYXLXDM</td>
+<td>字符串</td>
+<td>2</td>
+<td>必填</td>
+<td>临床医学类型字典表</td>
+</tr>
+<tr>
+<td>DE01.00.010.00</td>
+<td>门（急）诊号</td>
+<td>MJZH</td>
+<td>字符串</td>
+<td>36</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>患者姓名</td>
+<td>HZXM</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE07.00.007.00</td>
+<td>患者属性</td>
+<td>HZSX</td>
+<td>字符串</td>
+<td>20</td>
+<td>必填</td>
+<td>患者来源属性代码表</td>
+</tr>
+<tr>
+<td></td>
+<td>就诊类型</td>
+<td>JZLX</td>
+<td>字符串</td>
+<td>3</td>
+<td>必填</td>
+<td>门诊挂号类别代码表</td>
+</tr>
+<tr>
+<td></td>
+<td>是否急诊</td>
+<td>SFJZ</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>布尔值代码表 0 FALSE；1 TRUE</td>
+</tr>
+<tr>
+<td></td>
+<td>就诊性质</td>
+<td>JZXZ</td>
+<td>字符串</td>
+<td>4</td>
+<td>必填</td>
+<td>就诊性质字典表</td>
+</tr>
+<tr>
+<td></td>
+<td>就诊科室编码</td>
+<td>JZKSBM</td>
+<td>字符串</td>
+<td>64</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE08.10.026.00</td>
+<td>就诊科室名称</td>
+<td>JZKSMC</td>
+<td>字符串</td>
+<td>76</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.035.00</td>
+<td>门诊就诊日期</td>
+<td>JZKSRQ</td>
+<td>日期时间</td>
+<td></td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>接诊时间</td>
+<td>JZSJ</td>
+<td>日期时间</td>
+<td></td>
+<td>应填</td>
+<td>患者就诊医生接诊日期时间</td>
+</tr>
+<tr>
+<td></td>
+<td>完成就诊时间</td>
+<td>WCJZSJ</td>
+<td>日期时间</td>
+<td></td>
+<td>应填</td>
+<td>患者就诊医生完成就诊日期时间</td>
+</tr>
+<tr>
+<td></td>
+<td>主诊医生编号</td>
+<td>ZZYSBH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.039.00</td>
+<td>主诊医生姓名</td>
+<td>ZZYSXM</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE05.01.024.00</td>
+<td>门诊诊断代码 （主要诊断)</td>
+<td>MZZDDM</td>
+<td>字符串</td>
+<td>64</td>
+<td>必填</td>
+<td>代码。西医：按统一规定的ICD10字典表执行；中医：按国标-95执行。若有多条，填写主要诊断</td>
+</tr>
+<tr>
+<td>DE05.01.025.00</td>
+<td>门诊诊断名称（主要诊断）</td>
+<td>MZZDMC</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td>门诊诊断代码对应的汉字名称</td>
+</tr>
+<tr>
+<td></td>
+<td>证型代码</td>
+<td>ZXDM</td>
+<td>字符串</td>
+<td>64</td>
+<td>必填</td>
+<td>中医填写，多个证型以使用“|”（ASCII十进制值为124）进行分隔，代码和名称的顺序需要对应</td>
+</tr>
+<tr>
+<td></td>
+<td>证型名称</td>
+<td>ZXMC</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE06.00.159.00</td>
+<td>治法名称</td>
+<td>ZFMC</td>
+<td>字符串</td>
+<td>64</td>
+<td>必填</td>
+<td>中医填写，医生通过对患者证型的分析，得出的治疗方案，如：祛风润燥</td>
+</tr>
+<tr>
+<td></td>
+<td>代码类型</td>
+<td>BMLX</td>
+<td>字符串</td>
+<td>2</td>
+<td>必填</td>
+<td>01：ICD-10；02：国标-95</td>
+</tr>
+<tr>
+<td></td>
+<td>门诊诊断说明</td>
+<td>JZZDSM</td>
+<td>字符串</td>
+<td>512</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>主诉</td>
+<td>ZS</td>
+<td>字符串</td>
+<td>1024</td>
+<td>必填</td>
+<td>患者向医师描述的对自身本次疾病相关的感受的主要记录</td>
+</tr>
+<tr>
+<td>DE04.01.118.00</td>
+<td>门诊症状-名称</td>
+<td>MZZZMC</td>
+<td>字符串</td>
+<td>120</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE04.01.116.00</td>
+<td>门诊症状-诊断代码</td>
+<td>MZZZZDDM</td>
+<td>字符串</td>
+<td>40</td>
+<td>必填</td>
+<td>ICD-10 代码，多个用“；”分隔</td>
+</tr>
+<tr>
+<td></td>
+<td>留观观察</td>
+<td>LGGC</td>
+<td>字符串</td>
+<td>2</td>
+<td>必填</td>
+<td>布尔值代码表 0 FALSE；1 TRUE</td>
+</tr>
+<tr>
+<td></td>
+<td>症状描述</td>
+<td>ZZMS</td>
+<td>字符串</td>
+<td>1024</td>
+<td>必填</td>
+<td>接诊医生对患者症状的简要描述</td>
+</tr>
+<tr>
+<td>DE04.01.018.00</td>
+<td>发病日期时间</td>
+<td>FBRQSJ</td>
+<td>日期时间</td>
+<td></td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>收缩压</td>
+<td>SSY</td>
+<td>整数</td>
+<td>3</td>
+<td>应填</td>
+<td>单位：mmHg</td>
+</tr>
+<tr>
+<td></td>
+<td>舒张压</td>
+<td>SZY</td>
+<td>整数</td>
+<td>3</td>
+<td>应填</td>
+<td>单位：mmHg</td>
+</tr>
+<tr>
+<td></td>
+<td>体温</td>
+<td>TW</td>
+<td>浮点</td>
+<td>3,1</td>
+<td>应填</td>
+<td>单位：℃，忽略测量方法和部位</td>
+</tr>
+<tr>
+<td>DE04.01.115.00</td>
+<td>症状持续时间</td>
+<td>ZZCXSJ</td>
+<td>字符串</td>
+<td>3</td>
+<td>必填</td>
+<td>单位：min</td>
+</tr>
+<tr>
+<td></td>
+<td>修改标志</td>
+<td>XGBZ</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>数据操作方式代码</td>
+</tr>
+<tr>
+<td></td>
+<td>密级</td>
+<td>MJ</td>
+<td>字符串</td>
+<td>16</td>
+<td>必填</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_37">诊断信息</h3>
+<h4 id="tb_mz_zdmxb">门诊诊断明细表(TB_MZ_ZDMXB)</h4>
+<blockquote>
+<p>该表用于记录患者在门诊就诊期间，所有的中医、西医诊断结果，对于诊断的撤销直接修改原记录的记录状态列，由正常修改为撤销状态，此信息可被以新增、更新、作废方式填报。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>标识符</strong></th>
+<th><strong>中文名</strong></th>
+<th><strong>字段名</strong></th>
+<th><strong>数据类型</strong></th>
+<th><strong>数据长度</strong></th>
+<th><strong>填报要求</strong></th>
+<th><strong>备注</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DE08.10.052.00</td>
+<td>医疗机构代码</td>
+<td>YLJGDM</td>
+<td>字符串</td>
+<td>22</td>
+<td>必填</td>
+<td>复合主键</td>
+</tr>
+<tr>
+<td></td>
+<td>诊断ID</td>
+<td>ZDID</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td>复合主键；患者医院内部唯一诊断ID</td>
+</tr>
+<tr>
+<td></td>
+<td>就诊流水号</td>
+<td>ZYJZLSH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td>患者每次就诊的院内唯一标识号</td>
+</tr>
+<tr>
+<td></td>
+<td>个人标识类型</td>
+<td>GRBSLX</td>
+<td>字符串</td>
+<td>16</td>
+<td>必填</td>
+<td>患者识别码，与患者信息表进行关联</td>
+</tr>
+<tr>
+<td></td>
+<td>个人标识号</td>
+<td>GRBSH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>修改标志</td>
+<td>XGBZ</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>数据操作方式代码</td>
+</tr>
+<tr>
+<td>DE05.01.059.00</td>
+<td>诊断日期时间</td>
+<td>ZDRQSJ</td>
+<td>日期时间</td>
+<td></td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>诊断方法代码</td>
+<td>ZDFFBM</td>
+<td>字符串</td>
+<td>2</td>
+<td>必填</td>
+<td>诊断方法代码 01：西医；02：中医</td>
+</tr>
+<tr>
+<td>DE05.01.024.00</td>
+<td>诊断标准代码</td>
+<td>ZDBZBM</td>
+<td>字符串</td>
+<td>2</td>
+<td>必填</td>
+<td>01：ICD-10；02：国标-95</td>
+</tr>
+<tr>
+<td></td>
+<td>诊断类别代码</td>
+<td>ZDLBBM</td>
+<td>字符串</td>
+<td>2</td>
+<td>必填</td>
+<td>疾病诊断类别字典表</td>
+</tr>
+<tr>
+<td></td>
+<td>病证区别代码</td>
+<td>BZQBDM</td>
+<td>字符串</td>
+<td>2</td>
+<td>必填</td>
+<td>01：病；02：证；诊断方法代码为02时必须填写， 诊断方法代码为01时填写填写ASCII十进制值为45的字符串</td>
+</tr>
+<tr>
+<td></td>
+<td>证对应病ID</td>
+<td>ZDYBID</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td>诊断方法代码为02与诊断区别代码为02必填，其他填写ASCII十进制值为45的字符串</td>
+</tr>
+<tr>
+<td></td>
+<td>诊断主次代码</td>
+<td>ZDZCBM</td>
+<td>字符串</td>
+<td>2</td>
+<td>必填</td>
+<td>疾病诊断类别字典表</td>
+</tr>
+<tr>
+<td></td>
+<td>诊断顺序</td>
+<td>ZDSX</td>
+<td>整数</td>
+<td>2</td>
+<td>应填</td>
+<td>按照诊断的先后顺序进行排序，排序含主要诊断</td>
+</tr>
+<tr>
+<td>DE05.01.024.00</td>
+<td>诊断代码</td>
+<td>ZDBM</td>
+<td>字符串</td>
+<td>32</td>
+<td>必填</td>
+<td>填写医院业务系统实际的诊断代码</td>
+</tr>
+<tr>
+<td>DE05.01.025.00</td>
+<td>诊断名称</td>
+<td>ZDMC</td>
+<td>字符串</td>
+<td>72</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>是否疑诊</td>
+<td>SFYZ</td>
+<td>字符串</td>
+<td>2</td>
+<td>必填</td>
+<td>布尔值代码表 0 FALSE；1 TRUE</td>
+</tr>
+<tr>
+<td></td>
+<td>出院情况代码</td>
+<td>CYQKBM</td>
+<td>字符串</td>
+<td>4</td>
+<td>必填</td>
+<td>CV05.10.010代码 病情转归代码表</td>
+</tr>
+<tr>
+<td></td>
+<td>诊断类型</td>
+<td>ZDLX</td>
+<td>字符串</td>
+<td>1</td>
+<td>应填</td>
+<td>诊断类型 1：初步诊断；2：修正诊断；3：确诊诊断</td>
+</tr>
+<tr>
+<td></td>
+<td>记录时间</td>
+<td>JLSJ_YWK</td>
+<td>日期时间</td>
+<td></td>
+<td>必填</td>
+<td>数据记录在业务数据库的生成时间</td>
+</tr>
+<tr>
+<td></td>
+<td>撤销时间</td>
+<td>CXSJ_YWK</td>
+<td>日期时间</td>
+<td></td>
+<td>应填</td>
+<td>数据记录在业务库的撤销（作废）时间，作废必须填写</td>
+</tr>
+<tr>
+<td></td>
+<td>编辑时间</td>
+<td>BJSJ_YWK</td>
+<td>日期时间</td>
+<td></td>
+<td>必填</td>
+<td>数据记录在业务数据库的最新的操作时间</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_38">处方信息</h3>
+<blockquote>
+<p>该章节用于对患者在门诊期间产生的处方信息进行上传。</p>
+</blockquote>
+<h4 id="tb_mz_cfzb">门诊处方主表（TB_MZ_CFZB）</h4>
+<blockquote>
+<p>用于填写明细记录的主记录，每张处方或申请单产生一条主表记录。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>标识符</strong></th>
+<th><strong>中文名</strong></th>
+<th><strong>字段名</strong></th>
+<th><strong>数据类型</strong></th>
+<th><strong>数据长度</strong></th>
+<th><strong>填报要求</strong></th>
+<th><strong>备注</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DE08.10.052.00</td>
+<td>医疗机构代码</td>
+<td>YLJGDM</td>
+<td>字符串</td>
+<td>22</td>
+<td>必填</td>
+<td>复合主键</td>
+</tr>
+<tr>
+<td></td>
+<td>处方主ID</td>
+<td>CFZID</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td>复合主键</td>
+</tr>
+<tr>
+<td></td>
+<td>就诊流水号</td>
+<td>JZLSH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td>患者每次挂号就诊的唯一标识号</td>
+</tr>
+<tr>
+<td></td>
+<td>个人标识类型</td>
+<td>GRBSLX</td>
+<td>字符串</td>
+<td>16</td>
+<td>必填</td>
+<td>患者识别码，与患者信息表进行关联</td>
+</tr>
+<tr>
+<td></td>
+<td>个人标识号</td>
+<td>GRBSH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE01.00.010.00</td>
+<td>门(急)诊号</td>
+<td>MJZH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>处方大类</td>
+<td>CFDL</td>
+<td>字符串</td>
+<td>4</td>
+<td>必填</td>
+<td>处方或申请单类别字典表</td>
+</tr>
+<tr>
+<td></td>
+<td>处方类型</td>
+<td>CFLX</td>
+<td>字符串</td>
+<td>2</td>
+<td>必填</td>
+<td>处方类型</td>
+</tr>
+<tr>
+<td>DE01.00.020.00</td>
+<td>处方号码</td>
+<td>CFHM</td>
+<td>字符串</td>
+<td>64</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE08.10.025.00</td>
+<td>开方科室代码</td>
+<td>KFKSDM</td>
+<td>字符串</td>
+<td>64</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE08.10.026.00</td>
+<td>开方科室名称</td>
+<td>KFKSMC</td>
+<td>字符串</td>
+<td>76</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>开方医生编号</td>
+<td>KFYSBH</td>
+<td>字符串</td>
+<td>32</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.039.00</td>
+<td>开方医生姓名</td>
+<td>KFYSXM</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE08.50.033.00</td>
+<td>开方时间</td>
+<td>KFSJ</td>
+<td>日期时间</td>
+<td></td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>患者标识号</td>
+<td>HZBSH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td>填写门诊/病案号</td>
+</tr>
+<tr>
+<td>DE02.01.043.00</td>
+<td>患者姓名</td>
+<td>HZXM</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.040.00</td>
+<td>患者性别代码</td>
+<td>HZXBDM</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>GB/T2261.1-2003代码 生理性别代码表</td>
+</tr>
+<tr>
+<td>DE02.01.044.00</td>
+<td>患者性别</td>
+<td>HZXB</td>
+<td>字符串</td>
+<td>20</td>
+<td>必填</td>
+<td>GB/T2261.1-2003名称</td>
+</tr>
+<tr>
+<td>DE02.01.026.00</td>
+<td>患者年龄<a href="填写患者就诊时年龄，通过“\|”对患者年龄中年月日进行分割，第一位填写年，第二位填写月，第三位填写日，无时填写空，如患者年龄为2岁6个月13天，填写格式为2\|6\|13；患者年龄为6个月13天，填写格式为\|6\|13；患者年龄为13天，填写格式为\|\|13">^2</a></td>
+<td>HZNL</td>
+<td>字符串</td>
+<td>15</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>患者体重</td>
+<td>HZTZ</td>
+<td>字符串</td>
+<td>20</td>
+<td>应填</td>
+<td>单位：Kg</td>
+</tr>
+<tr>
+<td></td>
+<td>费用类型</td>
+<td>FYLX</td>
+<td>字符串</td>
+<td>10</td>
+<td>必填</td>
+<td>费用收入分类代码表</td>
+</tr>
+<tr>
+<td>DE05.01.024.00</td>
+<td>西医诊断代码</td>
+<td>XYZDDM</td>
+<td>字符串</td>
+<td>11</td>
+<td>应填</td>
+<td>ICD-10代码</td>
+</tr>
+<tr>
+<td></td>
+<td>西医诊断名称</td>
+<td>XYZDMC</td>
+<td>字符串</td>
+<td>200</td>
+<td>应填</td>
+<td>ICD-10名称</td>
+</tr>
+<tr>
+<td>DE05.10.130.00</td>
+<td>中医病名代码</td>
+<td>ZYBMDM</td>
+<td>字符串</td>
+<td>9</td>
+<td>应填</td>
+<td>GB/T15657-1995代码 中医病证分类与代码表</td>
+</tr>
+<tr>
+<td></td>
+<td>中医病名名称</td>
+<td>ZYBMMC</td>
+<td>字符串</td>
+<td>50</td>
+<td>应填</td>
+<td>中医病证分类与代码表</td>
+</tr>
+<tr>
+<td>DE05.10.130.00</td>
+<td>中医证候代码</td>
+<td>ZYZHDM</td>
+<td>字符串</td>
+<td>9</td>
+<td>应填</td>
+<td>中医病证分类与代码表</td>
+</tr>
+<tr>
+<td></td>
+<td>中医证候名称</td>
+<td>ZYZHMC</td>
+<td>字符串</td>
+<td>50</td>
+<td>应填</td>
+<td>GB/T15657-1995名称</td>
+</tr>
+<tr>
+<td>DE07.00.004.00</td>
+<td>处方金额</td>
+<td>CFJE</td>
+<td>浮点</td>
+<td>10,4</td>
+<td>必填</td>
+<td>以处方为单位汇总的应收金额，单位：元</td>
+</tr>
+<tr>
+<td>DE06.00.294.00</td>
+<td>处方有效天数</td>
+<td>CFYXTS</td>
+<td>整数</td>
+<td>2</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE06.00.179.00</td>
+<td>处方备注信息</td>
+<td>CFBZXX</td>
+<td>字符串</td>
+<td>100</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE06.00.300.00</td>
+<td>治则治法</td>
+<td>ZZZF</td>
+<td>字符串</td>
+<td>100</td>
+<td>应填</td>
+<td>GB/T16751.3-1997名称</td>
+</tr>
+<tr>
+<td>DE08.10.013.00</td>
+<td>文档保管的医疗机构名称</td>
+<td>WDBGJGMC</td>
+<td>字符串</td>
+<td>70</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.009.01</td>
+<td>文档保管的医疗机构地址</td>
+<td>WDBGJGDZ</td>
+<td>字符串</td>
+<td>128</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>处方审核药剂师编号</td>
+<td>CFSHYJSBH</td>
+<td>字符串</td>
+<td>36</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.039.00</td>
+<td>处方审核药剂师签名</td>
+<td>CFSHYJSQM</td>
+<td>字符串</td>
+<td>50</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>处方调配药剂师编号</td>
+<td>CFTPYJSBH</td>
+<td>字符串</td>
+<td>36</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.039.00</td>
+<td>处方调配药剂师签名</td>
+<td>CFTPYJSQM</td>
+<td>字符串</td>
+<td>50</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>处方发药药剂师编号</td>
+<td>CFFYYJSBH</td>
+<td>字符串</td>
+<td>36</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.039.00</td>
+<td>处方发药药剂师签名</td>
+<td>CFFYYJSQM</td>
+<td>字符串</td>
+<td>50</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>处方核对药剂师编号</td>
+<td>CFHDYJSBH</td>
+<td>字符串</td>
+<td>36</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.039.00</td>
+<td>处方核对药剂师签名</td>
+<td>CFHDYJSQM</td>
+<td>字符串</td>
+<td>50</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE08.50.050.00</td>
+<td>中药饮片剂数</td>
+<td>ZYYPJSJ</td>
+<td>整数</td>
+<td>2</td>
+<td>应填</td>
+<td>单位：剂，中药饮片中：5剂</td>
+</tr>
+<tr>
+<td></td>
+<td>中药饮片煎煮频次</td>
+<td>ZYJZPC</td>
+<td>字符串</td>
+<td>100</td>
+<td>应填</td>
+<td>中药饮片中：每日一剂</td>
+</tr>
+<tr>
+<td>DE08.50.047.00</td>
+<td>中药饮片煎煮法</td>
+<td>ZYYPJZF</td>
+<td>字符串</td>
+<td>100</td>
+<td>应填</td>
+<td>中药饮片中：水煎400ml</td>
+</tr>
+<tr>
+<td></td>
+<td>中药饮片服法</td>
+<td>ZYYPFF</td>
+<td>字符串</td>
+<td>100</td>
+<td>应填</td>
+<td>中药饮片中：分早晚两次空腹温服</td>
+</tr>
+<tr>
+<td></td>
+<td>中药饮片用药方法</td>
+<td>ZYYYFF</td>
+<td>字符串</td>
+<td>100</td>
+<td>应填</td>
+<td>中药饮片剂数、中药饮片煎煮频次、中药饮片煎煮法、中药饮片服法组合成文字</td>
+</tr>
+<tr>
+<td>DE08.50.049.00</td>
+<td>中药饮片处方</td>
+<td>ZYYPCF</td>
+<td>字符串</td>
+<td>500</td>
+<td>应填</td>
+<td>中药饮片处方的详细或特别描述</td>
+</tr>
+<tr>
+<td>DE06.00.179.00</td>
+<td>备注</td>
+<td>BZ</td>
+<td>字符串</td>
+<td>100</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>修改标志</td>
+<td>XGBZ</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>数据操作方式代码</td>
+</tr>
+</tbody>
+</table>
+<h4 id="tb_mz_ypcfmxb">门诊药品处方明细表（TB_MZ_YPCFMXB）</h4>
+<blockquote>
+<p>该表用于上传门诊处方主表中处方大类以01开头的药品处方笺数据。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>标识符</strong></th>
+<th><strong>中文名</strong></th>
+<th><strong>字段名</strong></th>
+<th><strong>数据类型</strong></th>
+<th><strong>数据长度</strong></th>
+<th><strong>填报要求</strong></th>
+<th><strong>备注</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DE08.10.052.00</td>
+<td>医疗机构代码</td>
+<td>YLJGDM</td>
+<td>字符串</td>
+<td>22</td>
+<td>必填</td>
+<td>复合主键</td>
+</tr>
+<tr>
+<td></td>
+<td>处方明细ID</td>
+<td>CFMXID</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td>复合主键；处方记录机构内部明细索引主键</td>
+</tr>
+<tr>
+<td></td>
+<td>就诊流水号</td>
+<td>JZLSH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td>患者每次就诊的唯一标识号</td>
+</tr>
+<tr>
+<td></td>
+<td>个人标识类型</td>
+<td>GRBSLX</td>
+<td>字符串</td>
+<td>16</td>
+<td>必填</td>
+<td>患者识别码，与患者信息表进行关联</td>
+</tr>
+<tr>
+<td></td>
+<td>个人标识号</td>
+<td>GRBSH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>处方主ID</td>
+<td>CFZID</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td>与门诊处方主表进行关联</td>
+</tr>
+<tr>
+<td></td>
+<td>处方医嘱序号</td>
+<td>CFYZXH</td>
+<td>整数</td>
+<td>8</td>
+<td>应填</td>
+<td>用于标示处方的展示顺序,按照处方单分组统一排序。</td>
+</tr>
+<tr>
+<td>DE08.50.056.00</td>
+<td>处方医嘱组号</td>
+<td>CFYZZH</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td>用于标示一张处方中不同组的处方</td>
+</tr>
+<tr>
+<td></td>
+<td>诊疗项目类别编码</td>
+<td>ZLXMLBBM</td>
+<td>字符串</td>
+<td>4</td>
+<td>必填</td>
+<td>填写“诊疗项目类别字典表”代码没值域代码</td>
+</tr>
+<tr>
+<td></td>
+<td>项目代码</td>
+<td>XMBM</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td>填写标准药品代码</td>
+</tr>
+<tr>
+<td>DE08.50.022.00</td>
+<td>项目名称</td>
+<td>XMMC</td>
+<td>字符串</td>
+<td>64</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>项目分类</td>
+<td>XMFLBM</td>
+<td>字符串</td>
+<td>32</td>
+<td>应填</td>
+<td>国家药品分类</td>
+</tr>
+<tr>
+<td></td>
+<td>项目分类名称</td>
+<td>XMFLMC</td>
+<td>字符串</td>
+<td>50</td>
+<td>应填</td>
+<td>国家药品分类对应的名称</td>
+</tr>
+<tr>
+<td>DE08.50.011.00</td>
+<td>剂型代码</td>
+<td>JXDM</td>
+<td>字符串</td>
+<td>4</td>
+<td>必填</td>
+<td>药物剂型代码表 CV08.50.002代码</td>
+</tr>
+<tr>
+<td>DE08.50.043.00</td>
+<td>药品规格</td>
+<td>YPGG</td>
+<td>字符串</td>
+<td>64</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE06.00.134.00</td>
+<td>用药途径代码</td>
+<td>YYTJDM</td>
+<td>字符串</td>
+<td>3</td>
+<td>应填</td>
+<td>用药途径代码表 CV06.00.102代码</td>
+</tr>
+<tr>
+<td>DE06.00.133.00</td>
+<td>使用频次代码</td>
+<td>SYPCDM</td>
+<td>字符串</td>
+<td>2</td>
+<td>应填</td>
+<td>药物使用频次代码表 CV06.00.228</td>
+</tr>
+<tr>
+<td></td>
+<td>用药频次</td>
+<td>YYPC</td>
+<td>字符串</td>
+<td>32</td>
+<td>必填</td>
+<td>一时段内用药次数，如：一日三次</td>
+</tr>
+<tr>
+<td>DE08.50.023.00</td>
+<td>使用次剂量</td>
+<td>SYCJL</td>
+<td>浮点数</td>
+<td>10,4</td>
+<td>应填</td>
+<td>西药、中成药为单次使用剂量，中药饮片为每剂处方中药物的剂量</td>
+</tr>
+<tr>
+<td>DE08.50.024.00</td>
+<td>使用剂量单位</td>
+<td>SYJLDW</td>
+<td>字符串</td>
+<td>6</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE06.00.135.00</td>
+<td>使用总剂量</td>
+<td>SYZJL</td>
+<td>浮点数</td>
+<td>12,4</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE06.00.136.00</td>
+<td>中药用药方法</td>
+<td>ZYYYFF</td>
+<td>字符串</td>
+<td>100</td>
+<td>应填</td>
+<td>中药药物用药方法，比如先煎、后下等，中药药物的角注</td>
+</tr>
+<tr>
+<td></td>
+<td>发药数量</td>
+<td>FYSL</td>
+<td>浮点数</td>
+<td>8,3</td>
+<td>应填</td>
+<td>发药包装数量，可以是最小单位的总数量</td>
+</tr>
+<tr>
+<td></td>
+<td>发药数量单位</td>
+<td>FYSLDW</td>
+<td>字符串</td>
+<td>10</td>
+<td>必填</td>
+<td>发药包装单位，可以是最小单位</td>
+</tr>
+<tr>
+<td>DE06.00.147.00</td>
+<td>用药天数</td>
+<td>YYTS</td>
+<td>浮点数</td>
+<td>8,3</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE08.50.020.00</td>
+<td>药物类型</td>
+<td>YWLX</td>
+<td>字符串</td>
+<td>100</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>处方开始时间</td>
+<td>CFKSSJ</td>
+<td>日期时间</td>
+<td></td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>处方停止时间</td>
+<td>CFTZSJ</td>
+<td>日期时间</td>
+<td></td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE08.10.025.00</td>
+<td>执行科室编码</td>
+<td>ZXKSBM</td>
+<td>字符串</td>
+<td>64</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE08.10.026.00</td>
+<td>执行科室名称</td>
+<td>ZXKSMC</td>
+<td>字符串</td>
+<td>76</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>处方执行人编号</td>
+<td>ZXRBH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>处方执行人姓名</td>
+<td>ZXRXM</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>处方执行时间</td>
+<td>CFZXSJ</td>
+<td>日期时间</td>
+<td></td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE06.00.179.00</td>
+<td>备注</td>
+<td>BZ</td>
+<td>字符串</td>
+<td>128</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>密级</td>
+<td>MJ</td>
+<td>字符串</td>
+<td>16</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>修改标志</td>
+<td>XGBZ</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>数据操作方式代码</td>
+</tr>
+</tbody>
+</table>
+<h4 id="tb_mz_qtcfmx">门诊其他处方明细表（TB_MZ_QTCFMX）</h4>
+<blockquote>
+<p>门诊其他处方明细表用于上传门诊处方主表中处方大类不以01开头的各种申请单数据。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>标识符</strong></th>
+<th><strong>中文名</strong></th>
+<th><strong>字段名</strong></th>
+<th><strong>数据类型</strong></th>
+<th><strong>数据长度</strong></th>
+<th><strong>填报要求</strong></th>
+<th><strong>备注</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DE08.10.052.00</td>
+<td>医疗机构代码</td>
+<td>YLJGDM</td>
+<td>字符串</td>
+<td>22</td>
+<td>必填</td>
+<td>复合主键</td>
+</tr>
+<tr>
+<td></td>
+<td>处方明细ID</td>
+<td>CFMXID</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td>复合主键；处方记录机构内部明细索引主键</td>
+</tr>
+<tr>
+<td></td>
+<td>就诊流水号</td>
+<td>JZLSH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td>患者每次挂号就诊的唯一标识号</td>
+</tr>
+<tr>
+<td></td>
+<td>个人标识类型</td>
+<td>GRBSLX</td>
+<td>字符串</td>
+<td>16</td>
+<td>必填</td>
+<td>患者识别码，与患者信息表进行关联</td>
+</tr>
+<tr>
+<td></td>
+<td>个人标识号</td>
+<td>GRBSH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>处方主ID</td>
+<td>CFZID</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td>与门诊处方主表进行关联</td>
+</tr>
+<tr>
+<td></td>
+<td>处方序号</td>
+<td>YZXH</td>
+<td>整数</td>
+<td>8</td>
+<td>应填</td>
+<td>用于标示处方的展示顺序,按照处方单分组统一排序</td>
+</tr>
+<tr>
+<td></td>
+<td>处方组号</td>
+<td>YZZH</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td>用于标示医院内部一张处方中不同组的处方</td>
+</tr>
+<tr>
+<td></td>
+<td>诊疗项目类别编码</td>
+<td>ZLXMLBBM</td>
+<td>字符串</td>
+<td>4</td>
+<td>必填</td>
+<td>诊疗项目类别代码表</td>
+</tr>
+<tr>
+<td></td>
+<td>项目代码</td>
+<td>XMBM</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE09.00.064.00</td>
+<td>项目名称</td>
+<td>XMMC</td>
+<td>字符串</td>
+<td>64</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>项目分类代码</td>
+<td>XMFLBM</td>
+<td>字符串</td>
+<td>32</td>
+<td>必填</td>
+<td>填写CV06.00.229 医嘱项目类型代码表</td>
+</tr>
+<tr>
+<td></td>
+<td>项目分类名称</td>
+<td>XMFLMC</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>执行频率</td>
+<td>ZXPL</td>
+<td>字符串</td>
+<td>72</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>采集方式</td>
+<td>CJFX</td>
+<td>字符串</td>
+<td>40</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>采集标本</td>
+<td>CJBB</td>
+<td>字符串</td>
+<td>40</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>检查部位</td>
+<td>JCBW</td>
+<td>字符串</td>
+<td>40</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE06.00.073.00</td>
+<td>麻醉方式</td>
+<td>MZFS</td>
+<td>字符串</td>
+<td>40</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>处方开始时间</td>
+<td>CFKSSJ</td>
+<td>日期时间</td>
+<td></td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>处方停止时间</td>
+<td>CFTZSJ</td>
+<td>日期时间</td>
+<td></td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE08.10.025.00</td>
+<td>执行科室编码</td>
+<td>ZXKSBM</td>
+<td>字符串</td>
+<td>64</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE08.10.026.00</td>
+<td>执行科室名称</td>
+<td>ZXKSMC</td>
+<td>字符串</td>
+<td>76</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>处方执行人编号</td>
+<td>ZXRBH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>处方执行人姓名</td>
+<td>ZXRXM</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>处方执行时间</td>
+<td>CFZXSJ</td>
+<td>日期时间</td>
+<td></td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE09.00.056.00</td>
+<td>卫生服务要求</td>
+<td>WSFWYQ</td>
+<td>字符串</td>
+<td>200</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE06.00.087.00</td>
+<td>其它医学处置</td>
+<td>QTYXCZ</td>
+<td>字符串</td>
+<td>200</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE06.00.174.00</td>
+<td>转诊标志</td>
+<td>ZZBZ</td>
+<td>字符串</td>
+<td>1</td>
+<td>应填</td>
+<td>布尔值型代码表 0：False；1：True</td>
+</tr>
+<tr>
+<td>DE05.10.033.00</td>
+<td>健康问题评估</td>
+<td>JKWTPG</td>
+<td>字符串</td>
+<td>200</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE08.10.013.00</td>
+<td>就诊机构名称</td>
+<td>JZJGMC</td>
+<td>字符串</td>
+<td>70</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE04.01.120.00</td>
+<td>咨询问题</td>
+<td>ZWT</td>
+<td>字符串</td>
+<td>200</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE05.10.014.00</td>
+<td>处置计划</td>
+<td>CZJH</td>
+<td>字符串</td>
+<td>200</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE06.00.066.00</td>
+<td>康复措施指导</td>
+<td>KFCSZD</td>
+<td>字符串</td>
+<td>200</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE06.00.179.00</td>
+<td>备注</td>
+<td>BZ</td>
+<td>字符串</td>
+<td>128</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>密级</td>
+<td>MJ</td>
+<td>字符串</td>
+<td>16</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>修改标志</td>
+<td>XGBZ</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>数据操作方式代码</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_39">费用信息</h3>
+<h4 id="tb_mz_sfmxb">门诊费用明细表(TB_MZ_SFMXB)</h4>
+<blockquote>
+<p>该表用于上传患者在门诊产生的费用明细记录，收费和退费都需要对明细记录上传，同时该表每费用结算ID
+  的总费用需要与门诊结算明细表中相同结算记录ID 的总费用相等。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>标识符</strong></th>
+<th><strong>中文名</strong></th>
+<th><strong>字段名</strong></th>
+<th><strong>数据类型</strong></th>
+<th><strong>数据长度</strong></th>
+<th><strong>填报要求</strong></th>
+<th><strong>备注</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DE08.10.052.00</td>
+<td>医疗机构代码</td>
+<td>YLJGDM</td>
+<td>字符串</td>
+<td>22</td>
+<td>必填</td>
+<td>复合主键</td>
+</tr>
+<tr>
+<td></td>
+<td>收费明细ID</td>
+<td>SFMXID</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td>复合主键；机构内收费明细的唯一主键</td>
+</tr>
+<tr>
+<td></td>
+<td>个人标识类型</td>
+<td>GRBSLX</td>
+<td>字符串</td>
+<td>16</td>
+<td>必填</td>
+<td>患者识别码，与患者信息表进行关联</td>
+</tr>
+<tr>
+<td></td>
+<td>个人标识号</td>
+<td>GRBSH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>就诊流水号</td>
+<td>JZLSH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td>患者每次挂号就诊的唯一标识号</td>
+</tr>
+<tr>
+<td></td>
+<td>被退费明细ID</td>
+<td>BTFMXID</td>
+<td>字符串</td>
+<td>36</td>
+<td>应填</td>
+<td>退费记录应该为必填</td>
+</tr>
+<tr>
+<td></td>
+<td>退费标志</td>
+<td>TFBZ</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>退费标志 1：收费；2：退费；3：被退费；</td>
+</tr>
+<tr>
+<td></td>
+<td>收费场景代码</td>
+<td>SFCJBM</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>收费场景代码 1：挂号时产生费用；2：门诊收费产生费用</td>
+</tr>
+<tr>
+<td></td>
+<td>处方明细ID</td>
+<td>YZMXID</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td>与门诊药品处方明细表或门诊其他处方明细表处方明细ID对应</td>
+</tr>
+<tr>
+<td></td>
+<td>收费项目类别代码</td>
+<td>SFXMLBBM</td>
+<td>字符串</td>
+<td>4</td>
+<td>必填</td>
+<td>诊疗项目类别代码表</td>
+</tr>
+<tr>
+<td>DE07.00.002.00</td>
+<td>费用收入归类代码</td>
+<td>FYSRGLBM</td>
+<td>字符串</td>
+<td>4</td>
+<td>必填</td>
+<td>门诊费用分类代码表 CV07.10.001</td>
+</tr>
+<tr>
+<td>DE07.00.003.00</td>
+<td>费用收入归类名称</td>
+<td>FYSRGLMC</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>费用发生时间</td>
+<td>FYFSSJ</td>
+<td>日期时间</td>
+<td></td>
+<td>必填</td>
+<td>费用的发生的时间</td>
+</tr>
+<tr>
+<td></td>
+<td>费用结算ID</td>
+<td>SYJSID</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td>与门诊结算明细表中结算记录ID对应，该明细费用相加必须和门诊结算记录表总费用相等</td>
+</tr>
+<tr>
+<td></td>
+<td>费用结算时间</td>
+<td>SFJSSJ</td>
+<td>日期时间</td>
+<td></td>
+<td>必填</td>
+<td>收费为收费结算时间，退费为退费结算时间</td>
+</tr>
+<tr>
+<td></td>
+<td>开单科室编码</td>
+<td>KDKSBM</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE08.10.026.00</td>
+<td>开单科室名称</td>
+<td>KDKSMC</td>
+<td>字符串</td>
+<td>72</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>开单医生编号</td>
+<td>KDYSBH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.039.00</td>
+<td>开单医生姓名</td>
+<td>KDYSXM</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>执行科室编码</td>
+<td>ZXKSBM</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE08.10.026.00</td>
+<td>执行科室名称</td>
+<td>ZXKSMC</td>
+<td>字符串</td>
+<td>72</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>执行人员编号</td>
+<td>ZXRYBH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>执行人员姓名</td>
+<td>ZXRYXM</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>明细项目代码</td>
+<td>MXXMBM</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td>填写药品/耗材/试剂标准代码，未在以上标准代码范围内填写社保代码</td>
+</tr>
+<tr>
+<td></td>
+<td>明细项目名称</td>
+<td>MXXMMC</td>
+<td>字符串</td>
+<td>64</td>
+<td>必填</td>
+<td>业务系统实际项目名称</td>
+</tr>
+<tr>
+<td></td>
+<td>明细项目单位</td>
+<td>MXXMDW</td>
+<td>字符串</td>
+<td>12</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>明细项目单价</td>
+<td>MXXMDJ</td>
+<td>浮点</td>
+<td>12,4</td>
+<td>应填</td>
+<td>单位：元</td>
+</tr>
+<tr>
+<td></td>
+<td>项目分类代码</td>
+<td>XMFLBM</td>
+<td>字符串</td>
+<td>32</td>
+<td>必填</td>
+<td>对于药品处方，填写药物类型，见药物类型字典，如抗生素对应的代码等；非药品处方，填写平台提供的诊疗项目代码</td>
+</tr>
+<tr>
+<td></td>
+<td>项目分类名称</td>
+<td>XMFLMC</td>
+<td>字符串</td>
+<td>64</td>
+<td>必填</td>
+<td>名称存与代码对应的名称即可</td>
+</tr>
+<tr>
+<td></td>
+<td>明细项目数量</td>
+<td>MXXMSL</td>
+<td>浮点</td>
+<td>8,3</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>明细项目应收金额</td>
+<td>MXXMYSJE</td>
+<td>浮点</td>
+<td>12,4</td>
+<td>应填</td>
+<td>单位：元；收费填写正数，退费填写负数</td>
+</tr>
+<tr>
+<td></td>
+<td>明细项目实收金额</td>
+<td>MXXMSSJE</td>
+<td>浮点</td>
+<td>12,4</td>
+<td>必填</td>
+<td>单位：元；收费填写正数，退费填写负数</td>
+</tr>
+<tr>
+<td></td>
+<td>修改标志</td>
+<td>XGBZ</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>数据操作方式代码</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_40">报告信息</h3>
+<h4 id="_41">检验报告信息</h4>
+<h5 id="tb_jy_jybgzb">检验报告主表(TB_JY_JYBGZB)</h5>
+<table>
+<thead>
+<tr>
+<th><strong>标识符</strong></th>
+<th><strong>中文名</strong></th>
+<th><strong>字段名</strong></th>
+<th><strong>数据类型</strong></th>
+<th><strong>数据长度</strong></th>
+<th><strong>填报要求</strong></th>
+<th><strong>备注</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DE08.10.052.00</td>
+<td>医疗机构代码</td>
+<td>YLJGDM</td>
+<td>字符串</td>
+<td>22</td>
+<td>必填</td>
+<td>复合主键</td>
+</tr>
+<tr>
+<td></td>
+<td>检验报告ID</td>
+<td>JYBGID</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td>检验报告唯一索引号</td>
+</tr>
+<tr>
+<td></td>
+<td>就诊流水号</td>
+<td>JZLSH</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td>用于与门诊和住院的就诊信息记录相关联</td>
+</tr>
+<tr>
+<td></td>
+<td>个人标识类型</td>
+<td>GRBSLX</td>
+<td>字符串</td>
+<td>16</td>
+<td>必填</td>
+<td>患者识别码，与患者信息表进行关联</td>
+</tr>
+<tr>
+<td></td>
+<td>个人标识号</td>
+<td>GRBSH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>门诊/住院标志</td>
+<td>MZZYBZ</td>
+<td>字符串</td>
+<td>2</td>
+<td>必填</td>
+<td>填写门诊/住院标志字典表代码</td>
+</tr>
+<tr>
+<td>DE01.00.010.00</td>
+<td>门（急）诊号</td>
+<td>MJZH</td>
+<td>字符串</td>
+<td>36</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE01.00.014.00</td>
+<td>住院号</td>
+<td>ZYH</td>
+<td>字符串</td>
+<td>36</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.060.00</td>
+<td>患者类型代码</td>
+<td>HZLXDM</td>
+<td>数值</td>
+<td>1</td>
+<td>应填</td>
+<td>患者类型代码表 CV09.00.404</td>
+</tr>
+<tr>
+<td>DE02.01.039.00</td>
+<td>患者姓名</td>
+<td>HZXM</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.040.00</td>
+<td>患者性别</td>
+<td>HZXB</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>生理性别代码表 GB/T2261.1-2003</td>
+</tr>
+<tr>
+<td></td>
+<td>患者年龄</td>
+<td>HZNL</td>
+<td>字符串</td>
+<td>16</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.010.09</td>
+<td>电话号码</td>
+<td>DHHM</td>
+<td>字符串</td>
+<td>20</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>患者科室代码</td>
+<td>HZKSDM</td>
+<td>字符串</td>
+<td>36</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE08.10.026.00</td>
+<td>患者科室名称</td>
+<td>HZKSMC</td>
+<td>字符串</td>
+<td>50</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE08.10.054.00</td>
+<td>患者病区名称</td>
+<td>HZBQMC</td>
+<td>字符串</td>
+<td>50</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE01.00.019.00</td>
+<td>患者病房号</td>
+<td>HZBFH</td>
+<td>字符串</td>
+<td>10</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE01.00.026.00</td>
+<td>患者病床号</td>
+<td>BZBCH</td>
+<td>字符串</td>
+<td>10</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE01.00.008.00</td>
+<td>申请单编号</td>
+<td>SQDBH</td>
+<td>字符串</td>
+<td>20</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE08.10.052.00</td>
+<td>申请机构代码</td>
+<td>SQJGDM</td>
+<td>字符串</td>
+<td>22</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE08.10.013.00</td>
+<td>申请机构名称</td>
+<td>SQJGMC</td>
+<td>字符串</td>
+<td>70</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE08.10.025.00</td>
+<td>申请科室代码</td>
+<td>SQKSDM</td>
+<td>字符串</td>
+<td>64</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE08.10.026.00</td>
+<td>申请科室名称</td>
+<td>SQKSMC</td>
+<td>字符串</td>
+<td>76</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>申请日期时间</td>
+<td>SQRQSJ</td>
+<td>日期时间</td>
+<td></td>
+<td>应填</td>
+<td>检验项目申请日期时间</td>
+</tr>
+<tr>
+<td>DE05.01.024.00</td>
+<td>西医诊断代码</td>
+<td>XYZDDM</td>
+<td>字符串</td>
+<td>11</td>
+<td>应填</td>
+<td>ICD-10代码</td>
+</tr>
+<tr>
+<td></td>
+<td>西医诊断名称</td>
+<td>XYZDMC</td>
+<td>字符串</td>
+<td>50</td>
+<td>应填</td>
+<td>ICD-10名称</td>
+</tr>
+<tr>
+<td>DE08.10.052.00</td>
+<td>诊断机构代码</td>
+<td>ZDJGDM</td>
+<td>字符串</td>
+<td>22</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE08.10.013.00</td>
+<td>诊断机构名称</td>
+<td>ZDJGMC</td>
+<td>字符串</td>
+<td>70</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE05.01.058.00</td>
+<td>诊断日期</td>
+<td>ZDRQ</td>
+<td>日期</td>
+<td></td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE04.50.134.00</td>
+<td>标本类型</td>
+<td>BBLX</td>
+<td>字符串</td>
+<td>20</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE01.00.003.00</td>
+<td>检验标本号</td>
+<td>JYBBH</td>
+<td>字符串</td>
+<td>20</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE04.50.135.00</td>
+<td>标本状态</td>
+<td>BBZT</td>
+<td>字符串</td>
+<td>20</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE04.50.137.00</td>
+<td>采样日期时间</td>
+<td>CYRQSJ</td>
+<td>日期时间</td>
+<td></td>
+<td>应填</td>
+<td>标本采样日期时间</td>
+</tr>
+<tr>
+<td>DE04.50.141.00</td>
+<td>接收日期时间</td>
+<td>JSRQSJ</td>
+<td>日期时间</td>
+<td></td>
+<td>应填</td>
+<td>接收标本日期时间</td>
+</tr>
+<tr>
+<td>DE04.30.019.00</td>
+<td>检验项目代码</td>
+<td>JYXMDM</td>
+<td>字符串</td>
+<td>20</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>检验项目名称</td>
+<td>JYXMMC</td>
+<td>字符串</td>
+<td>200</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>检验技师编号</td>
+<td>JYJSBH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.039.00</td>
+<td>检验技师签名</td>
+<td>JYJSQM</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>检验医师编号</td>
+<td>JYYSBH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.039.00</td>
+<td>检验医师签名</td>
+<td>JYYSQM</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE04.50.140.00</td>
+<td>检验日期</td>
+<td>JYRQ</td>
+<td>日期时间</td>
+<td></td>
+<td>应填</td>
+<td>检验项目检验日期</td>
+</tr>
+<tr>
+<td>DE01.00.018.00</td>
+<td>检验报告单号</td>
+<td>JYBGDH</td>
+<td>字符串</td>
+<td>20</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>报告科室编号</td>
+<td>BGKSBH</td>
+<td>字符串</td>
+<td>36</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE08.10.026.00</td>
+<td>报告科室名称</td>
+<td>BGKSMC</td>
+<td>字符串</td>
+<td>50</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE04.50.130.00</td>
+<td>检验报告结果</td>
+<td>JYBGJG</td>
+<td>字符串</td>
+<td>200</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE06.00.179.00</td>
+<td>检验报告备注</td>
+<td>JYBGBZ</td>
+<td>字符串</td>
+<td>100</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE04.50.133.00</td>
+<td>检验报告日期</td>
+<td>JYBGRQ</td>
+<td>日期时间</td>
+<td></td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>报告医师编号</td>
+<td>BGYSBH</td>
+<td>字符串</td>
+<td>36</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.039.00</td>
+<td>报告医师签名</td>
+<td>BGYSQM</td>
+<td>字符串</td>
+<td>50</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>审核医师编号</td>
+<td>SHYSBH</td>
+<td>字符串</td>
+<td>36</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.039.00</td>
+<td>审核医师签名</td>
+<td>SHYSQM</td>
+<td>字符串</td>
+<td>50</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>打印日期</td>
+<td>DYRQ</td>
+<td>日期时间</td>
+<td></td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>申请日期</td>
+<td>SQRQ</td>
+<td>日期时间</td>
+<td></td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>标本代码</td>
+<td>BBDM</td>
+<td>字符串</td>
+<td>4</td>
+<td>必填</td>
+<td>填写检验标本字典表代码</td>
+</tr>
+<tr>
+<td></td>
+<td>标本名称</td>
+<td>BBMC</td>
+<td>字符串</td>
+<td>64</td>
+<td>必填</td>
+<td>填写检验标本字典表名称</td>
+</tr>
+<tr>
+<td></td>
+<td>报告单类别代码</td>
+<td>BGDLBBM</td>
+<td>字符串</td>
+<td>4</td>
+<td>必填</td>
+<td>(2.16.156.10011.2.3.51.12) 检验报告类别代码</td>
+</tr>
+<tr>
+<td></td>
+<td>报告单类别名称</td>
+<td>BGDLB</td>
+<td>字符串</td>
+<td>256</td>
+<td>必填</td>
+<td>必填写中文。如“血常规”、“尿常规”等行业常识的名称</td>
+</tr>
+<tr>
+<td></td>
+<td>文件链接</td>
+<td>WJLJ</td>
+<td>字符串</td>
+<td>256</td>
+<td>必填</td>
+<td>见说明1</td>
+</tr>
+<tr>
+<td></td>
+<td>记录医生编号</td>
+<td>JLYSBH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE08.10.052.00</td>
+<td>档案保存机构代码</td>
+<td>DABCJGBM</td>
+<td>字符串</td>
+<td>22</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE01.00.013.00</td>
+<td>档案保存机构名称</td>
+<td>DABCJGMC</td>
+<td>字符串</td>
+<td>70</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.009.01</td>
+<td>档案保存机构地址</td>
+<td>DABCJGDZ</td>
+<td>字符串</td>
+<td>128</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>密级</td>
+<td>MJ</td>
+<td>字符串</td>
+<td>16</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>修改标志</td>
+<td>XGBZ</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>(2.16.156.10011.2.3.51.6) 数据操作方式代码</td>
+</tr>
+</tbody>
+</table>
+<h5 id="tb_jy_jyjgzbb">检验结果指标表（TB_JY_JYJGZBB）</h5>
+<table>
+<thead>
+<tr>
+<th><strong>标识符</strong></th>
+<th><strong>中文名</strong></th>
+<th><strong>字段名</strong></th>
+<th><strong>数据类型</strong></th>
+<th><strong>数据长度</strong></th>
+<th><strong>填报要求</strong></th>
+<th><strong>备注</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>检验指标流水号</td>
+<td>JYZBLSH</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td>复合主键；见表后“检验指标流水号”说明</td>
+</tr>
+<tr>
+<td>DE08.10.052.00</td>
+<td>医疗机构代码</td>
+<td>YLJGDM</td>
+<td>字符串</td>
+<td>22</td>
+<td>必填</td>
+<td>复合主键</td>
+</tr>
+<tr>
+<td></td>
+<td>检验报告ID</td>
+<td>JYBGID</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td>检验报告唯一索引号，与检验报告主表关联</td>
+</tr>
+<tr>
+<td></td>
+<td>打印序号</td>
+<td>DYXH</td>
+<td>整数</td>
+<td>4</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE04.50.133.00</td>
+<td>报告日期</td>
+<td>BGRQ</td>
+<td>字符串</td>
+<td>8</td>
+<td>必填</td>
+<td>YYYYMMDD</td>
+</tr>
+<tr>
+<td></td>
+<td>检测人编号</td>
+<td>JCRBH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.039.00</td>
+<td>检测人姓名</td>
+<td>JCRXM</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>审核人编号</td>
+<td>SHRBH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.039.00</td>
+<td>审核人姓名</td>
+<td>SHRXM</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>检测收费代码</td>
+<td>YBSFDM</td>
+<td>字符串</td>
+<td>20</td>
+<td>必填</td>
+<td>检测收费代码</td>
+</tr>
+<tr>
+<td>DE02.10.027.00</td>
+<td>检验方法名称</td>
+<td>JCFFMC</td>
+<td>字符串</td>
+<td>100</td>
+<td>必填</td>
+<td>如：“化学法”</td>
+</tr>
+<tr>
+<td>DE04.30.018.00</td>
+<td>检验类别</td>
+<td>JCLB</td>
+<td>字符串</td>
+<td>100</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE04.30.019.00</td>
+<td>LOINC代码</td>
+<td>LOINCDM</td>
+<td>字符串</td>
+<td>20</td>
+<td>应填</td>
+<td>检测项目的LOINC代码</td>
+</tr>
+<tr>
+<td></td>
+<td>检测指标代码</td>
+<td>JCZBDM</td>
+<td>字符串</td>
+<td>20</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>检测指标名称</td>
+<td>JCZBMC</td>
+<td>字符串</td>
+<td>100</td>
+<td>必填</td>
+<td>如：“红细胞压积”</td>
+</tr>
+<tr>
+<td></td>
+<td>指标结果类型</td>
+<td>ZBJGLX</td>
+<td>整数</td>
+<td>1</td>
+<td>必填</td>
+<td>指标结果类型代码表</td>
+</tr>
+<tr>
+<td>DE04.30.015.00</td>
+<td>检测指标结果</td>
+<td>JCZBJG</td>
+<td>字符串</td>
+<td>128</td>
+<td>必填</td>
+<td>量化结果或定性结果；例如：“阴性”或“+”，以及描述性文字</td>
+</tr>
+<tr>
+<td>DE04.30.016.00</td>
+<td>检验定量结果计算单位</td>
+<td>JYDLJGJSDW</td>
+<td>字符串</td>
+<td>20</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE04.30.017.00</td>
+<td>异常提示</td>
+<td>YCTS</td>
+<td>字符串</td>
+<td>2</td>
+<td>必填</td>
+<td>(2.16.156.10011.2.3.51.58) 异常提示代码表</td>
+</tr>
+<tr>
+<td></td>
+<td>参考值范围</td>
+<td>CKZFW</td>
+<td>字符串</td>
+<td>128</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>设备代码</td>
+<td>SBBM</td>
+<td>字符串</td>
+<td>20</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>仪器编号</td>
+<td>YQBH</td>
+<td>字符串</td>
+<td>20</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>仪器名称</td>
+<td>YQMC</td>
+<td>字符串</td>
+<td>100</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>计量单位</td>
+<td>JLDW</td>
+<td>字符串</td>
+<td>20</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>相关医嘱ID或处方项目明细编号</td>
+<td>YZID</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td>见表后“相关医嘱ID或处方项目明细编号” 说明</td>
+</tr>
+<tr>
+<td></td>
+<td>修改标志</td>
+<td>XGBZ</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>(2.16.156.10011.2.3.51.6) 数据操作方式代码</td>
+</tr>
+</tbody>
+</table>
+<h5 id="tb_jy_xjjgb">细菌结果表(TB_JY_XJJGB)</h5>
+<table>
+<thead>
+<tr>
+<th><strong>标识符</strong></th>
+<th><strong>中文名</strong></th>
+<th><strong>字段名</strong></th>
+<th><strong>数据类型</strong></th>
+<th><strong>数据长度</strong></th>
+<th><strong>填报要求</strong></th>
+<th><strong>备注</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>细菌结果流水号</td>
+<td>XJJGLSH</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td>复合主键；见表后“细菌结果流水号说明”</td>
+</tr>
+<tr>
+<td>DE08.10.052.00</td>
+<td>医疗机构代码</td>
+<td>YLJGDM</td>
+<td>字符串</td>
+<td>22</td>
+<td>必填</td>
+<td>复合主键</td>
+</tr>
+<tr>
+<td></td>
+<td>检验报告ID</td>
+<td>JYBGID</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td>检验报告唯一索引号，与检验报告主表关联</td>
+</tr>
+<tr>
+<td>DE04.50.133.00</td>
+<td>报告日期</td>
+<td>BGRQ</td>
+<td>字符串</td>
+<td>8</td>
+<td>必填</td>
+<td>YYYYMMDD</td>
+</tr>
+<tr>
+<td></td>
+<td>细菌代号</td>
+<td>XJDH</td>
+<td>字符串</td>
+<td>32</td>
+<td>必填</td>
+<td>见说明2；如未发现细菌，填“YLJYXJ_WFX”</td>
+</tr>
+<tr>
+<td></td>
+<td>细菌名称</td>
+<td>XJMC</td>
+<td>字符串</td>
+<td>128</td>
+<td>必填</td>
+<td>中文名称。如：“金黄色葡萄球菌”等；如未发现细菌，填“无”</td>
+</tr>
+<tr>
+<td></td>
+<td>菌落计数</td>
+<td>JLJS</td>
+<td>字符串</td>
+<td>16</td>
+<td>必填</td>
+<td>单位：cfu/ml；如“>10万”</td>
+</tr>
+<tr>
+<td></td>
+<td>培养基</td>
+<td>BYJ</td>
+<td>字符串</td>
+<td>40</td>
+<td>必填</td>
+<td>例如：“巧克力平板”、“血平板”、“琼脂平板”等</td>
+</tr>
+<tr>
+<td></td>
+<td>培养时间</td>
+<td>BYSJ</td>
+<td>字符串</td>
+<td>16</td>
+<td>必填</td>
+<td>应包含单位；例如：72小时</td>
+</tr>
+<tr>
+<td></td>
+<td>培养条件</td>
+<td>PYTJ</td>
+<td>字符串</td>
+<td>64</td>
+<td>必填</td>
+<td>例如：“37℃；空气”或“35℃±2℃；5%CO2”</td>
+</tr>
+<tr>
+<td></td>
+<td>发现方式</td>
+<td>FXFS</td>
+<td>字符串</td>
+<td>64</td>
+<td>必填</td>
+<td>例如：“肉眼”或“镜检”等</td>
+</tr>
+<tr>
+<td></td>
+<td>检测结果</td>
+<td>JCJG</td>
+<td>字符串</td>
+<td>100</td>
+<td>必填</td>
+<td>简要描述是否发现或是否生长等</td>
+</tr>
+<tr>
+<td></td>
+<td>检测结果文字描述</td>
+<td>JCJGWZ</td>
+<td>字符串</td>
+<td>1024</td>
+<td>必填</td>
+<td>详细描述检验的结果</td>
+</tr>
+<tr>
+<td></td>
+<td>设备代码</td>
+<td>SBBM</td>
+<td>字符串</td>
+<td>20</td>
+<td>必填</td>
+<td>非特指某台物理设备，而指能表示某类设备的编号</td>
+</tr>
+<tr>
+<td></td>
+<td>仪器编号</td>
+<td>YQBH</td>
+<td>字符串</td>
+<td>20</td>
+<td>必填</td>
+<td>“仪器设备字典表”代码。医疗机构内某一台物理设备的唯一序号。</td>
+</tr>
+<tr>
+<td></td>
+<td>仪器名称</td>
+<td>YQMC</td>
+<td>字符串</td>
+<td>100</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>修改标志</td>
+<td>XGBZ</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>(2.16.156.10011.2.3.51.6) 数据操作方式代码</td>
+</tr>
+</tbody>
+</table>
+<h5 id="tb_jy_ymjgb">药敏结果表(TB_JY_YMJGB)</h5>
+<table>
+<thead>
+<tr>
+<th><strong>标识符</strong></th>
+<th><strong>中文名</strong></th>
+<th><strong>字段名</strong></th>
+<th><strong>数据类型</strong></th>
+<th><strong>数据长度</strong></th>
+<th><strong>填报要求</strong></th>
+<th><strong>备注</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>药敏结果流水号</td>
+<td>YMJGLSH</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td>复合主键；见表后“药敏结果流水号说明”</td>
+</tr>
+<tr>
+<td>DE08.10.052.00</td>
+<td>医疗机构代码</td>
+<td>YLJGDM</td>
+<td>字符串</td>
+<td>22</td>
+<td>必填</td>
+<td>复合主键</td>
+</tr>
+<tr>
+<td></td>
+<td>检验报告ID</td>
+<td>JYBGID</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td>检验报告唯一索引号，与检验报告主表关联</td>
+</tr>
+<tr>
+<td>DE04.50.133.00</td>
+<td>报告日期</td>
+<td>BGRQ</td>
+<td>字符串</td>
+<td>8</td>
+<td>必填</td>
+<td>YYYYMMDD</td>
+</tr>
+<tr>
+<td></td>
+<td>细菌代号</td>
+<td>XJDH</td>
+<td>字符串</td>
+<td>32</td>
+<td>必填</td>
+<td>用于与“细菌结果”作可能的外部关联</td>
+</tr>
+<tr>
+<td></td>
+<td>打印序号</td>
+<td>DYXH</td>
+<td>整数</td>
+<td>4</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>药敏代码</td>
+<td>YMDM</td>
+<td>字符串</td>
+<td>40</td>
+<td>必填</td>
+<td>例如：阿莫西林代码为“AMX”或“AMOX”</td>
+</tr>
+<tr>
+<td></td>
+<td>药敏名称</td>
+<td>YMMC</td>
+<td>字符串</td>
+<td>40</td>
+<td>必填</td>
+<td>中文，例如：“阿莫西林”</td>
+</tr>
+<tr>
+<td></td>
+<td>检测结果描述</td>
+<td>JCJG</td>
+<td>字符串</td>
+<td>512</td>
+<td>必填</td>
+<td>文字描述，如：耐药、中度敏感、敏感等</td>
+</tr>
+<tr>
+<td></td>
+<td>纸片含药量</td>
+<td>ZPHYL</td>
+<td>字符串</td>
+<td>16</td>
+<td>必填</td>
+<td>应包含单位：g、mg、µg</td>
+</tr>
+<tr>
+<td></td>
+<td>抑菌浓度</td>
+<td>YJND</td>
+<td>字符串</td>
+<td>10</td>
+<td>必填</td>
+<td>即MIC；单位：g/ml</td>
+</tr>
+<tr>
+<td></td>
+<td>抑菌环直径</td>
+<td>YJHZJ</td>
+<td>字符串</td>
+<td>10</td>
+<td>必填</td>
+<td>单位：mm</td>
+</tr>
+<tr>
+<td></td>
+<td>修改标志</td>
+<td>XGBZ</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>(2.16.156.10011.2.3.51.6) 数据操作方式代码</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_42">检查报告信息</h4>
+<h5 id="tb_jc_yxjcbgb">医学检查报告表(TB_JC_YXJCBGB)</h5>
+<table>
+<thead>
+<tr>
+<th><strong>标识符</strong></th>
+<th><strong>中文名</strong></th>
+<th><strong>字段名</strong></th>
+<th><strong>数据类型</strong></th>
+<th><strong>数据长度</strong></th>
+<th><strong>填报要求</strong></th>
+<th><strong>备注</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DE08.10.052.00</td>
+<td>医疗机构代码</td>
+<td>YLJGDM</td>
+<td>字符串</td>
+<td>22</td>
+<td>必填</td>
+<td>复合主键</td>
+</tr>
+<tr>
+<td></td>
+<td>检查报告ID</td>
+<td>JCBGID</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td>检查报告唯一索引号</td>
+</tr>
+<tr>
+<td></td>
+<td>就诊流水号</td>
+<td>JZLSH</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td>用于与门诊和住院的就诊信息记录相关联</td>
+</tr>
+<tr>
+<td>DE01.00.010.00</td>
+<td>门（急）诊号</td>
+<td>MJZH</td>
+<td>字符串</td>
+<td>36</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>个人标识类型</td>
+<td>GRBSLX</td>
+<td>字符串</td>
+<td>16</td>
+<td>必填</td>
+<td>患者识别码，与患者信息表进行关联</td>
+</tr>
+<tr>
+<td></td>
+<td>个人标识号</td>
+<td>GRBSH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>门诊/住院标志</td>
+<td>MZZYBZ</td>
+<td>字符串</td>
+<td>2</td>
+<td>必填</td>
+<td>填写门诊/住院标志字典表代码</td>
+</tr>
+<tr>
+<td>DE01.00.014.00</td>
+<td>住院号</td>
+<td>ZYH</td>
+<td>字符串</td>
+<td>36</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.060.00</td>
+<td>患者类型代码</td>
+<td>HZLXDM</td>
+<td>数值</td>
+<td>1</td>
+<td>应填</td>
+<td>患者类型代码表 CV09.00.404</td>
+</tr>
+<tr>
+<td>DE02.01.039.00</td>
+<td>患者姓名</td>
+<td>HZXM</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.040.00</td>
+<td>患者性别</td>
+<td>HZXB</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>生理性别代码表 GB/T2261.1-2003</td>
+</tr>
+<tr>
+<td></td>
+<td>患者年龄</td>
+<td>HZNL</td>
+<td>字符串</td>
+<td>16</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.010.09</td>
+<td>电话号码</td>
+<td>DHHM</td>
+<td>字符串</td>
+<td>20</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>患者科室代码</td>
+<td>HZKSDM</td>
+<td>字符串</td>
+<td>36</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE08.10.026.00</td>
+<td>患者科室名称</td>
+<td>HZKSMC</td>
+<td>字符串</td>
+<td>50</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE08.10.054.00</td>
+<td>患者病区名称</td>
+<td>HZBQMC</td>
+<td>字符串</td>
+<td>50</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE01.00.019.00</td>
+<td>患者病房号</td>
+<td>HZBFH</td>
+<td>字符串</td>
+<td>10</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE01.00.026.00</td>
+<td>患者病床号</td>
+<td>BZBCH</td>
+<td>字符串</td>
+<td>10</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE01.00.008.00</td>
+<td>申请单编号</td>
+<td>SQDBH</td>
+<td>字符串</td>
+<td>20</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE08.10.052.0</td>
+<td>申请机构代码</td>
+<td>SQJGDM</td>
+<td>字符串</td>
+<td>22</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE08.10.013.00</td>
+<td>申请机构名称</td>
+<td>SQJGMC</td>
+<td>字符串</td>
+<td>70</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE08.10.025.00</td>
+<td>申请科室代码</td>
+<td>SQKSDM</td>
+<td>字符串</td>
+<td>64</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE08.10.026.00</td>
+<td>申请科室名称</td>
+<td>SQKSMC</td>
+<td>字符串</td>
+<td>76</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>申请日期时间</td>
+<td>SQRQSJ</td>
+<td>日期时间</td>
+<td></td>
+<td>应填</td>
+<td>检验项目申请日期时间</td>
+</tr>
+<tr>
+<td></td>
+<td>申请人编号</td>
+<td>SQRBH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.039.00</td>
+<td>申请人姓名</td>
+<td>SQRXM</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE05.01.024.00</td>
+<td>西医诊断代码</td>
+<td>XYZDDM</td>
+<td>字符串</td>
+<td>11</td>
+<td>应填</td>
+<td>ICD-10代码</td>
+</tr>
+<tr>
+<td></td>
+<td>西医诊断名称</td>
+<td>XYZDMC</td>
+<td>字符串</td>
+<td>50</td>
+<td>应填</td>
+<td>ICD-10名称</td>
+</tr>
+<tr>
+<td>DE08.10.052.00</td>
+<td>诊断机构代码</td>
+<td>ZDJGDM</td>
+<td>字符串</td>
+<td>22</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE08.10.013.00</td>
+<td>诊断机构名称</td>
+<td>ZDJGMC</td>
+<td>字符串</td>
+<td>70</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE05.01.058.00</td>
+<td>诊断日期</td>
+<td>ZDRQ</td>
+<td>日期</td>
+<td></td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE04.01.119.00</td>
+<td>患者主诉</td>
+<td>HZZS</td>
+<td>字符串</td>
+<td>100</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE06.00.221.00</td>
+<td>症状开始日期时间</td>
+<td>ZZKSRQSJ</td>
+<td>日期时间</td>
+<td></td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE06.00.218.00</td>
+<td>症状停止日期时间</td>
+<td>ZZTZRQSJ</td>
+<td>日期时间</td>
+<td></td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE04.01.117.00</td>
+<td>症状描述</td>
+<td>ZZMS</td>
+<td>字符串</td>
+<td>1000</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.079.00</td>
+<td>特殊检查标志</td>
+<td>TSJCBZ</td>
+<td>整数</td>
+<td>1</td>
+<td>应填</td>
+<td>布尔值型代码表 0：False；1：True</td>
+</tr>
+<tr>
+<td>DE06.00.093.00</td>
+<td>操作编码</td>
+<td>CZBM</td>
+<td>字符串</td>
+<td>80</td>
+<td>应填</td>
+<td>ICD-9-CM-3代码</td>
+</tr>
+<tr>
+<td>DE06.00.094.00</td>
+<td>操作名称</td>
+<td>CZMC</td>
+<td>字符串</td>
+<td>80</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE06.00.186.00</td>
+<td>操作部位代码</td>
+<td>CZBWDM</td>
+<td>字符串</td>
+<td>4</td>
+<td>应填</td>
+<td>操作部位代码表 CV06.00.227</td>
+</tr>
+<tr>
+<td>DE08.50.037.00</td>
+<td>介入物名称</td>
+<td>JRWMC</td>
+<td>字符串</td>
+<td>100</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE06.00.251.00</td>
+<td>操作方法描述</td>
+<td>CZFFMS</td>
+<td>字符串</td>
+<td>2000</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE06.00.250.00</td>
+<td>操作次数</td>
+<td>CZCS</td>
+<td>整数</td>
+<td>3</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE06.00.095.00</td>
+<td>操作日期时间</td>
+<td>CZRQSJ</td>
+<td>日期时间</td>
+<td></td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE06.00.073.00</td>
+<td>麻醉方法代码</td>
+<td>MZFFDM</td>
+<td>字符串</td>
+<td>2</td>
+<td>应填</td>
+<td>麻醉方法代码表 CV06.00.103</td>
+</tr>
+<tr>
+<td>DE02.10.028.00</td>
+<td>麻醉观察结果</td>
+<td>MZGCJG</td>
+<td>字符串</td>
+<td>1000</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE06.00.307.00</td>
+<td>麻醉中西医标识代码</td>
+<td>MZZXYBSDM</td>
+<td>字符串</td>
+<td>1</td>
+<td>应填</td>
+<td>麻醉中西医标识代码表 1 西医麻醉；2 中医麻醉</td>
+</tr>
+<tr>
+<td></td>
+<td>麻醉医师编号</td>
+<td>MZYSBH</td>
+<td>字符串</td>
+<td>16</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.039.00</td>
+<td>麻醉医师签名</td>
+<td>MZYSQM</td>
+<td>字符串</td>
+<td>50</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE06.00.296.00</td>
+<td>诊疗过程描述</td>
+<td>ZLGCMS</td>
+<td>字符串</td>
+<td>2000</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE04.50.134.00</td>
+<td>标本类别</td>
+<td>BBLB</td>
+<td>字符串</td>
+<td>20</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE01.00.003.00</td>
+<td>检查标本号</td>
+<td>JCBBH</td>
+<td>字符串</td>
+<td>20</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE04.50.135.00</td>
+<td>标本状态</td>
+<td>BBZT</td>
+<td>字符串</td>
+<td>20</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE08.50.027.00</td>
+<td>标本固定液名称</td>
+<td>BBGDYMC</td>
+<td>字符串</td>
+<td>50</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE04.50.137.00</td>
+<td>接收采样日期时间</td>
+<td>JSCYRQSJ</td>
+<td>日期时间</td>
+<td></td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE04.50.141.00</td>
+<td>接收标本日期时间</td>
+<td>JSBBRQSJ</td>
+<td>日期时间</td>
+<td></td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.10.027.00</td>
+<td>检査方法名称</td>
+<td>JCFFMC</td>
+<td>字符串</td>
+<td>100</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE04.30.018.00</td>
+<td>检查类别</td>
+<td>JCLB</td>
+<td>字符串</td>
+<td>100</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE04.30.019.00</td>
+<td>检测项目代码</td>
+<td>JCXMDM</td>
+<td>字符串</td>
+<td>20</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>检测项目名称</td>
+<td>JCXMMC</td>
+<td>字符串</td>
+<td>100</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>指标结果类型</td>
+<td>ZBJGLX</td>
+<td>整数</td>
+<td>1</td>
+<td>应填</td>
+<td>指标结果类型代码表</td>
+</tr>
+<tr>
+<td>DE04.30.015.00</td>
+<td>检测项目结果</td>
+<td>JCXMJG</td>
+<td>字符串</td>
+<td>128</td>
+<td>应填</td>
+<td>数字填写格式为N..14,4</td>
+</tr>
+<tr>
+<td>DE04.30.016.00</td>
+<td>检验定量结果剂量单位</td>
+<td>JYDLJGJLDW</td>
+<td>字符串</td>
+<td>20</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE04.30.017.00</td>
+<td>检查结果代码</td>
+<td>JCJGDM</td>
+<td>字符串</td>
+<td>1</td>
+<td>应填</td>
+<td>检查结果代码表1.正常 2.异常 3.不确定</td>
+</tr>
+<tr>
+<td></td>
+<td>检查技师编号</td>
+<td>JCJSBH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.039.00</td>
+<td>检查技师签名</td>
+<td>JYJSQM</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>检查医生编号</td>
+<td>JCYSBH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.039.00</td>
+<td>检查医生签名</td>
+<td>JCYSQM</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE04.50.140.00</td>
+<td>检查日期</td>
+<td>JCRQ</td>
+<td>日期</td>
+<td></td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE01.00.018.00</td>
+<td>检查报告单编号</td>
+<td>JCBGDBH</td>
+<td>字符串</td>
+<td>20</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE08.10.052.00</td>
+<td>报告机构代码</td>
+<td>BGJGDM</td>
+<td>字符串</td>
+<td>22</td>
+<td>应填</td>
+<td>检查报告机构代码</td>
+</tr>
+<tr>
+<td>DE08.10.013.00</td>
+<td>报告机构名称</td>
+<td>BGJGMC</td>
+<td>字符串</td>
+<td>70</td>
+<td>应填</td>
+<td>检查报告机构名称</td>
+</tr>
+<tr>
+<td></td>
+<td>报告科室编号</td>
+<td>BGKSBH</td>
+<td>字符串</td>
+<td>36</td>
+<td>应填</td>
+<td>检查报告科室编号</td>
+</tr>
+<tr>
+<td>DE08.10.026.00</td>
+<td>报告科室名称</td>
+<td>BGKSMC</td>
+<td>字符串</td>
+<td>50</td>
+<td>应填</td>
+<td>检查报告科室名称</td>
+</tr>
+<tr>
+<td>DE04.50.131.00</td>
+<td>检查报告结果-客观所见</td>
+<td>JCBGJGKGSJ</td>
+<td>字符串</td>
+<td>200</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE04.50.132.00</td>
+<td>检查报告结果-主观提示</td>
+<td>JCBGJGZGTS</td>
+<td>字符串</td>
+<td>200</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE06.00.179.00</td>
+<td>检查报告备注</td>
+<td>JCBGBZ</td>
+<td>字符串</td>
+<td>100</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE04.50.133.00</td>
+<td>报告日期时间</td>
+<td>BGRQSJ</td>
+<td>日期时间</td>
+<td></td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>报告医师编号</td>
+<td>BGYSBH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.039.00</td>
+<td>报告医师签名</td>
+<td>BGYSQM</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>审核医师编号</td>
+<td>SHYSBH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.039.00</td>
+<td>审核医师签名</td>
+<td>SHYSQM</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>检查号</td>
+<td>JCH</td>
+<td>字符串</td>
+<td>512</td>
+<td>必填</td>
+<td>复合主键；DICOM标准中每个study的uid，多个时使用“，”连接</td>
+</tr>
+<tr>
+<td></td>
+<td>影像号</td>
+<td>YXH</td>
+<td>字符串</td>
+<td>64</td>
+<td>必填</td>
+<td>被检查的病人在医疗机构内部的影像号码，即影像图像DICOM文件中对应DICOM中位置(0010,0020)的值</td>
+</tr>
+<tr>
+<td></td>
+<td>开单时间</td>
+<td>KDSJ</td>
+<td>日期</td>
+<td></td>
+<td>应填</td>
+<td>检查单开单时间</td>
+</tr>
+<tr>
+<td></td>
+<td>检查时间</td>
+<td>JYSJ</td>
+<td>日期</td>
+<td></td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>检查类型</td>
+<td>JCLX</td>
+<td>字符串</td>
+<td>16</td>
+<td>必填</td>
+<td>填写检查类型字典表代码，表明病人检查的类型</td>
+</tr>
+<tr>
+<td></td>
+<td>检查设备仪器型号</td>
+<td>SBBM</td>
+<td>字符串</td>
+<td>64</td>
+<td>必填</td>
+<td>设备代码并非特指某一台物理设备，而是能够表示某类设备的编号</td>
+</tr>
+<tr>
+<td></td>
+<td>检查仪器号</td>
+<td>YQBM</td>
+<td>字符串</td>
+<td>64</td>
+<td>必填</td>
+<td>表示医疗机构内某台物理设备的唯一序号</td>
+</tr>
+<tr>
+<td>DE08.10.025.00</td>
+<td>检查科室代码</td>
+<td>JCKS</td>
+<td>字符串</td>
+<td>64</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE08.10.026.00</td>
+<td>检查科室名称</td>
+<td>JCKSMC</td>
+<td>字符串</td>
+<td>76</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>检查部位</td>
+<td>JCBW</td>
+<td>字符串</td>
+<td>64</td>
+<td>必填</td>
+<td>文字说明被检查的部位。或活检部位</td>
+</tr>
+<tr>
+<td></td>
+<td>检查部位ACR代码</td>
+<td>BWACR</td>
+<td>字符串</td>
+<td>32</td>
+<td>必填</td>
+<td>表明病人的检查部位的代码，若未填写该字段则数据中心端根据部位自动对应。若对应到多个部位，则ACR代码中间用“，”分隔。对填写的ACR代码必须至少精确到二级目录</td>
+</tr>
+<tr>
+<td></td>
+<td>检查名称</td>
+<td>JCMC</td>
+<td>字符串</td>
+<td>64</td>
+<td>必填</td>
+<td>检查内容名称的文字描述</td>
+</tr>
+<tr>
+<td></td>
+<td>阴阳性</td>
+<td>YYS</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>指标结果分类代码表 1 阳性；2 阴性；3 不详</td>
+</tr>
+<tr>
+<td></td>
+<td>报告临床诊断</td>
+<td>BGLCZD</td>
+<td>字符串</td>
+<td>512</td>
+<td>必填</td>
+<td>文字描述</td>
+</tr>
+<tr>
+<td></td>
+<td>影像表现或检查所见</td>
+<td>YXBX</td>
+<td>字符串</td>
+<td>1024</td>
+<td>必填</td>
+<td>文字描述</td>
+</tr>
+<tr>
+<td></td>
+<td>检查诊断或提示</td>
+<td>YXZD</td>
+<td>字符串</td>
+<td>1024</td>
+<td>必填</td>
+<td>文字描述</td>
+</tr>
+<tr>
+<td></td>
+<td>备注或建议</td>
+<td>BZHJY</td>
+<td>字符串</td>
+<td>512</td>
+<td>必填</td>
+<td>文字描述</td>
+</tr>
+<tr>
+<td></td>
+<td>是否有影像</td>
+<td>SFYYY</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>1：有；2：无；3：未定</td>
+</tr>
+<tr>
+<td></td>
+<td>记录医生编号</td>
+<td>JLYSBH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>数据记录时间</td>
+<td>SJJLSJ</td>
+<td>日期</td>
+<td></td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE08.10.052.00</td>
+<td>档案保存机构代码</td>
+<td>DABCJGBM</td>
+<td>字符串</td>
+<td>22</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE01.00.013.00</td>
+<td>档案保存机构名称</td>
+<td>DABCJGMC</td>
+<td>字符串</td>
+<td>70</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.009.01</td>
+<td>档案保存机构地址</td>
+<td>DABCJGDZ</td>
+<td>字符串</td>
+<td>128</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>修改标志</td>
+<td>XGBZ</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>(2.16.156.10011.2.3.51.6) 数据操作方式代码</td>
+</tr>
+<tr>
+<td></td>
+<td>密级</td>
+<td>MJ</td>
+<td>字符串</td>
+<td>16</td>
+<td>必填</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_43">费用结算信息</h3>
+<h4 id="tb_mz_jsmxb">门诊结算明细表（TB_MZ_JSMXB）</h4>
+<table>
+<thead>
+<tr>
+<th><strong>标识符</strong></th>
+<th><strong>中文名</strong></th>
+<th><strong>字段名</strong></th>
+<th><strong>数据类型</strong></th>
+<th><strong>数据长度</strong></th>
+<th><strong>填报要求</strong></th>
+<th><strong>备注</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DE08.10.052.00</td>
+<td>医疗机构代码</td>
+<td>YLJGDM</td>
+<td>字符串</td>
+<td>22</td>
+<td>必填</td>
+<td>复合主键</td>
+</tr>
+<tr>
+<td></td>
+<td>结算记录ID</td>
+<td>JSJLID</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td>复合主键；结算记录主表的院内唯一结算主键</td>
+</tr>
+<tr>
+<td></td>
+<td>个人标识类型</td>
+<td>GRBSLX</td>
+<td>字符串</td>
+<td>16</td>
+<td>必填</td>
+<td>患者识别码，与患者信息表进行关联</td>
+</tr>
+<tr>
+<td></td>
+<td>个人标识号</td>
+<td>GRBSH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>就诊流水号</td>
+<td>JZLSH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td>患者每次挂号就诊的唯一标识号</td>
+</tr>
+<tr>
+<td></td>
+<td>结算发票号</td>
+<td>JSFPH</td>
+<td>字符串</td>
+<td>200</td>
+<td>必填</td>
+<td>费用结算对应的发票号，一次结算多张发票，使用“|”（ASCII十进制值为124）对多张发票进行分隔，无数据填写<em>ASCII十进制值为45的字符串</em></td>
+</tr>
+<tr>
+<td></td>
+<td>收费场景代码</td>
+<td>SFCJBM</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>收费场景代码表 1 挂号时产生费用；2 门诊收费产生费用</td>
+</tr>
+<tr>
+<td></td>
+<td>记录收费状态</td>
+<td>JLSFZT</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>退费标志代码表 1 收费；2 退费；3 被退费</td>
+</tr>
+<tr>
+<td></td>
+<td>费用结算时间</td>
+<td>FYJSSJ</td>
+<td>日期时间</td>
+<td></td>
+<td>必填</td>
+<td>收费为收费结算时间，退费为退费结算时间</td>
+</tr>
+<tr>
+<td></td>
+<td>患者来源属性</td>
+<td>HZLYSX</td>
+<td>字符串</td>
+<td>6</td>
+<td>必填</td>
+<td>患者来源属性代码表</td>
+</tr>
+<tr>
+<td>DE07.00.007.00</td>
+<td>医疗付费方式代码</td>
+<td>YLFFFSDM</td>
+<td>字符串</td>
+<td>2</td>
+<td>必填</td>
+<td>医疗付费方式代码表 CV07.10.005代码</td>
+</tr>
+<tr>
+<td></td>
+<td>费用结算总金额</td>
+<td>FYJSZJE</td>
+<td>浮点</td>
+<td>12,4</td>
+<td>必填</td>
+<td>单位：元；收费填写正数，退费填写负数</td>
+</tr>
+<tr>
+<td>DE07.00.001.00</td>
+<td>个人承担费用金额</td>
+<td>GRCDFYJE</td>
+<td>浮点</td>
+<td>10,2</td>
+<td>应填</td>
+<td>单位：元</td>
+</tr>
+<tr>
+<td></td>
+<td>结算人员编号</td>
+<td>JSRYBH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>结算人员姓名</td>
+<td>JSRYXM</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>修改标志</td>
+<td>XGBZ</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>数据操作方式代码</td>
+</tr>
+</tbody>
+</table>
+<h4 id="tb_mz_jszffsmxb">门诊结算支付方式明细表（TB_MZ_JSZFFSMXB）</h4>
+<table>
+<thead>
+<tr>
+<th><strong>标识符</strong></th>
+<th><strong>中文名</strong></th>
+<th><strong>字段名</strong></th>
+<th><strong>数据类型</strong></th>
+<th><strong>数据长度</strong></th>
+<th><strong>填报要求</strong></th>
+<th><strong>备注</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>医疗机构代码</td>
+<td>YLJGDM</td>
+<td>字符串</td>
+<td>22</td>
+<td>必填</td>
+<td>复合主键</td>
+</tr>
+<tr>
+<td></td>
+<td>支付方式记录ID</td>
+<td>ZFFSJLID</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td>复合主键；支付方式唯一ID，院内唯一主键ID</td>
+</tr>
+<tr>
+<td></td>
+<td>个人标识类型</td>
+<td>GRBSLX</td>
+<td>字符串</td>
+<td>16</td>
+<td>必填</td>
+<td>患者识别码，与患者信息表进行关联</td>
+</tr>
+<tr>
+<td></td>
+<td>个人标识号</td>
+<td>GRBSH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>就诊流水号</td>
+<td>JZLSH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td>患者每次挂号就诊的唯一标识号</td>
+</tr>
+<tr>
+<td></td>
+<td>结算记录ID</td>
+<td>JSJLID</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td>结算记录主表的院内唯一结算主键，用于与门诊结算记录表对应</td>
+</tr>
+<tr>
+<td></td>
+<td>记录收费状态</td>
+<td>JLSFZT</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>1：收费；2：退费</td>
+</tr>
+<tr>
+<td></td>
+<td>支付方式代码</td>
+<td>ZFFSDM</td>
+<td>字符串</td>
+<td>2</td>
+<td>必填</td>
+<td>医疗费用结算方式代码表CV07.10.004代码</td>
+</tr>
+<tr>
+<td></td>
+<td>支付金额</td>
+<td>ZFFSJE</td>
+<td>浮点</td>
+<td>12,4</td>
+<td>必填</td>
+<td>单位：元；收费填写正数，退费填写负数</td>
+</tr>
+<tr>
+<td></td>
+<td>费用结算时间</td>
+<td>FYJSSJ</td>
+<td>日期时间</td>
+<td></td>
+<td>必填</td>
+<td>收费为收费结算时间，退费为退费结算时间</td>
+</tr>
+<tr>
+<td></td>
+<td>结算人员编号</td>
+<td>JSRYBH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>结算人员姓名</td>
+<td>JSRYXM</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>修改标志</td>
+<td>XGBZ</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>数据操作方式代码</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_44">病历信息</h3>
+<h4 id="tb_bl_mzblxx">门（急）诊病历信息（TB_BL_MZBLXX）</h4>
+<table>
+<thead>
+<tr>
+<th><strong>标识符</strong></th>
+<th><strong>中文名</strong></th>
+<th><strong>字段名</strong></th>
+<th><strong>数据类型</strong></th>
+<th><strong>数据长度</strong></th>
+<th><strong>填报要求</strong></th>
+<th><strong>备注</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DE08.10.052.00</td>
+<td>医疗机构代码</td>
+<td>YLJGDM</td>
+<td>字符串</td>
+<td>22</td>
+<td>必填</td>
+<td>复合主键</td>
+</tr>
+<tr>
+<td></td>
+<td>就诊流水号</td>
+<td>JZLSH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td>复合主键；患者每次挂号就诊的唯一标识号</td>
+</tr>
+<tr>
+<td></td>
+<td>修改标志</td>
+<td>XGBZ</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>(2.16.156.10011.2.3.51.6) 数据操作方式代码</td>
+</tr>
+<tr>
+<td></td>
+<td>个人标识类型</td>
+<td>GRBSLX</td>
+<td>字符串</td>
+<td>16</td>
+<td>必填</td>
+<td>患者识别码，与患者信息表进行关联</td>
+</tr>
+<tr>
+<td></td>
+<td>个人标识号</td>
+<td>GRBSH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE02.01.060.00</td>
+<td>患者类型代码</td>
+<td>HZLXDM</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>患者类型代码表 CV09.00.404代码</td>
+</tr>
+<tr>
+<td>DE06.00.062.00</td>
+<td>就诊日期时间</td>
+<td>JZRQSJ</td>
+<td>日期时间</td>
+<td></td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE04.01.018.00</td>
+<td>发病日期时间</td>
+<td>FBRQSJ</td>
+<td>日期时间</td>
+<td></td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE05.10.053.00</td>
+<td>就诊原因</td>
+<td>JZYY</td>
+<td>字符串</td>
+<td>1000</td>
+<td>必填</td>
+<td>文字描述</td>
+</tr>
+<tr>
+<td>DE01.00.010.00</td>
+<td>门（急）诊号</td>
+<td>MJZH</td>
+<td>字符串</td>
+<td>36</td>
+<td>必填</td>
+<td>填写门诊号</td>
+</tr>
+<tr>
+<td>DE04.50.001.00</td>
+<td>ABO血型代码</td>
+<td>ABOXXDM</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>ABO血型代码表 CV04.50.005代码</td>
+</tr>
+<tr>
+<td>DE04.50.010.00</td>
+<td>Rh血型代码</td>
+<td>RHXXDM</td>
+<td>字符串</td>
+<td>1</td>
+<td>必填</td>
+<td>Rh(D)血型代码表 CV04.50.020代码</td>
+</tr>
+<tr>
+<td>DE02.10.026.00</td>
+<td>疾病史(含外伤）</td>
+<td>JBSHWS</td>
+<td>字符串</td>
+<td>1000</td>
+<td>应填</td>
+<td>文字描述</td>
+</tr>
+<tr>
+<td>DE02.10.008.00</td>
+<td>传染病史</td>
+<td>CRBS</td>
+<td>字符串</td>
+<td>1000</td>
+<td>应填</td>
+<td>文字描述</td>
+</tr>
+<tr>
+<td>DE02.10.101.00</td>
+<td>预防接种史</td>
+<td>YFJZS</td>
+<td>字符串</td>
+<td>1000</td>
+<td>应填</td>
+<td>文字描述</td>
+</tr>
+<tr>
+<td>DE02.10.061.00</td>
+<td>手术史</td>
+<td>SSS</td>
+<td>字符串</td>
+<td>1000</td>
+<td>应填</td>
+<td>文字描述</td>
+</tr>
+<tr>
+<td>DE02.10.100.00</td>
+<td>输血史</td>
+<td>SXS</td>
+<td>字符串</td>
+<td>1000</td>
+<td>应填</td>
+<td>文字描述</td>
+</tr>
+<tr>
+<td>DE02.10.022.00</td>
+<td>过敏史</td>
+<td>GMS</td>
+<td>字符串</td>
+<td>1000</td>
+<td>应填</td>
+<td>文字描述</td>
+</tr>
+<tr>
+<td>DE02.10.097.00</td>
+<td>个人史</td>
+<td>GRS</td>
+<td>字符串</td>
+<td>1000</td>
+<td>应填</td>
+<td>文字描述</td>
+</tr>
+<tr>
+<td>DE02.10.098.00</td>
+<td>婚育史</td>
+<td>HYS</td>
+<td>字符串</td>
+<td>1000</td>
+<td>应填</td>
+<td>文字描述</td>
+</tr>
+<tr>
+<td>DE02.10.102.00</td>
+<td>月经史</td>
+<td>YJS</td>
+<td>字符串</td>
+<td>1000</td>
+<td>应填</td>
+<td>文字描述</td>
+</tr>
+<tr>
+<td>DE02.10.103.00</td>
+<td>家族史</td>
+<td>JZS</td>
+<td>字符串</td>
+<td>1000</td>
+<td>应填</td>
+<td>文字描述</td>
+</tr>
+<tr>
+<td>DE02.10.071.00</td>
+<td>现病史</td>
+<td>XBS</td>
+<td>字符串</td>
+<td>2000</td>
+<td>应填</td>
+<td>文字描述</td>
+</tr>
+<tr>
+<td>DE02.10.099.00</td>
+<td>既往史</td>
+<td>JWS</td>
+<td>字符串</td>
+<td>1000</td>
+<td>应填</td>
+<td>文字描述</td>
+</tr>
+<tr>
+<td>DE06.00.093.00</td>
+<td>手术及操作代码</td>
+<td>SSJCZBM</td>
+<td>字符串</td>
+<td>80</td>
+<td>应填</td>
+<td>ICD-9-CM-3代码</td>
+</tr>
+<tr>
+<td>DE08.50.022.00</td>
+<td>关键药物名称</td>
+<td>GJYWMC</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td>有多项时用“；”隔开</td>
+</tr>
+<tr>
+<td>DE06.00.136.00</td>
+<td>关键药物用法</td>
+<td>GJYWYF</td>
+<td>字符串</td>
+<td>100</td>
+<td>必填</td>
+<td>有多项时用“；”隔开</td>
+</tr>
+<tr>
+<td>DE06.00.129.00</td>
+<td>药物不良反应情况</td>
+<td>YWBLFYQK</td>
+<td>字符串</td>
+<td>100</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE06.00.164.00</td>
+<td>中药使用类别代码</td>
+<td>ZYSYLBDM</td>
+<td>字符串</td>
+<td>1</td>
+<td>应填</td>
+<td>中药使用类别代码表 CV06.00.101</td>
+</tr>
+<tr>
+<td>DE06.00.251.00</td>
+<td>其他医学处置</td>
+<td>QTYXCZ</td>
+<td>字符串</td>
+<td>2000</td>
+<td>应填</td>
+<td></td>
+</tr>
+<tr>
+<td>DE05.01.021.00</td>
+<td>根本死因代码</td>
+<td>GBSYDM</td>
+<td>字符串</td>
+<td>50</td>
+<td>应填</td>
+<td>ICD-10代码</td>
+</tr>
+<tr>
+<td>DE02.01.039.00</td>
+<td>责任医师姓名</td>
+<td>ZRYSXM</td>
+<td>字符串</td>
+<td>50</td>
+<td>必填</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>是否有诊断明细</td>
+<td>SFYZDMX</td>
+<td>字符串</td>
+<td>1</td>
+<td>应填</td>
+<td>布尔值型代码表 0：False；1：True</td>
+</tr>
+<tr>
+<td></td>
+<td>记录时间</td>
+<td>JLSJ_YWK</td>
+<td>日期时间</td>
+<td></td>
+<td>必填</td>
+<td>数据记录在业务数据库的生成时间</td>
+</tr>
+<tr>
+<td></td>
+<td>撤销时间</td>
+<td>CXSJ_YWK</td>
+<td>日期时间</td>
+<td></td>
+<td>应填</td>
+<td>数据记录在业务库的撤销（作废）时间，作废必须填写</td>
+</tr>
+<tr>
+<td></td>
+<td>编辑时间</td>
+<td>BJSJ_YWK</td>
+<td>日期时间</td>
+<td></td>
+<td>必填</td>
+<td>数据记录在业务数据库的最新的操作时间</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_45">附录</h2>
+<h3 id="_46">数据元值域编码</h3>
+<p><strong>------------------------</strong></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../%E5%9B%9B%E5%B7%9D%E7%9C%81%E6%99%BA%E6%85%A7%E8%AF%8A%E6%89%80%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%9F%BA%E6%9C%AC%E5%8A%9F%E8%83%BD%E8%A7%84%E8%8C%83/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  上一页
+                </span>
+                四川省智慧诊所信息系统基本功能规范
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.08c56446.min.js"></script>
+      <script src="../assets/javascripts/bundle.6ced434e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.8c7e0a7e.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
