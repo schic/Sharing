@@ -1,0 +1,5863 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.3">
+    
+    
+      
+        <title>四川省智慧诊所基本功能规范（整合） - 诊所信息系统标准</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3b61ea93.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="诊所信息系统标准" class="md-header-nav__button md-logo" aria-label="诊所信息系统标准">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            诊所信息系统标准
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              四川省智慧诊所基本功能规范（整合）
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="诊所信息系统标准" class="md-nav__button md-logo" aria-label="诊所信息系统标准">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    诊所信息系统标准
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      项目简介
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="../%E5%9B%9B%E5%B7%9D%E7%9C%81%E6%99%BA%E6%85%A7%E8%AF%8A%E6%89%80%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%9F%BA%E6%9C%AC%E5%8A%9F%E8%83%BD%E8%A7%84%E8%8C%83/" class="md-nav__link">
+      四川省智慧诊所信息系统基本功能规范
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        四川省智慧诊所基本功能规范（整合）
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      四川省智慧诊所基本功能规范（整合）
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    一、诊所管理
+  </a>
+  
+    <nav class="md-nav" aria-label="一、诊所管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    诊所基本信息维护
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    科室基本信息维护
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    医护人员基本信息维护
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    医疗设备基本信息维护
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    耗材基本信息维护
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    用户管理（拓展）
+  </a>
+  
+    <nav class="md-nav" aria-label="用户管理（拓展）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    权限管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    角色管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    角色权限管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    用户角色管理
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    排班管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    供应商信息管理
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    二、便民服务
+  </a>
+  
+    <nav class="md-nav" aria-label="二、便民服务">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    居民/患者建档服务
+  </a>
+  
+    <nav class="md-nav" aria-label="居民/患者建档服务">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    建档
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    审核档案（拓展）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    患者（就诊人员）身份识别
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    咨询服务
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    预约挂号
+  </a>
+  
+    <nav class="md-nav" aria-label="预约挂号">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    预约挂号
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    取消挂号/退号
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    查询预约信息
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    提醒患者就诊（拓展）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    结算与收费
+  </a>
+  
+    <nav class="md-nav" aria-label="结算与收费">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    查询缴费记录
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    缴费
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    收费结算
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    查询费用明细（拓展）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    退费
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    查询就诊记录
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    查询处方信息
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    查询检查检验结果
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    查询机构服务项目
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    药品价格公示
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_37" class="md-nav__link">
+    诊疗项目价格公示
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_38" class="md-nav__link">
+    大屏留观提醒
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_39" class="md-nav__link">
+    大屏叫号
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_40" class="md-nav__link">
+    线上查看候诊人数
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_41" class="md-nav__link">
+    打印
+  </a>
+  
+    <nav class="md-nav" aria-label="打印">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_42" class="md-nav__link">
+    打印挂号单
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_43" class="md-nav__link">
+    打印收据单
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_44" class="md-nav__link">
+    打印收费明细
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_45" class="md-nav__link">
+    打印检查检验报告单
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_46" class="md-nav__link">
+    打印处方病历
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_47" class="md-nav__link">
+    三、医疗服务
+  </a>
+  
+    <nav class="md-nav" aria-label="三、医疗服务">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_48" class="md-nav__link">
+    医嘱管理
+  </a>
+  
+    <nav class="md-nav" aria-label="医嘱管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_49" class="md-nav__link">
+    中西医处方管理
+  </a>
+  
+    <nav class="md-nav" aria-label="中西医处方管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_50" class="md-nav__link">
+    中西医处方维护
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_51" class="md-nav__link">
+    中西医处方审核
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_52" class="md-nav__link">
+    中西医处方作废
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_53" class="md-nav__link">
+    处方的自动检测和咨询（银海）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_54" class="md-nav__link">
+    非处方医嘱管理
+  </a>
+  
+    <nav class="md-nav" aria-label="非处方医嘱管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_55" class="md-nav__link">
+    医嘱发送
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_56" class="md-nav__link">
+    医嘱取消发送
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_57" class="md-nav__link">
+    医嘱作废
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_58" class="md-nav__link">
+    医嘱审阅/核对
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_59" class="md-nav__link">
+    医嘱执行
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_60" class="md-nav__link">
+    医嘱取消执行
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_61" class="md-nav__link">
+    医嘱执行情况查询
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_62" class="md-nav__link">
+    输液药品分组
+  </a>
+  
+    <nav class="md-nav" aria-label="输液药品分组">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_63" class="md-nav__link">
+    患者与用药（治疗方案）身份核对
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_64" class="md-nav__link">
+    取消输液药品分组
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_65" class="md-nav__link">
+    病历管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_66" class="md-nav__link">
+    模板管理
+  </a>
+  
+    <nav class="md-nav" aria-label="模板管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_67" class="md-nav__link">
+    模板维护
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_68" class="md-nav__link">
+    模板引用
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_69" class="md-nav__link">
+    模板内置
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_70" class="md-nav__link">
+    模板权限管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_71" class="md-nav__link">
+    模板收藏
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_72" class="md-nav__link">
+    信息查询共享
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_73" class="md-nav__link">
+    智能提醒
+  </a>
+  
+    <nav class="md-nav" aria-label="智能提醒">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_74" class="md-nav__link">
+    皮试结果提醒
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_75" class="md-nav__link">
+    合理用药提醒
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_76" class="md-nav__link">
+    药物适应症提醒
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_77" class="md-nav__link">
+    配伍禁忌提醒
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_78" class="md-nav__link">
+    中药十八反十九畏提醒
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_79" class="md-nav__link">
+    医嘱复核（银海）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_80" class="md-nav__link">
+    用药分析（银海）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_81" class="md-nav__link">
+    诊疗/检查/检验管理
+  </a>
+  
+    <nav class="md-nav" aria-label="诊疗/检查/检验管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_82" class="md-nav__link">
+    项目维护
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_83" class="md-nav__link">
+    报告查询
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_84" class="md-nav__link">
+    设备对接
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_85" class="md-nav__link">
+    质量控制
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_86" class="md-nav__link">
+    病历质控规则知识库查询
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_87" class="md-nav__link">
+    门诊病历质量监控
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_88" class="md-nav__link">
+    质控分析
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_89" class="md-nav__link">
+    预警提醒
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_90" class="md-nav__link">
+    医学影像管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_91" class="md-nav__link">
+    临床检验信息管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_92" class="md-nav__link">
+    电生理信息管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_93" class="md-nav__link">
+    远程会诊
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_94" class="md-nav__link">
+    打印
+  </a>
+  
+    <nav class="md-nav" aria-label="打印">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_95" class="md-nav__link">
+    打印中西医处方
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_96" class="md-nav__link">
+    打印非处方医嘱
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_97" class="md-nav__link">
+    打印病历
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_98" class="md-nav__link">
+    四、药事管理
+  </a>
+  
+    <nav class="md-nav" aria-label="四、药事管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_99" class="md-nav__link">
+    药品基本信息管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_100" class="md-nav__link">
+    发药管理
+  </a>
+  
+    <nav class="md-nav" aria-label="发药管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_101" class="md-nav__link">
+    药房药物规则管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_102" class="md-nav__link">
+    临床用药知识库管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_103" class="md-nav__link">
+    发药
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_104" class="md-nav__link">
+    退药处理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_105" class="md-nav__link">
+    智能提醒
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_106" class="md-nav__link">
+    药物自动识别管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_107" class="md-nav__link">
+    药物追溯管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_108" class="md-nav__link">
+    针剂、口服药、外用药等全过程管理
+  </a>
+  
+    <nav class="md-nav" aria-label="针剂、口服药、外用药等全过程管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_109" class="md-nav__link">
+    配药管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_110" class="md-nav__link">
+    标签管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_111" class="md-nav__link">
+    身份查对
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_112" class="md-nav__link">
+    药品查对
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_113" class="md-nav__link">
+    配伍禁忌
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_114" class="md-nav__link">
+    药品皮试
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_115" class="md-nav__link">
+    用药前后病情获取
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_116" class="md-nav__link">
+    中药煎药服务
+  </a>
+  
+    <nav class="md-nav" aria-label="中药煎药服务">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_117" class="md-nav__link">
+    中药调配
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_118" class="md-nav__link">
+    煎药登记
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_119" class="md-nav__link">
+    煎药过程记录
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_120" class="md-nav__link">
+    质量控制
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_121" class="md-nav__link">
+    发放管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_122" class="md-nav__link">
+    配送管理
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_123" class="md-nav__link">
+    供应商结算
+  </a>
+  
+    <nav class="md-nav" aria-label="供应商结算">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_124" class="md-nav__link">
+    供应商结算申请
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_125" class="md-nav__link">
+    供应商结算审核
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_126" class="md-nav__link">
+    抗菌药物管理
+  </a>
+  
+    <nav class="md-nav" aria-label="抗菌药物管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_127" class="md-nav__link">
+    抗菌药物知识库设置
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_128" class="md-nav__link">
+    抗菌药物分级规则设置
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_129" class="md-nav__link">
+    使用分级授权
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_130" class="md-nav__link">
+    审批提醒
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_131" class="md-nav__link">
+    用药效果评估
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_132" class="md-nav__link">
+    指标统计
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_133" class="md-nav__link">
+    基本药物监管
+  </a>
+  
+    <nav class="md-nav" aria-label="基本药物监管">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_134" class="md-nav__link">
+    基本药物信息共享
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_135" class="md-nav__link">
+    流通数据监测
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_136" class="md-nav__link">
+    临床使用信息采集
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_137" class="md-nav__link">
+    用药监控辅助决策知识库
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_138" class="md-nav__link">
+    药物使用统计分析
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_139" class="md-nav__link">
+    静脉药物配置管理
+  </a>
+  
+    <nav class="md-nav" aria-label="静脉药物配置管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_140" class="md-nav__link">
+    智能获取信息
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_141" class="md-nav__link">
+    药师审核
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_142" class="md-nav__link">
+    贴签摆药
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_143" class="md-nav__link">
+    入舱核对
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_144" class="md-nav__link">
+    冲配核对
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_145" class="md-nav__link">
+    出舱核对
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_146" class="md-nav__link">
+    病区签收
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_147" class="md-nav__link">
+    退药管理
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_148" class="md-nav__link">
+    基本药物目录管理
+  </a>
+  
+    <nav class="md-nav" aria-label="基本药物目录管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_149" class="md-nav__link">
+    分类管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_150" class="md-nav__link">
+    录入
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_151" class="md-nav__link">
+    增补
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_152" class="md-nav__link">
+    移除
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_153" class="md-nav__link">
+    调价
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_154" class="md-nav__link">
+    获取
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_155" class="md-nav__link">
+    使用
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_156" class="md-nav__link">
+    药房管理
+  </a>
+  
+    <nav class="md-nav" aria-label="药房管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_157" class="md-nav__link">
+    信息获取
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_158" class="md-nav__link">
+    划价
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_159" class="md-nav__link">
+    发药
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_160" class="md-nav__link">
+    对账
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_161" class="md-nav__link">
+    领药
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_162" class="md-nav__link">
+    盘点
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_163" class="md-nav__link">
+    报损
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_164" class="md-nav__link">
+    调拨
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_165" class="md-nav__link">
+    退药
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_166" class="md-nav__link">
+    中药方管理
+  </a>
+  
+    <nav class="md-nav" aria-label="中药方管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_167" class="md-nav__link">
+    中药饮片信息管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_168" class="md-nav__link">
+    中药饮片处方审核点评
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_169" class="md-nav__link">
+    中药饮片全流程管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_170" class="md-nav__link">
+    中药煎煮指导
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_171" class="md-nav__link">
+    中药师身份认证
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_172" class="md-nav__link">
+    中药配伍禁忌知识库
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_173" class="md-nav__link">
+    中药煎煮指导知识库
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_174" class="md-nav__link">
+    药物物流管理
+  </a>
+  
+    <nav class="md-nav" aria-label="药物物流管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_175" class="md-nav__link">
+    供应商信息接收
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_176" class="md-nav__link">
+    药品采购
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_177" class="md-nav__link">
+    入库管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_178" class="md-nav__link">
+    出库管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_179" class="md-nav__link">
+    库存管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_180" class="md-nav__link">
+    药品调价
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_181" class="md-nav__link">
+    药品盘点
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_182" class="md-nav__link">
+    药品标识码
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_183" class="md-nav__link">
+    药品配送
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_184" class="md-nav__link">
+    药品追溯
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_185" class="md-nav__link">
+    统计台账
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_186" class="md-nav__link">
+    打印
+  </a>
+  
+    <nav class="md-nav" aria-label="打印">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_187" class="md-nav__link">
+    打印发药单据
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_188" class="md-nav__link">
+    打印用药标签
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_189" class="md-nav__link">
+    打印入库单
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_190" class="md-nav__link">
+    打印出库单
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_191" class="md-nav__link">
+    打印盘点单
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_192" class="md-nav__link">
+    五、健康档案管理
+  </a>
+  
+    <nav class="md-nav" aria-label="五、健康档案管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_193" class="md-nav__link">
+    居民档案建立
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_194" class="md-nav__link">
+    档案导入
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_195" class="md-nav__link">
+    档案查询
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_196" class="md-nav__link">
+    档案修改
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_197" class="md-nav__link">
+    档案删除
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_198" class="md-nav__link">
+    档案增减
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_199" class="md-nav__link">
+    档案查重
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_200" class="md-nav__link">
+    档案合并
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_201" class="md-nav__link">
+    档案迁移
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_202" class="md-nav__link">
+    死亡注销
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_203" class="md-nav__link">
+    六、随访服务
+  </a>
+  
+    <nav class="md-nav" aria-label="六、随访服务">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_204" class="md-nav__link">
+    慢病随访
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_205" class="md-nav__link">
+    老年人随访
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_206" class="md-nav__link">
+    新生儿随访
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_207" class="md-nav__link">
+    孕产妇随访
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_208" class="md-nav__link">
+    七、老年人健康管理
+  </a>
+  
+    <nav class="md-nav" aria-label="七、老年人健康管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_209" class="md-nav__link">
+    生活方式和健康状况评估
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_210" class="md-nav__link">
+    体格检查
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_211" class="md-nav__link">
+    辅助检查
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_212" class="md-nav__link">
+    健康指导
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_213" class="md-nav__link">
+    随访预约
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_214" class="md-nav__link">
+    随访预约提醒
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_215" class="md-nav__link">
+    老年人信息上报
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_216" class="md-nav__link">
+    老年人信息审核
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_217" class="md-nav__link">
+    老年人信息查询/档案审核
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_218" class="md-nav__link">
+    老年人信息导出
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_219" class="md-nav__link">
+    老年入信息统计/查询
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_220" class="md-nav__link">
+    数据质量控制
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_221" class="md-nav__link">
+    八、慢性病管理
+  </a>
+  
+    <nav class="md-nav" aria-label="八、慢性病管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_222" class="md-nav__link">
+    信息上报
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_223" class="md-nav__link">
+    查询统计指标
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_224" class="md-nav__link">
+    慢病患者信息管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_225" class="md-nav__link">
+    信息查询
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_226" class="md-nav__link">
+    审核慢病患者数据
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_227" class="md-nav__link">
+    导出慢病患者数据
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_228" class="md-nav__link">
+    统计分析慢病患者数据
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_229" class="md-nav__link">
+    九、突发公卫管理
+  </a>
+  
+    <nav class="md-nav" aria-label="九、突发公卫管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_230" class="md-nav__link">
+    信息上报
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_231" class="md-nav__link">
+    信息管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_232" class="md-nav__link">
+    信息导出
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_233" class="md-nav__link">
+    审核
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_234" class="md-nav__link">
+    统计分析
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_235" class="md-nav__link">
+    十、传染病管理
+  </a>
+  
+    <nav class="md-nav" aria-label="十、传染病管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_236" class="md-nav__link">
+    传染病患者信息管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_237" class="md-nav__link">
+    传染病随访信息管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_238" class="md-nav__link">
+    肺结核患者筛查记录
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_239" class="md-nav__link">
+    密切接触者筛查记录
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_240" class="md-nav__link">
+    报卡患者追踪记录
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_241" class="md-nav__link">
+    患者治疗记录
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_242" class="md-nav__link">
+    患者服药记录
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_243" class="md-nav__link">
+    查询统计指标
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_244" class="md-nav__link">
+    传染病患者信息补报
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_245" class="md-nav__link">
+    传染病患者信息审核
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_246" class="md-nav__link">
+    传染病患者信息导出
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_247" class="md-nav__link">
+    传染病报告卡上报
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_248" class="md-nav__link">
+    传染病疫情报告率自动生成
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_249" class="md-nav__link">
+    传染病疫情报告及时率查询
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_250" class="md-nav__link">
+    十一、康复服务
+  </a>
+  
+    <nav class="md-nav" aria-label="十一、康复服务">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_251" class="md-nav__link">
+    管理康复患者健康档案
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_252" class="md-nav__link">
+    管理康复患者就诊档案
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_253" class="md-nav__link">
+    查询患者信息
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_254" class="md-nav__link">
+    体检信息维护
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_255" class="md-nav__link">
+    查询康复病人等级评定
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_256" class="md-nav__link">
+    查询治疗计划
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_257" class="md-nav__link">
+    录入康复过程信息
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_258" class="md-nav__link">
+    录入康复治疗医嘱信息
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_259" class="md-nav__link">
+    核对康复治疗医嘱信息
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_260" class="md-nav__link">
+    执行康复治疗医嘱信息
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_261" class="md-nav__link">
+    作废康复治疗医嘱信息
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_262" class="md-nav__link">
+    审核康复治疗医嘱信息
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_263" class="md-nav__link">
+    推送关怀信息
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_264" class="md-nav__link">
+    康复随访管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_265" class="md-nav__link">
+    心理咨询管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_266" class="md-nav__link">
+    电子签名
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_267" class="md-nav__link">
+    模板管理
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_268" class="md-nav__link">
+    十二、健康教育
+  </a>
+  
+    <nav class="md-nav" aria-label="十二、健康教育">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_269" class="md-nav__link">
+    健康教育信息推送
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_270" class="md-nav__link">
+    健康教育信息维护
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_271" class="md-nav__link">
+    十三、双向转诊
+  </a>
+  
+    <nav class="md-nav" aria-label="十三、双向转诊">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_272" class="md-nav__link">
+    转诊申请（向上级提交）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_273" class="md-nav__link">
+    转诊预约
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_274" class="md-nav__link">
+    转诊审核
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_275" class="md-nav__link">
+    转诊管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_276" class="md-nav__link">
+    患者回转
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_277" class="md-nav__link">
+    转诊医院信息查询
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_278" class="md-nav__link">
+    转诊资源管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_279" class="md-nav__link">
+    患者信息反馈
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_280" class="md-nav__link">
+    随访
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_281" class="md-nav__link">
+    十四、家庭医生签约
+  </a>
+  
+    <nav class="md-nav" aria-label="十四、家庭医生签约">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_282" class="md-nav__link">
+    家庭医生签约业务
+  </a>
+  
+    <nav class="md-nav" aria-label="家庭医生签约业务">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_283" class="md-nav__link">
+    签约
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_284" class="md-nav__link">
+    续约
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_285" class="md-nav__link">
+    解约
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_286" class="md-nav__link">
+    转约
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_287" class="md-nav__link">
+    服务评价
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_288" class="md-nav__link">
+    统计分析
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_289" class="md-nav__link">
+    家庭医生服务管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_290" class="md-nav__link">
+    服务履约业务
+  </a>
+  
+    <nav class="md-nav" aria-label="服务履约业务">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_291" class="md-nav__link">
+    履约计划生成
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_292" class="md-nav__link">
+    任务分配
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_293" class="md-nav__link">
+    服务预约和通知
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_294" class="md-nav__link">
+    服务记录
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_295" class="md-nav__link">
+    服务完成情况查询
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_296" class="md-nav__link">
+    家庭医生考核管理
+  </a>
+  
+    <nav class="md-nav" aria-label="家庭医生考核管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_297" class="md-nav__link">
+    质量管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_298" class="md-nav__link">
+    能力管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_299" class="md-nav__link">
+    绩效管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_300" class="md-nav__link">
+    满意度管理
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_301" class="md-nav__link">
+    十五、医疗协同管理
+  </a>
+  
+    <nav class="md-nav" aria-label="十五、医疗协同管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_302" class="md-nav__link">
+    样本采集信息录入
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_303" class="md-nav__link">
+    样本物流信息跟踪
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_304" class="md-nav__link">
+    查询上级机构提供的诊断信息
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="../%E5%9B%9B%E5%B7%9D%E7%9C%81%E8%AF%8A%E6%89%80%E7%B1%BB%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%E6%95%B0%E6%8D%AE%E5%85%B1%E4%BA%AB%E4%BA%A4%E6%8D%A2%E6%A0%87%E5%87%86/" class="md-nav__link">
+      四川省诊所类医疗健康数据共享交换标准
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    一、诊所管理
+  </a>
+  
+    <nav class="md-nav" aria-label="一、诊所管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    诊所基本信息维护
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    科室基本信息维护
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    医护人员基本信息维护
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    医疗设备基本信息维护
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    耗材基本信息维护
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    用户管理（拓展）
+  </a>
+  
+    <nav class="md-nav" aria-label="用户管理（拓展）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    权限管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    角色管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    角色权限管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    用户角色管理
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    排班管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    供应商信息管理
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    二、便民服务
+  </a>
+  
+    <nav class="md-nav" aria-label="二、便民服务">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    居民/患者建档服务
+  </a>
+  
+    <nav class="md-nav" aria-label="居民/患者建档服务">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    建档
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    审核档案（拓展）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    患者（就诊人员）身份识别
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    咨询服务
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    预约挂号
+  </a>
+  
+    <nav class="md-nav" aria-label="预约挂号">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    预约挂号
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    取消挂号/退号
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    查询预约信息
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    提醒患者就诊（拓展）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    结算与收费
+  </a>
+  
+    <nav class="md-nav" aria-label="结算与收费">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    查询缴费记录
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    缴费
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    收费结算
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    查询费用明细（拓展）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    退费
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    查询就诊记录
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    查询处方信息
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    查询检查检验结果
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    查询机构服务项目
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    药品价格公示
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_37" class="md-nav__link">
+    诊疗项目价格公示
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_38" class="md-nav__link">
+    大屏留观提醒
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_39" class="md-nav__link">
+    大屏叫号
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_40" class="md-nav__link">
+    线上查看候诊人数
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_41" class="md-nav__link">
+    打印
+  </a>
+  
+    <nav class="md-nav" aria-label="打印">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_42" class="md-nav__link">
+    打印挂号单
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_43" class="md-nav__link">
+    打印收据单
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_44" class="md-nav__link">
+    打印收费明细
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_45" class="md-nav__link">
+    打印检查检验报告单
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_46" class="md-nav__link">
+    打印处方病历
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_47" class="md-nav__link">
+    三、医疗服务
+  </a>
+  
+    <nav class="md-nav" aria-label="三、医疗服务">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_48" class="md-nav__link">
+    医嘱管理
+  </a>
+  
+    <nav class="md-nav" aria-label="医嘱管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_49" class="md-nav__link">
+    中西医处方管理
+  </a>
+  
+    <nav class="md-nav" aria-label="中西医处方管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_50" class="md-nav__link">
+    中西医处方维护
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_51" class="md-nav__link">
+    中西医处方审核
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_52" class="md-nav__link">
+    中西医处方作废
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_53" class="md-nav__link">
+    处方的自动检测和咨询（银海）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_54" class="md-nav__link">
+    非处方医嘱管理
+  </a>
+  
+    <nav class="md-nav" aria-label="非处方医嘱管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_55" class="md-nav__link">
+    医嘱发送
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_56" class="md-nav__link">
+    医嘱取消发送
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_57" class="md-nav__link">
+    医嘱作废
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_58" class="md-nav__link">
+    医嘱审阅/核对
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_59" class="md-nav__link">
+    医嘱执行
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_60" class="md-nav__link">
+    医嘱取消执行
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_61" class="md-nav__link">
+    医嘱执行情况查询
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_62" class="md-nav__link">
+    输液药品分组
+  </a>
+  
+    <nav class="md-nav" aria-label="输液药品分组">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_63" class="md-nav__link">
+    患者与用药（治疗方案）身份核对
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_64" class="md-nav__link">
+    取消输液药品分组
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_65" class="md-nav__link">
+    病历管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_66" class="md-nav__link">
+    模板管理
+  </a>
+  
+    <nav class="md-nav" aria-label="模板管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_67" class="md-nav__link">
+    模板维护
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_68" class="md-nav__link">
+    模板引用
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_69" class="md-nav__link">
+    模板内置
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_70" class="md-nav__link">
+    模板权限管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_71" class="md-nav__link">
+    模板收藏
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_72" class="md-nav__link">
+    信息查询共享
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_73" class="md-nav__link">
+    智能提醒
+  </a>
+  
+    <nav class="md-nav" aria-label="智能提醒">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_74" class="md-nav__link">
+    皮试结果提醒
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_75" class="md-nav__link">
+    合理用药提醒
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_76" class="md-nav__link">
+    药物适应症提醒
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_77" class="md-nav__link">
+    配伍禁忌提醒
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_78" class="md-nav__link">
+    中药十八反十九畏提醒
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_79" class="md-nav__link">
+    医嘱复核（银海）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_80" class="md-nav__link">
+    用药分析（银海）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_81" class="md-nav__link">
+    诊疗/检查/检验管理
+  </a>
+  
+    <nav class="md-nav" aria-label="诊疗/检查/检验管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_82" class="md-nav__link">
+    项目维护
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_83" class="md-nav__link">
+    报告查询
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_84" class="md-nav__link">
+    设备对接
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_85" class="md-nav__link">
+    质量控制
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_86" class="md-nav__link">
+    病历质控规则知识库查询
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_87" class="md-nav__link">
+    门诊病历质量监控
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_88" class="md-nav__link">
+    质控分析
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_89" class="md-nav__link">
+    预警提醒
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_90" class="md-nav__link">
+    医学影像管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_91" class="md-nav__link">
+    临床检验信息管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_92" class="md-nav__link">
+    电生理信息管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_93" class="md-nav__link">
+    远程会诊
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_94" class="md-nav__link">
+    打印
+  </a>
+  
+    <nav class="md-nav" aria-label="打印">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_95" class="md-nav__link">
+    打印中西医处方
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_96" class="md-nav__link">
+    打印非处方医嘱
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_97" class="md-nav__link">
+    打印病历
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_98" class="md-nav__link">
+    四、药事管理
+  </a>
+  
+    <nav class="md-nav" aria-label="四、药事管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_99" class="md-nav__link">
+    药品基本信息管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_100" class="md-nav__link">
+    发药管理
+  </a>
+  
+    <nav class="md-nav" aria-label="发药管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_101" class="md-nav__link">
+    药房药物规则管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_102" class="md-nav__link">
+    临床用药知识库管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_103" class="md-nav__link">
+    发药
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_104" class="md-nav__link">
+    退药处理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_105" class="md-nav__link">
+    智能提醒
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_106" class="md-nav__link">
+    药物自动识别管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_107" class="md-nav__link">
+    药物追溯管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_108" class="md-nav__link">
+    针剂、口服药、外用药等全过程管理
+  </a>
+  
+    <nav class="md-nav" aria-label="针剂、口服药、外用药等全过程管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_109" class="md-nav__link">
+    配药管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_110" class="md-nav__link">
+    标签管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_111" class="md-nav__link">
+    身份查对
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_112" class="md-nav__link">
+    药品查对
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_113" class="md-nav__link">
+    配伍禁忌
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_114" class="md-nav__link">
+    药品皮试
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_115" class="md-nav__link">
+    用药前后病情获取
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_116" class="md-nav__link">
+    中药煎药服务
+  </a>
+  
+    <nav class="md-nav" aria-label="中药煎药服务">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_117" class="md-nav__link">
+    中药调配
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_118" class="md-nav__link">
+    煎药登记
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_119" class="md-nav__link">
+    煎药过程记录
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_120" class="md-nav__link">
+    质量控制
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_121" class="md-nav__link">
+    发放管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_122" class="md-nav__link">
+    配送管理
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_123" class="md-nav__link">
+    供应商结算
+  </a>
+  
+    <nav class="md-nav" aria-label="供应商结算">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_124" class="md-nav__link">
+    供应商结算申请
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_125" class="md-nav__link">
+    供应商结算审核
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_126" class="md-nav__link">
+    抗菌药物管理
+  </a>
+  
+    <nav class="md-nav" aria-label="抗菌药物管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_127" class="md-nav__link">
+    抗菌药物知识库设置
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_128" class="md-nav__link">
+    抗菌药物分级规则设置
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_129" class="md-nav__link">
+    使用分级授权
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_130" class="md-nav__link">
+    审批提醒
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_131" class="md-nav__link">
+    用药效果评估
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_132" class="md-nav__link">
+    指标统计
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_133" class="md-nav__link">
+    基本药物监管
+  </a>
+  
+    <nav class="md-nav" aria-label="基本药物监管">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_134" class="md-nav__link">
+    基本药物信息共享
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_135" class="md-nav__link">
+    流通数据监测
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_136" class="md-nav__link">
+    临床使用信息采集
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_137" class="md-nav__link">
+    用药监控辅助决策知识库
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_138" class="md-nav__link">
+    药物使用统计分析
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_139" class="md-nav__link">
+    静脉药物配置管理
+  </a>
+  
+    <nav class="md-nav" aria-label="静脉药物配置管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_140" class="md-nav__link">
+    智能获取信息
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_141" class="md-nav__link">
+    药师审核
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_142" class="md-nav__link">
+    贴签摆药
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_143" class="md-nav__link">
+    入舱核对
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_144" class="md-nav__link">
+    冲配核对
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_145" class="md-nav__link">
+    出舱核对
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_146" class="md-nav__link">
+    病区签收
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_147" class="md-nav__link">
+    退药管理
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_148" class="md-nav__link">
+    基本药物目录管理
+  </a>
+  
+    <nav class="md-nav" aria-label="基本药物目录管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_149" class="md-nav__link">
+    分类管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_150" class="md-nav__link">
+    录入
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_151" class="md-nav__link">
+    增补
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_152" class="md-nav__link">
+    移除
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_153" class="md-nav__link">
+    调价
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_154" class="md-nav__link">
+    获取
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_155" class="md-nav__link">
+    使用
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_156" class="md-nav__link">
+    药房管理
+  </a>
+  
+    <nav class="md-nav" aria-label="药房管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_157" class="md-nav__link">
+    信息获取
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_158" class="md-nav__link">
+    划价
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_159" class="md-nav__link">
+    发药
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_160" class="md-nav__link">
+    对账
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_161" class="md-nav__link">
+    领药
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_162" class="md-nav__link">
+    盘点
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_163" class="md-nav__link">
+    报损
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_164" class="md-nav__link">
+    调拨
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_165" class="md-nav__link">
+    退药
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_166" class="md-nav__link">
+    中药方管理
+  </a>
+  
+    <nav class="md-nav" aria-label="中药方管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_167" class="md-nav__link">
+    中药饮片信息管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_168" class="md-nav__link">
+    中药饮片处方审核点评
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_169" class="md-nav__link">
+    中药饮片全流程管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_170" class="md-nav__link">
+    中药煎煮指导
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_171" class="md-nav__link">
+    中药师身份认证
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_172" class="md-nav__link">
+    中药配伍禁忌知识库
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_173" class="md-nav__link">
+    中药煎煮指导知识库
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_174" class="md-nav__link">
+    药物物流管理
+  </a>
+  
+    <nav class="md-nav" aria-label="药物物流管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_175" class="md-nav__link">
+    供应商信息接收
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_176" class="md-nav__link">
+    药品采购
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_177" class="md-nav__link">
+    入库管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_178" class="md-nav__link">
+    出库管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_179" class="md-nav__link">
+    库存管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_180" class="md-nav__link">
+    药品调价
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_181" class="md-nav__link">
+    药品盘点
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_182" class="md-nav__link">
+    药品标识码
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_183" class="md-nav__link">
+    药品配送
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_184" class="md-nav__link">
+    药品追溯
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_185" class="md-nav__link">
+    统计台账
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_186" class="md-nav__link">
+    打印
+  </a>
+  
+    <nav class="md-nav" aria-label="打印">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_187" class="md-nav__link">
+    打印发药单据
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_188" class="md-nav__link">
+    打印用药标签
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_189" class="md-nav__link">
+    打印入库单
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_190" class="md-nav__link">
+    打印出库单
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_191" class="md-nav__link">
+    打印盘点单
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_192" class="md-nav__link">
+    五、健康档案管理
+  </a>
+  
+    <nav class="md-nav" aria-label="五、健康档案管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_193" class="md-nav__link">
+    居民档案建立
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_194" class="md-nav__link">
+    档案导入
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_195" class="md-nav__link">
+    档案查询
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_196" class="md-nav__link">
+    档案修改
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_197" class="md-nav__link">
+    档案删除
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_198" class="md-nav__link">
+    档案增减
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_199" class="md-nav__link">
+    档案查重
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_200" class="md-nav__link">
+    档案合并
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_201" class="md-nav__link">
+    档案迁移
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_202" class="md-nav__link">
+    死亡注销
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_203" class="md-nav__link">
+    六、随访服务
+  </a>
+  
+    <nav class="md-nav" aria-label="六、随访服务">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_204" class="md-nav__link">
+    慢病随访
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_205" class="md-nav__link">
+    老年人随访
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_206" class="md-nav__link">
+    新生儿随访
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_207" class="md-nav__link">
+    孕产妇随访
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_208" class="md-nav__link">
+    七、老年人健康管理
+  </a>
+  
+    <nav class="md-nav" aria-label="七、老年人健康管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_209" class="md-nav__link">
+    生活方式和健康状况评估
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_210" class="md-nav__link">
+    体格检查
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_211" class="md-nav__link">
+    辅助检查
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_212" class="md-nav__link">
+    健康指导
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_213" class="md-nav__link">
+    随访预约
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_214" class="md-nav__link">
+    随访预约提醒
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_215" class="md-nav__link">
+    老年人信息上报
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_216" class="md-nav__link">
+    老年人信息审核
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_217" class="md-nav__link">
+    老年人信息查询/档案审核
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_218" class="md-nav__link">
+    老年人信息导出
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_219" class="md-nav__link">
+    老年入信息统计/查询
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_220" class="md-nav__link">
+    数据质量控制
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_221" class="md-nav__link">
+    八、慢性病管理
+  </a>
+  
+    <nav class="md-nav" aria-label="八、慢性病管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_222" class="md-nav__link">
+    信息上报
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_223" class="md-nav__link">
+    查询统计指标
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_224" class="md-nav__link">
+    慢病患者信息管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_225" class="md-nav__link">
+    信息查询
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_226" class="md-nav__link">
+    审核慢病患者数据
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_227" class="md-nav__link">
+    导出慢病患者数据
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_228" class="md-nav__link">
+    统计分析慢病患者数据
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_229" class="md-nav__link">
+    九、突发公卫管理
+  </a>
+  
+    <nav class="md-nav" aria-label="九、突发公卫管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_230" class="md-nav__link">
+    信息上报
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_231" class="md-nav__link">
+    信息管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_232" class="md-nav__link">
+    信息导出
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_233" class="md-nav__link">
+    审核
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_234" class="md-nav__link">
+    统计分析
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_235" class="md-nav__link">
+    十、传染病管理
+  </a>
+  
+    <nav class="md-nav" aria-label="十、传染病管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_236" class="md-nav__link">
+    传染病患者信息管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_237" class="md-nav__link">
+    传染病随访信息管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_238" class="md-nav__link">
+    肺结核患者筛查记录
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_239" class="md-nav__link">
+    密切接触者筛查记录
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_240" class="md-nav__link">
+    报卡患者追踪记录
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_241" class="md-nav__link">
+    患者治疗记录
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_242" class="md-nav__link">
+    患者服药记录
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_243" class="md-nav__link">
+    查询统计指标
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_244" class="md-nav__link">
+    传染病患者信息补报
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_245" class="md-nav__link">
+    传染病患者信息审核
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_246" class="md-nav__link">
+    传染病患者信息导出
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_247" class="md-nav__link">
+    传染病报告卡上报
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_248" class="md-nav__link">
+    传染病疫情报告率自动生成
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_249" class="md-nav__link">
+    传染病疫情报告及时率查询
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_250" class="md-nav__link">
+    十一、康复服务
+  </a>
+  
+    <nav class="md-nav" aria-label="十一、康复服务">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_251" class="md-nav__link">
+    管理康复患者健康档案
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_252" class="md-nav__link">
+    管理康复患者就诊档案
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_253" class="md-nav__link">
+    查询患者信息
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_254" class="md-nav__link">
+    体检信息维护
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_255" class="md-nav__link">
+    查询康复病人等级评定
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_256" class="md-nav__link">
+    查询治疗计划
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_257" class="md-nav__link">
+    录入康复过程信息
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_258" class="md-nav__link">
+    录入康复治疗医嘱信息
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_259" class="md-nav__link">
+    核对康复治疗医嘱信息
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_260" class="md-nav__link">
+    执行康复治疗医嘱信息
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_261" class="md-nav__link">
+    作废康复治疗医嘱信息
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_262" class="md-nav__link">
+    审核康复治疗医嘱信息
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_263" class="md-nav__link">
+    推送关怀信息
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_264" class="md-nav__link">
+    康复随访管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_265" class="md-nav__link">
+    心理咨询管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_266" class="md-nav__link">
+    电子签名
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_267" class="md-nav__link">
+    模板管理
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_268" class="md-nav__link">
+    十二、健康教育
+  </a>
+  
+    <nav class="md-nav" aria-label="十二、健康教育">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_269" class="md-nav__link">
+    健康教育信息推送
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_270" class="md-nav__link">
+    健康教育信息维护
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_271" class="md-nav__link">
+    十三、双向转诊
+  </a>
+  
+    <nav class="md-nav" aria-label="十三、双向转诊">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_272" class="md-nav__link">
+    转诊申请（向上级提交）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_273" class="md-nav__link">
+    转诊预约
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_274" class="md-nav__link">
+    转诊审核
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_275" class="md-nav__link">
+    转诊管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_276" class="md-nav__link">
+    患者回转
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_277" class="md-nav__link">
+    转诊医院信息查询
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_278" class="md-nav__link">
+    转诊资源管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_279" class="md-nav__link">
+    患者信息反馈
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_280" class="md-nav__link">
+    随访
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_281" class="md-nav__link">
+    十四、家庭医生签约
+  </a>
+  
+    <nav class="md-nav" aria-label="十四、家庭医生签约">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_282" class="md-nav__link">
+    家庭医生签约业务
+  </a>
+  
+    <nav class="md-nav" aria-label="家庭医生签约业务">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_283" class="md-nav__link">
+    签约
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_284" class="md-nav__link">
+    续约
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_285" class="md-nav__link">
+    解约
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_286" class="md-nav__link">
+    转约
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_287" class="md-nav__link">
+    服务评价
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_288" class="md-nav__link">
+    统计分析
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_289" class="md-nav__link">
+    家庭医生服务管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_290" class="md-nav__link">
+    服务履约业务
+  </a>
+  
+    <nav class="md-nav" aria-label="服务履约业务">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_291" class="md-nav__link">
+    履约计划生成
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_292" class="md-nav__link">
+    任务分配
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_293" class="md-nav__link">
+    服务预约和通知
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_294" class="md-nav__link">
+    服务记录
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_295" class="md-nav__link">
+    服务完成情况查询
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_296" class="md-nav__link">
+    家庭医生考核管理
+  </a>
+  
+    <nav class="md-nav" aria-label="家庭医生考核管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_297" class="md-nav__link">
+    质量管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_298" class="md-nav__link">
+    能力管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_299" class="md-nav__link">
+    绩效管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_300" class="md-nav__link">
+    满意度管理
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_301" class="md-nav__link">
+    十五、医疗协同管理
+  </a>
+  
+    <nav class="md-nav" aria-label="十五、医疗协同管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_302" class="md-nav__link">
+    样本采集信息录入
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_303" class="md-nav__link">
+    样本物流信息跟踪
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_304" class="md-nav__link">
+    查询上级机构提供的诊断信息
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="_1">四川省智慧诊所基本功能规范（整合）</h1>
+<h2 id="_2">一、诊所管理</h2>
+<h3 id="_3">诊所基本信息维护</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>具备诊所基本信息维护功能，即增删改查。</p>
+<p>其中，包含法人姓名、法人证件号码、执业许可证号、组织机构代码证号或社会信用代码、名称、地址、联系电话 等内容的维护，并且支持营业执照、执业证书等以图片格式上传。</p>
+<ul>
+<li>对象说明</li>
+</ul>
+<p>医生/管理者：具备增删改查全部功能</p>
+<p>患者：具备查询功能</p>
+<h3 id="_4">科室基本信息维护</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>基本科室基本信息维护功能，即增删改查</p>
+<p>其中，包含名称、类型、诊疗科目、联系电话等内容的维护</p>
+<ul>
+<li>对象说明</li>
+</ul>
+<p>医生/管理者：具备增删改查全部功能</p>
+<p>患者：具备查询功能</p>
+<h3 id="_5">医护人员基本信息维护</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>具备医执人员基本信息管理，支持医护技his编码、姓名、性别、出生日期、民族、有效证件类型、有效证件号码、执业范围、职称、职务、执业证书编码、资格证书编码、执业注册地、处方有效标志、联系电话、在该诊所开始执业时间、在该诊所结束执业时间等内容维护；支持执业证书、资格证书等以图片格式上传。</p>
+<ul>
+<li>对象说明</li>
+</ul>
+<p>医生/管理者：具备增删改查全部功能</p>
+<p>患者：具备查询功能</p>
+<h3 id="_6">医疗设备基本信息维护</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>具备设备基本信息管理，支持设备his编码、名称、类别、大型设备类别、型号、品牌、产地、配置、购买日期、使用年限等内容维护。</p>
+<ul>
+<li>对象说明</li>
+</ul>
+<p>医生/管理者：具备增删改查全部功能</p>
+<h3 id="_7">耗材基本信息维护</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>具备耗材基本信息管理，支持his耗材编码、名称、规格型号、生产厂家、注册证号、注册证名称、国产/进口、供应商名称等内容维护。   </p>
+<ul>
+<li>对象说明</li>
+</ul>
+<p>医生/管理者：具备增删改查全部功能</p>
+<h3 id="_8">用户管理（拓展）</h3>
+<h4 id="_9">权限管理</h4>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>对权限的增删改查</p>
+<ul>
+<li>对象说明</li>
+</ul>
+<p>管理者：具备增删改查全部功能</p>
+<h4 id="_10">角色管理</h4>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>对角色的增删改查</p>
+<ul>
+<li>对象说明</li>
+</ul>
+<p>管理者：具备增删改查全部功能</p>
+<h4 id="_11">角色权限管理</h4>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>维护角色与权限的关系，即可为某个角色新增、移除某些权限</p>
+<ul>
+<li>对象说明</li>
+</ul>
+<p>管理者：拥有此操作全部功能</p>
+<h4 id="_12">用户角色管理</h4>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>维护用户（即医生/护士）与角色的关系，即为某个用户赋予一个或者多个角色，或者为某个用户移除一个或者多个角色</p>
+<ul>
+<li>对象说明</li>
+</ul>
+<p>管理者：拥有此操作全部功能</p>
+<h3 id="_13">排班管理</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>医生排班的增删改查</p>
+<ul>
+<li>对象说明</li>
+</ul>
+<p>医生/管理者：拥有此操作全部功能</p>
+<p>患者：具备查询功能（主要用于预约挂号）</p>
+<h3 id="_14">供应商信息管理</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>管理与诊所来往的供应商信息，具备增删改查功能</p>
+<ul>
+<li>对象说明</li>
+</ul>
+<p>医生/管理者：拥有此操作全部功能</p>
+<h2 id="_15">二、便民服务</h2>
+<h3 id="_16">居民/患者建档服务</h3>
+<h4 id="_17">建档</h4>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>录入患者（本人）基本信息（姓名、性别、年龄、联系电话、家庭住址等），建立患者/个人档案，并且该信息可供患者本人或者医生查看、修改。</p>
+<ul>
+<li>对象说明</li>
+</ul>
+<p>患者/医生/护士：具备档案新增、修改以及查询等全部功能</p>
+<h4 id="_18">审核档案（拓展）</h4>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>审核患者/医护人员提交的患者档案，审核通过后该患者才能进行挂号、查询个人诊疗记录、报告、缴费等等信息。</p>
+<p>审核通过与否可给患者相应的提示信息，如短信或者其他方式。</p>
+<ul>
+<li>对象说明</li>
+</ul>
+<p>医生/护士：具备此操作全部功能</p>
+<h3 id="_19">患者（就诊人员）身份识别</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>支持居民身份证、社保卡、医保卡、居民健康卡（电子）等刷卡功能，进行患者身份识别</p>
+<ul>
+<li>对象说明</li>
+</ul>
+<p>患者：具备此操作全部功能</p>
+<h3 id="_20">咨询服务</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>支持患者在线咨询，医护人员可在线回答患者咨询问题</p>
+<p>可提供消息提醒，消息是否已读提醒等功能（拓展）</p>
+<ul>
+<li>对象说明</li>
+</ul>
+<p>患者/医护人员：具备使用该服务进行彼此沟通的功能</p>
+<h3 id="_21">预约挂号</h3>
+<h4 id="_22">预约挂号</h4>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>患者/居民可通过网上进行预约挂号（选择挂号医生和就诊时间），并支付挂号费。</p>
+<p>其中挂号方式可通过网上预约，自助机自助挂号，人工挂号（通过医护人员）</p>
+<p>支付挂号费的方式可以是：现金支付，在线支付，扫码支付等等</p>
+<ul>
+<li>对象说明</li>
+</ul>
+<p>患者/医护人员都可预约挂号</p>
+<h4 id="_23">取消挂号/退号</h4>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>取消挂号，并退返已支付的挂号费</p>
+<p>与预约挂号一样，取消挂号也可人工（医护人员）取消</p>
+<ul>
+<li>对象说明</li>
+</ul>
+<p>患者/医护人员都可取消挂号</p>
+<h4 id="_24">查询预约信息</h4>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>查询挂号信息</p>
+<ul>
+<li>对象说明</li>
+</ul>
+<p>患者/医生均可查询</p>
+<h4 id="_25">提醒患者就诊（拓展）</h4>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>可在预约的就诊时间前12小时，前2两小时提醒患者就诊。</p>
+<ul>
+<li>对象说明</li>
+</ul>
+<p>是服务平台根据患者预约的就诊时间推送提醒信息</p>
+<h3 id="_26">结算与收费</h3>
+<h4 id="_27">查询缴费记录</h4>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>可根据缴费项目、缴费人信息、时间等等条件查询缴费记录</p>
+<ul>
+<li>对象说明</li>
+</ul>
+<p>患者可查询个人缴费记录</p>
+<p>医护人员可查询某个患者的缴费记录</p>
+<h4 id="_28">缴费</h4>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>缴纳所需费用，支持现金、银行卡、居民健康卡、社会保障卡等支付方式，也可组合支付</p>
+<ul>
+<li>对象说明</li>
+</ul>
+<p>医护人员收费</p>
+<p>患者缴纳费用</p>
+<h4 id="_29">收费结算</h4>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>包括医保实时结算（包含异地医保）、折扣结算，统计应收费用，实际应收费用，折扣/报销费用等数据。</p>
+<ul>
+<li>对象说明</li>
+</ul>
+<p>系统根据就诊患者是否参保、有优惠折扣等方面计算其应当缴纳的费用</p>
+<p>患者/医护人员可查询应当缴纳的费用</p>
+<h4 id="_30">查询费用明细（拓展）</h4>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>查询费用明细，包括医保报销明细、折扣明细、每种药物名称、价格，治疗项目名称、价格，所需耗材名称、价格等等</p>
+<ul>
+<li>对象说明</li>
+</ul>
+<h4 id="_31">退费</h4>
+<ul>
+<li>
+<p>功能描述</p>
+</li>
+<li>
+<p>对象说明</p>
+</li>
+</ul>
+<h3 id="_32">查询就诊记录</h3>
+<h3 id="_33">查询处方信息</h3>
+<h3 id="_34">查询检查检验结果</h3>
+<h3 id="_35">查询机构服务项目</h3>
+<h3 id="_36">药品价格公示</h3>
+<h3 id="_37">诊疗项目价格公示</h3>
+<h3 id="_38">大屏留观提醒</h3>
+<h3 id="_39">大屏叫号</h3>
+<h3 id="_40">线上查看候诊人数</h3>
+<h3 id="_41">打印</h3>
+<h4 id="_42">打印挂号单</h4>
+<h4 id="_43">打印收据单</h4>
+<h4 id="_44">打印收费明细</h4>
+<h4 id="_45">打印检查检验报告单</h4>
+<h4 id="_46">打印处方病历</h4>
+<h2 id="_47">三、医疗服务</h2>
+<h3 id="_48">医嘱管理</h3>
+<h4 id="_49">中西医处方管理</h4>
+<h5 id="_50">中西医处方维护</h5>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>具备中西医处方的新增、删除、修改、查看功能；</p>
+<p>处方内容包括药品剂量、药品项目作用、配伍禁忌、适应症等，处方书写应当符合每张处方限于一名患者的用药，药品名称、剂量、规格、用法、用量要准确规范；患者年龄应当填写实足年龄，新生儿、婴幼儿写日、月龄，必要时要注明体重。
+西药处方和中药饮片应当分别开具处方，开具处方后的空白处划一斜线以示处方完毕。
+西药处方又分为普通处方、医保处方、儿童处方、急诊处方、含麻处方等处方类型，每一味药品应当另起一行，每张处方不得超过5味药品。
+中药饮片处方一般应当按照“君、臣、佐、使”的顺序排列；调剂、煎煮的特殊要求注明在药品右上方，并加括号，如布包、先煎、后下等；对饮片的产地、炮制有特殊要求的，应当在药品名称之前写明；除特殊情况外，应当注明临床诊断。 </p>
+<ul>
+<li>对象说明</li>
+</ul>
+<p>医生具备该操作的全部功能</p>
+<p>患者具备查询功能</p>
+<h5 id="_51">中西医处方审核</h5>
+<h5 id="_52">中西医处方作废</h5>
+<h5 id="_53">处方的自动检测和咨询（银海）</h5>
+<h4 id="_54">非处方医嘱管理</h4>
+<h5 id="_55">医嘱发送</h5>
+<h5 id="_56">医嘱取消发送</h5>
+<h5 id="_57">医嘱作废</h5>
+<h5 id="_58">医嘱审阅/核对</h5>
+<h5 id="_59">医嘱执行</h5>
+<h5 id="_60">医嘱取消执行</h5>
+<h5 id="_61">医嘱执行情况查询</h5>
+<h4 id="_62">输液药品分组</h4>
+<h5 id="_63">患者与用药（治疗方案）身份核对</h5>
+<h4 id="_64">取消输液药品分组</h4>
+<h3 id="_65">病历管理</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>病历包块中医病历和西医病历，具备新增、更新、删除、查询、引用等功能</p>
+<p>中医病历书写内容：
+中医四诊信息录入、中医病证诊断录入（国标_95）、治则治法记录、中药处方录入、中医非药物疗法治疗记录</p>
+<p>西医病历书写内容：
+主诉、现病史、既往史、体格检查、体温测量、过敏史、家族史、临床诊断（国标ICD_10）、诊断知识库，传染病、肺结核、冠状病毒的信息登记</p>
+<h3 id="_66">模板管理</h3>
+<h4 id="_67">模板维护</h4>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>支持各种模板的新增、删除、修改、查看等功能</p>
+<h4 id="_68">模板引用</h4>
+<h4 id="_69">模板内置</h4>
+<h4 id="_70">模板权限管理</h4>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>模板可存为本人模板和诊所模板，本人模板仅本人可见和引用，诊所模板全诊所均可见和引用；</p>
+<h4 id="_71">模板收藏</h4>
+<h3 id="_72">信息查询共享</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>支持查询患者在本机构的历史就诊记录，包括历史病历文书、医嘱列表；
+支持医生查看个人或诊所已诊病人的信息。</p>
+<p>支持转诊患者基本信息的查看，包括患者基本信息、转诊记录、西医诊断、既往史等；
+支持查询患者健康档案信息或其他医疗卫生机构诊疗信息，包括历史病历文书、医嘱列表、检查检验报告等内容。</p>
+<h3 id="_73">智能提醒</h3>
+<h4 id="_74">皮试结果提醒</h4>
+<h4 id="_75">合理用药提醒</h4>
+<h4 id="_76">药物适应症提醒</h4>
+<h4 id="_77">配伍禁忌提醒</h4>
+<h4 id="_78">中药十八反十九畏提醒</h4>
+<h4 id="_79">医嘱复核（银海）</h4>
+<h4 id="_80">用药分析（银海）</h4>
+<h3 id="_81">诊疗/检查/检验管理</h3>
+<h4 id="_82">项目维护</h4>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>具备检查、检验以及理疗项目的新增、删除、修改、查询、打印等功能</p>
+<h4 id="_83">报告查询</h4>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>剧本检查报告、检验报告的查询功能</p>
+<h4 id="_84">设备对接</h4>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>和设备对接，实现检查、检验报告实时传输</p>
+<h3 id="_85">质量控制</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>具备质控目标、时间点、关键节点等内容的质控管理功能；</p>
+<h3 id="_86">病历质控规则知识库查询</h3>
+<h3 id="_87">门诊病历质量监控</h3>
+<h3 id="_88">质控分析</h3>
+<h3 id="_89">预警提醒</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>支持短信、预警信息等2 种提醒方式。</p>
+<h3 id="_90">医学影像管理</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>实现医学影像信息资料电子化传输、存储、后处理与应用调阅；具备影像数据采集、图像压缩、数据存储归档、检查预约、信息登记、影像后处理分析、影像一致性输出、图像内容检索、影像调阅、诊断报告管理和打印、质控管理等功能；支持心电、放射、超声、病理等医学影像信息类型。</p>
+<h3 id="_91">临床检验信息管理</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>实现常规检验、生化检验、免疫检验、微生物检验等全流程信息管理；具备标本管理、时间管理、条码管理、报告书写、 报告审核、数据采集、双向质控、危急值设置、医嘱知识库等功能；支持常规检验、生化检验、免疫检验、微生物检验等检验类型。</p>
+<h3 id="_92">电生理信息管理</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>提供心电图机与运动平台、动态心电图等电生理检查的信息管理；具备设备数据采集、数字图像分析、诊断报告管理、质量控制功能。</p>
+<h3 id="_93">远程会诊</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>利用信息化和现代通讯工具，基于居民健康卡及医生电子证照，为患者完成远程病历分析、疾病诊断和治疗方案；具备医患双方身份数字认证、会诊申请、患者病历信息采集、专家会诊、病历信息调阅、专科诊断、会诊结果下传、远程会诊相关知识库、会诊评价、示教示范、数字音频处理、视频压缩传输等功能。</p>
+<h3 id="_94">打印</h3>
+<h4 id="_95">打印中西医处方</h4>
+<h4 id="_96">打印非处方医嘱</h4>
+<h4 id="_97">打印病历</h4>
+<h2 id="_98">四、药事管理</h2>
+<h3 id="_99">药品基本信息管理</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>具备药品基本信息管理，即药品基本信息的增删改查，支持his药品编码、名称、剂型、剂量、国药准字、生产厂家、本位码、包装、包装单位、最小计价单位、单价等内容维护；支持药品经营许可证、营业执照、GSP认证证书等以图片格式上传。</p>
+<ul>
+<li>对象说明</li>
+</ul>
+<p>医护人员具备此操作的全部功能</p>
+<h3 id="_100">发药管理</h3>
+<h4 id="_101">药房药物规则管理</h4>
+<h4 id="_102">临床用药知识库管理</h4>
+<h4 id="_103">发药</h4>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>支持发药并扣减药品库存。</p>
+<h4 id="_104">退药处理</h4>
+<h4 id="_105">智能提醒</h4>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>支持药品的库存预警、效期预警、毛利异常等智能提醒。</p>
+<h4 id="_106">药物自动识别管理</h4>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>支持条形码、二维码、电子标签等识别方式</p>
+<h4 id="_107">药物追溯管理</h4>
+<h4 id="_108">针剂、口服药、外用药等全过程管理</h4>
+<h5 id="_109">配药管理</h5>
+<h5 id="_110">标签管理</h5>
+<h5 id="_111">身份查对</h5>
+<h5 id="_112">药品查对</h5>
+<h5 id="_113">配伍禁忌</h5>
+<h5 id="_114">药品皮试</h5>
+<h5 id="_115">用药前后病情获取</h5>
+<h4 id="_116">中药煎药服务</h4>
+<p>该模块主要实现中药煎药服务的全过程信息化管理</p>
+<h5 id="_117">中药调配</h5>
+<h5 id="_118">煎药登记</h5>
+<h5 id="_119">煎药过程记录</h5>
+<h5 id="_120">质量控制</h5>
+<h5 id="_121">发放管理</h5>
+<h5 id="_122">配送管理</h5>
+<h3 id="_123">供应商结算</h3>
+<h4 id="_124">供应商结算申请</h4>
+<h4 id="_125">供应商结算审核</h4>
+<h3 id="_126">抗菌药物管理</h3>
+<p>抗菌药物分级管理，实现抗菌药物使用的全程干预、 警示、评估和点评。 具备抗菌药物知识库设置、抗菌药物分级规则设置、 使用分级授权、审批提醒、用药效果评估、指标统计等功能。</p>
+<h4 id="_127">抗菌药物知识库设置</h4>
+<h4 id="_128">抗菌药物分级规则设置</h4>
+<h4 id="_129">使用分级授权</h4>
+<h4 id="_130">审批提醒</h4>
+<h4 id="_131">用药效果评估</h4>
+<h4 id="_132">指标统计</h4>
+<h3 id="_133">基本药物监管</h3>
+<p>对基本药物的采购、支付、价格、使用等各环节进行监管，开展基本药物临床综合评价；具备基本药物信息共享、流通数据监测、临床使用信息采集、用药监控辅助决策知识库、药物使用统计分析等功能。</p>
+<h4 id="_134">基本药物信息共享</h4>
+<h4 id="_135">流通数据监测</h4>
+<h4 id="_136">临床使用信息采集</h4>
+<h4 id="_137">用药监控辅助决策知识库</h4>
+<h4 id="_138">药物使用统计分析</h4>
+<h3 id="_139">静脉药物配置管理</h3>
+<p>遵循标准操作程序，按照处方或医嘱辅助完成全静脉营养、细胞毒性药物和抗菌药物等各类静脉药物的混合调配，实现医嘱审核和药物配伍禁忌复核等功能；具备智能获取信息（如病历病史信息、疾病诊断信 息、医嘱信息、用药信息、过敏信息等）、药师审核、贴签摆药、入舱核对、冲配核对、出舱核对、病区签收、退药管理等功能；支持患者基本信息、病历病史信息、诊断信息、医嘱信息、用药信息、过敏信息自动获取共享。</p>
+<h4 id="_140">智能获取信息</h4>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>支持患者基本信息、病历病史信息、诊断信息、医嘱信息、用药信息、过敏信息自动获取共享</p>
+<h4 id="_141">药师审核</h4>
+<h4 id="_142">贴签摆药</h4>
+<h4 id="_143">入舱核对</h4>
+<h4 id="_144">冲配核对</h4>
+<h4 id="_145">出舱核对</h4>
+<h4 id="_146">病区签收</h4>
+<h4 id="_147">退药管理</h4>
+<h3 id="_148">基本药物目录管理</h3>
+<p>对国家基本药物目录的药品进行管理；具备分类管理、录入、增补、移除、调价、获取、使用等功能；支持与药房管理、全科诊疗、基本药物监管等接口。</p>
+<h4 id="_149">分类管理</h4>
+<h4 id="_150">录入</h4>
+<h4 id="_151">增补</h4>
+<h4 id="_152">移除</h4>
+<h4 id="_153">调价</h4>
+<h4 id="_154">获取</h4>
+<h4 id="_155">使用</h4>
+<h3 id="_156">药房管理</h3>
+<p>对药品进出、盘点、调价等过程的管理；具备信息获取、划价、发药、对账、领药、盘点、 报损、调拨、退药等功能；支持条形码、二维码、电子标签等识别方式。
+中药房管理还需实现对中药饮片的品种、规格、进出、调剂、日常养护，中药使用咨询、指导与监测等信息管理；具备中药饮片处方审核点评、中药饮片全流程管理、中药煎煮指导、中药师身份认证、中药配伍禁忌知识库、中药煎煮指导知识库等功能。</p>
+<h4 id="_157">信息获取</h4>
+<h4 id="_158">划价</h4>
+<h4 id="_159">发药</h4>
+<h4 id="_160">对账</h4>
+<h4 id="_161">领药</h4>
+<h4 id="_162">盘点</h4>
+<h4 id="_163">报损</h4>
+<h4 id="_164">调拨</h4>
+<h4 id="_165">退药</h4>
+<h4 id="_166">中药方管理</h4>
+<h5 id="_167">中药饮片信息管理</h5>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>实现对中药饮片的品种、规格、进出、调剂、日常养护，中药使用咨询、指导与监测等信息管理</p>
+<h5 id="_168">中药饮片处方审核点评</h5>
+<h5 id="_169">中药饮片全流程管理</h5>
+<h5 id="_170">中药煎煮指导</h5>
+<h5 id="_171">中药师身份认证</h5>
+<h5 id="_172">中药配伍禁忌知识库</h5>
+<h5 id="_173">中药煎煮指导知识库</h5>
+<h3 id="_174">药物物流管理</h3>
+<p>实现基层医疗卫生机构药房的药品进销存管理，可接 收外来药品供应链信息，提供完整的药品账务管理，通过 药品标识码，实现药品批次追溯功能；具备供应商信息接收、药品采购、入库管理、出库管理、库存管理、药品调价、药品盘点、药品标识码、药品配送、药品追溯、统计台账等功能；持条形码、二维码、电子标签等识别方式。</p>
+<h4 id="_175">供应商信息接收</h4>
+<h4 id="_176">药品采购</h4>
+<h4 id="_177">入库管理</h4>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>支持药品、物资入库、入库单修改、查询、打印等功能。</p>
+<h4 id="_178">出库管理</h4>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>支持药品、物资出库、出库单修改、查询、打印等功能。</p>
+<h4 id="_179">库存管理</h4>
+<h4 id="_180">药品调价</h4>
+<h4 id="_181">药品盘点</h4>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>支持药品、物资盘点、盘点单查询、打印等功能。</p>
+<h4 id="_182">药品标识码</h4>
+<h4 id="_183">药品配送</h4>
+<h4 id="_184">药品追溯</h4>
+<h4 id="_185">统计台账</h4>
+<h3 id="_186">打印</h3>
+<h4 id="_187">打印发药单据</h4>
+<h4 id="_188">打印用药标签</h4>
+<h4 id="_189">打印入库单</h4>
+<h4 id="_190">打印出库单</h4>
+<h4 id="_191">打印盘点单</h4>
+<h2 id="_192">五、健康档案管理</h2>
+<h3 id="_193">居民档案建立</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>建档，包括录入居民基本信息 以及 体检、随访、诊所外就诊、处方、检查、检验等与健康档案相关的信息。</p>
+<h3 id="_194">档案导入</h3>
+<h3 id="_195">档案查询</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>支持批量查询、统计分析</p>
+<h3 id="_196">档案修改</h3>
+<h3 id="_197">档案删除</h3>
+<h3 id="_198">档案增减</h3>
+<h3 id="_199">档案查重</h3>
+<h3 id="_200">档案合并</h3>
+<h3 id="_201">档案迁移</h3>
+<h3 id="_202">死亡注销</h3>
+<h2 id="_203">六、随访服务</h2>
+<h3 id="_204">慢病随访</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>支持高血压、糖尿病、肺结核、精神病患者随访，并录入随访信息，进行健康管理。</p>
+<h3 id="_205">老年人随访</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>支持60岁以上老年健康随访，并录入随访信息，进行健康管理。</p>
+<h3 id="_206">新生儿随访</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>支持新生儿随访，并录入随访信息，进行健康管理。</p>
+<h3 id="_207">孕产妇随访</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>支持孕产妇健康随访，并录入随访信息，进行健康管理。</p>
+<h2 id="_208">七、老年人健康管理</h2>
+<h3 id="_209">生活方式和健康状况评估</h3>
+<h3 id="_210">体格检查</h3>
+<h3 id="_211">辅助检查</h3>
+<h3 id="_212">健康指导</h3>
+<h3 id="_213">随访预约</h3>
+<h3 id="_214">随访预约提醒</h3>
+<h3 id="_215">老年人信息上报</h3>
+<h3 id="_216">老年人信息审核</h3>
+<h3 id="_217">老年人信息查询/档案审核</h3>
+<h3 id="_218">老年人信息导出</h3>
+<h3 id="_219">老年入信息统计/查询</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>查询 老年人失能率、指导率、管理率等统计指标</p>
+<h3 id="_220">数据质量控制</h3>
+<h2 id="_221">八、慢性病管理</h2>
+<h3 id="_222">信息上报</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>支持对高血压、糖尿病、慢阻肺、脑卒中、冠心病等其他慢性病患者信息上报；</p>
+<p>具备精神障碍患者、地方病患者信息上报功能；</p>
+<h3 id="_223">查询统计指标</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>具备高血压、糖尿病、慢阻肺、脑卒中、冠心病、精神障碍患者、地方病患者等慢病的疾病筛查率、治疗率、控制率、典型体征指标控制率、规范管理率等统计指标的查询</p>
+<h3 id="_224">慢病患者信息管理</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>支持按国家规范录入高血压、糖尿病患者就诊治疗信息；</p>
+<p>支持按国家规范录入肺结核、重性精神病患者就诊治疗信息；</p>
+<p>支持按国家规范录入传染病患者就诊治疗信息、筛查及密切接触者信息；</p>
+<p>支持按国家规范录入地方病患者就诊治疗信息；</p>
+<h3 id="_225">信息查询</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>支持查询慢病患者的就诊预约、就诊、疑似、确诊、治疗、随访、评估、干预、转诊等信息</p>
+<p>其中，银海提到了患者筛查结果信息记录、诊疗过程信息提醒。</p>
+<h3 id="_226">审核慢病患者数据</h3>
+<h3 id="_227">导出慢病患者数据</h3>
+<h3 id="_228">统计分析慢病患者数据</h3>
+<h2 id="_229">九、突发公卫管理</h2>
+<h3 id="_230">信息上报</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>支持对符合突发公共卫生事件、疑似突发公共卫生事件诊断标准的患者信息上报。</p>
+<h3 id="_231">信息管理</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>支持对符合突发公共卫生事件、疑似突发公共卫生事件诊断标准的患者信息管理；包括患者信息的录入、修正和查询等功能</p>
+<h3 id="_232">信息导出</h3>
+<h3 id="_233">审核</h3>
+<h3 id="_234">统计分析</h3>
+<h2 id="_235">十、传染病管理</h2>
+<h3 id="_236">传染病患者信息管理</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>包括患者信息的录入、订正与查询等功能。</p>
+<h3 id="_237">传染病随访信息管理</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>支持辖区内确诊的常住肺结核患者、常住艾滋病感染者和病人随访的信息管理；其中包括录入与上报等功能。</p>
+<h3 id="_238">肺结核患者筛查记录</h3>
+<h3 id="_239">密切接触者筛查记录</h3>
+<h3 id="_240">报卡患者追踪记录</h3>
+<h3 id="_241">患者治疗记录</h3>
+<h3 id="_242">患者服药记录</h3>
+<h3 id="_243">查询统计指标</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>具备患者管理率、规则服药率等统计指标的查询</p>
+<h3 id="_244">传染病患者信息补报</h3>
+<h3 id="_245">传染病患者信息审核</h3>
+<h3 id="_246">传染病患者信息导出</h3>
+<h3 id="_247">传染病报告卡上报</h3>
+<h3 id="_248">传染病疫情报告率自动生成</h3>
+<h3 id="_249">传染病疫情报告及时率查询</h3>
+<h2 id="_250">十一、康复服务</h2>
+<h3 id="_251">管理康复患者健康档案</h3>
+<h3 id="_252">管理康复患者就诊档案</h3>
+<h3 id="_253">查询患者信息</h3>
+<h3 id="_254">体检信息维护</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>支持血压、心率、心电等 3 项生理基本信息的测量并录入，可修改、查询该信息</p>
+<h3 id="_255">查询康复病人等级评定</h3>
+<h3 id="_256">查询治疗计划</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>可查询上级机以及本机构的治疗计划</p>
+<h3 id="_257">录入康复过程信息</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>支持康复用药、检查、检验、处置、护理等信息录入； </p>
+<h3 id="_258">录入康复治疗医嘱信息</h3>
+<h3 id="_259">核对康复治疗医嘱信息</h3>
+<h3 id="_260">执行康复治疗医嘱信息</h3>
+<h3 id="_261">作废康复治疗医嘱信息</h3>
+<h3 id="_262">审核康复治疗医嘱信息</h3>
+<h3 id="_263">推送关怀信息</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>支持定期或有针对性地向康复病人推送康复关怀信息</p>
+<h3 id="_264">康复随访管理</h3>
+<h3 id="_265">心理咨询管理</h3>
+<h3 id="_266">电子签名</h3>
+<h3 id="_267">模板管理</h3>
+<h2 id="_268">十二、健康教育</h2>
+<h3 id="_269">健康教育信息推送</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>定期向居民手机推送健康宣传信息。</p>
+<h3 id="_270">健康教育信息维护</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>支持填报健康教育信息，包含参加人数、健教内容等信息；</p>
+<h2 id="_271">十三、双向转诊</h2>
+<h3 id="_272">转诊申请（向上级提交）</h3>
+<h3 id="_273">转诊预约</h3>
+<h3 id="_274">转诊审核</h3>
+<h3 id="_275">转诊管理</h3>
+<h3 id="_276">患者回转</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>接受上级医院的转回患者，可查看医院的诊疗建议，接收转回信息并发送回执。</p>
+<h3 id="_277">转诊医院信息查询</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>支持在线查询转诊医院、科室、医生等信息</p>
+<h3 id="_278">转诊资源管理</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>实现对上级医院转诊资源的规范管理；具备转诊资源查询、内容更新、统计分析等功能。</p>
+<h3 id="_279">患者信息反馈</h3>
+<h3 id="_280">随访</h3>
+<h2 id="_281">十四、家庭医生签约</h2>
+<h3 id="_282">家庭医生签约业务</h3>
+<p>具备家庭医生签约、续约、解约、转约、服务评价、统计分析等服务功能</p>
+<h4 id="_283">签约</h4>
+<h4 id="_284">续约</h4>
+<h4 id="_285">解约</h4>
+<h4 id="_286">转约</h4>
+<h4 id="_287">服务评价</h4>
+<h4 id="_288">统计分析</h4>
+<h3 id="_289">家庭医生服务管理</h3>
+<ul>
+<li>功能描述</li>
+</ul>
+<p>支持家庭医生资质、服务项目、价格、服务包、服务评价、服务协议等的查询、新增、修改、删除、统计分析等功能</p>
+<h3 id="_290">服务履约业务</h3>
+<h4 id="_291">履约计划生成</h4>
+<h4 id="_292">任务分配</h4>
+<h4 id="_293">服务预约和通知</h4>
+<h4 id="_294">服务记录</h4>
+<h4 id="_295">服务完成情况查询</h4>
+<h3 id="_296">家庭医生考核管理</h3>
+<h4 id="_297">质量管理</h4>
+<h4 id="_298">能力管理</h4>
+<h4 id="_299">绩效管理</h4>
+<h4 id="_300">满意度管理</h4>
+<h2 id="_301">十五、医疗协同管理</h2>
+<h3 id="_302">样本采集信息录入</h3>
+<h3 id="_303">样本物流信息跟踪</h3>
+<h3 id="_304">查询上级机构提供的诊断信息</h3>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../%E5%9B%9B%E5%B7%9D%E7%9C%81%E6%99%BA%E6%85%A7%E8%AF%8A%E6%89%80%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%9F%BA%E6%9C%AC%E5%8A%9F%E8%83%BD%E8%A7%84%E8%8C%83/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  上一页
+                </span>
+                四川省智慧诊所信息系统基本功能规范
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../%E5%9B%9B%E5%B7%9D%E7%9C%81%E8%AF%8A%E6%89%80%E7%B1%BB%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%E6%95%B0%E6%8D%AE%E5%85%B1%E4%BA%AB%E4%BA%A4%E6%8D%A2%E6%A0%87%E5%87%86/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  下一页
+                </span>
+                四川省诊所类医疗健康数据共享交换标准
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.08c56446.min.js"></script>
+      <script src="../assets/javascripts/bundle.6ced434e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.8c7e0a7e.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
